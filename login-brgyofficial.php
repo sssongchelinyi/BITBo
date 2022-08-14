@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Login | BITBo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/brgyms-icon-white.png">
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style"/>        
+
+    </head>
+
+    <body class="loading" data-layout-config='{"darkMode":false}'>
+
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg py-lg-3 navbar-dark">
+            <div class="container">
+
+                <!-- logo -->
+                <a href="landing-bitbo.php" class="navbar-brand me-lg-5">
+                    <img src="assets/images/bitbo-white.png" alt="" class="logo-dark" height="40" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+
+                <!-- menus -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <!-- left menu -->
+                    <!-- <ul class="navbar-nav me-auto align-items-center">
+                        <li class="nav-item mx-lg-1">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                    </ul> -->
+
+                    <!-- right menu -->
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item me-0">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-login me-2"></i> Login <span class="caret"></span> </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="login-resident.php">Resident</a>
+                                    <a class="dropdown-item" href="login-purokleader.php">Purok Leader</a>
+                                    <a class="dropdown-item" href="login-healthworker.php">Health Worker</a>
+                                    <a class="dropdown-item" href="login-staff.php">Staff</a>
+                                    <a class="dropdown-item" href="#">Brgy. Official</a>
+                                    <a class="dropdown-item" href="login-helpdesk.php">Helpdesk</a>
+                                    <a class="dropdown-item" href="login-admin.php">Admin</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+
+        <!-- START HERO -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="mt-md-4">
+                            <div class="card">
+    
+                                <div class="card-body p-4">
+                                    
+                                    <div class="text-center w-75 m-auto">
+                                        <h4 class="text-dark-50 text-center mt-0 fw-bold">Login as BRGY. OFFICIAL</h4>
+                                        <p class="text-muted mb-4">Enter your email address and password to access your account.</p>
+                                    </div>
+    
+                                    <form action="#">
+
+                                        <div class="mb-3">
+                                            <label for="emailaddress" class="form-label">Email address</label>
+                                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        </div>
+    
+                                        <div class="mb-3">
+                                            <a href="forgotpassword.php" class="text-muted float-end"><small>Forgot your password?</small></a>
+                                            <label for="password" class="form-label">Password</label>
+                                            <div class="input-group input-group-merge">
+                                                <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                                <div class="input-group-text" data-password="false">
+                                                    <span class="password-eye"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="mb-3 mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkbox-signin" checked>
+                                                <label class="form-check-label" for="checkbox-signin">Remember me</label>
+                                            </div>
+                                        </div>
+    
+                                        <div class="mb-3 mb-0 text-center">
+                                            <button class="btn btn-primary" type="submit"> Log In </button>
+                                        </div>
+
+                                        <div class="text-center mt-4">
+                                            <p class="text-muted font-16">Login with</p>
+                                            <ul class="social-list list-inline mt-3">
+                                                <li class="list-inline-item">
+                                                    <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+    
+                                    </form>
+                                </div> <!-- end card-body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                    </div>
+                    <div class="col-md-5 offset-md-2">
+                        <div class="text-md-end mt-3 mt-md-0">
+                            <img src="assets/images/bitbo.png" alt="" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HERO -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="mt-5">
+                    <p class="text-muted mt-4 text-center mb-0">© 2022 - <script>document.write(new Date().getFullYear())</script> BrgyMS | iHealth Team</p>
+                </div>
+            </div>
+        </div><br><br>
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+
+</html>

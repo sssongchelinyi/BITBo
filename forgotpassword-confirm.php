@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Confirm Password | BITBo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/brgyms-icon-white.png">
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style"/>        
+
+    </head>
+
+    <body class="loading" data-layout-config='{"darkMode":false}'>
+
+        <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg py-lg-3 navbar-dark">
+            <div class="container">
+
+                <!-- logo -->
+                <a href="landing-bitbo.php" class="navbar-brand me-lg-5">
+                    <img src="assets/images/bitbo-white.png" alt="" class="logo-dark" height="40" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+
+                <!-- menus -->
+
+                <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item me-0">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-login me-2"></i> Login <span class="caret"></span> </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Resident</a>
+                                    <a class="dropdown-item" href="bitbo-login-purokleader.php">Purok Leader</a>
+                                    <a class="dropdown-item" href="bitbo-login-staff.php">Staff</a>
+                                    <a class="dropdown-item" href="bitbo-login-brgyofficial.php">Brgy. Official</a>
+                                    <a class="dropdown-item" href="bitbo-login-helpdesk.php">Helpdesk</a>
+                                    <a class="dropdown-item" href="bitbo-login-admin.php">Admin</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div> -->
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+
+        <!-- START HERO -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-4 col-lg-5">
+                        <div class="card">
+                            
+                            <div class="card-body p-4">
+                                
+                                <div class="text-center m-auto">
+                                    <img src="assets/images/mail_sent.svg" alt="mail sent image" height="64" />
+                                    <h4 class="text-dark-50 text-center mt-4 fw-bold">Please check your email</h4>
+                                    <p class="text-muted mb-4">
+                                        A email has been send to <b>youremail@domain.com</b>.
+                                        Please check for an email from company and click on the included link to
+                                        reset your password. 
+                                    </p>
+                                </div>
+
+                                <form action="bitbo-login-resident.php">
+                                    <div class="mb-0 text-center">
+                                        <button class="btn btn-primary" type="submit"><i class="mdi mdi-home me-1"></i> Back to Home</button>
+                                    </div>
+                                </form>
+
+                            </div> <!-- end card-body-->
+                        </div>
+                        <!-- end card -->
+
+                        <div class="row mt-3">
+                            <div class="col-12 text-center">
+                                <p class="text-muted">Back to <a href="bitbo-login-resident.php" class="text-muted ms-1"><b>Log In</b></a></p>
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- END HERO -->
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="mt-5">
+                    <p class="text-muted mt-4 text-center mb-0">© 2022 - <script>document.write(new Date().getFullYear())</script> BrgyMS | iHealth Team</p>
+                </div>
+            </div>
+        </div><br><br>
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+
+</html>
