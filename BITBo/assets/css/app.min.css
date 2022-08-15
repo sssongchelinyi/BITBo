@@ -16503,7 +16503,7 @@ select.form-control-sm:not([size]):not([multiple]) {
 }
 
 .bg-nav-pills {
-    background-color: #eef2f7
+    background-color: #fff;
 }
 
 .nav-tabs.nav-bordered {
