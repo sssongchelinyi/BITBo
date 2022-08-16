@@ -18,6 +18,8 @@
 		i.NotificationApp.send("Household updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-deletecert").on("click", function (t) {
 		i.NotificationApp.send("Certificate deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
+	}), i("#toastr-deletepay").on("click", function (t) {
+		i.NotificationApp.send("Payment deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-updatecert").on("click", function (t) {
 		i.NotificationApp.send("Certificate updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-addcert").on("click", function (t) {
@@ -26,6 +28,12 @@
 		i.NotificationApp.send("ID updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-generateid").on("click", function (t) {
 		i.NotificationApp.send("ID is being generated...", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-updatedinvoice").on("click", function (t) {
+		i.NotificationApp.send("Invoice updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-addpayment").on("click", function (t) {
+		i.NotificationApp.send("Payment added successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-edittheme").on("click", function (t) {
+		i.NotificationApp.send("Theme updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-deleteid").on("click", function (t) {
 		i.NotificationApp.send("ID deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-seven").on("click", function (t) {
