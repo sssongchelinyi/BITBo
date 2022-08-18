@@ -87,8 +87,7 @@
                                 <div class="card-body p-4">
                                     
                                     <div class="text-center w-75 m-auto">
-                                        <h4 class="text-dark-50 text-center mt-0 fw-bold">Sign up as RESIDENT</h4>
-                                        <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
+                                        <h4 class="text-dark-50 text-center mt-0 fw-bold">Sign up as RESIDENT</h4><br>
                                     </div>
     
                                     <div id="basicwizard">
@@ -131,38 +130,58 @@
                                                             <input class="form-control" type="text" id="emailaddress" required="" placeholder="Last Name">
                                                         </div>
                                                     </div>
+
                                                     <div class="row">
-                                                        <div class="col-md-4">
+                                                        <div class="col">
                                                             <div class="mb-3">
                                                                 <label for="lastname" class="form-label">Birthday</label>
                                                                 <input type="date" class="form-control" id="birthday" placeholder="Enter birthday">
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                        <div class="col">
                                                             <div class="mb-3">
                                                                 <label for="lastname" class="form-label">Phone No.</label>
                                                                 <input type="number" class="form-control" id="phone" placeholder="Phone No.">
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col">
                                                             <div class="mb-3">
                                                                 <label for="lastname" class="form-label">Username</label>
-                                                                <input type="text" class="form-control" id="username" placeholder="Username">
+                                                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="mb-3">
+                                                                <label for="lastname" class="form-label">Email</label>
+                                                                <input type="email" class="form-control" id="email" placeholder="Email">
                                                             </div>
                                                         </div>
                                                     </div>
                     
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-12">
                                                             <div class="mb-3">
-                                                                <label for="useremail" class="form-label">Email Address</label>
-                                                                <input type="email" class="form-control" id="useremail" placeholder="Email">
+                                                                <label for="useremail" class="form-label">Password</label>
+                                                                <div class="input-group input-group-merge">
+                                                                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                                                    <div class="input-group-text" data-password="false">
+                                                                        <span class="password-eye"></span>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-12">
                                                             <div class="mb-3">
-                                                                <label for="userpassword" class="form-label">Password</label>
-                                                                <input type="password" class="form-control" id="userpassword" placeholder="Password">
+                                                                <label for="userpassword" class="form-label"> Confirm Password</label>
+                                                                <div class="input-group input-group-merge">
+                                                                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                                                    <div class="input-group-text" data-password="false">
+                                                                        <span class="password-eye"></span>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -174,6 +193,10 @@
                                                     <div class="col mb-3">
                                                         <label for="useremail" class="form-label">House No./Street</label>
                                                         <input type="email" class="form-control" id="housestreet" placeholder="Email">
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <label for="userpassword" class="form-label">Purok</label>
+                                                        <input type="password" class="form-control" id="purok" placeholder="Purok">
                                                     </div>
                                                     <div class="col mb-3">
                                                         <label for="userpassword" class="form-label">Barangay</label>
