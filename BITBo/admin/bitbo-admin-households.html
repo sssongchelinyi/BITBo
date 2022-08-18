@@ -314,35 +314,69 @@
                                 </div>
                             </div>
                         </div>     
-                        <!-- end page title --> 
+                        <!-- end page title -->
 
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="tab-content">
-                                            <div class="tab-pane show active" id="buttons-table-residents">
+                                            <div class="tab-pane show active" id="buttons-table-residents" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-householdhead", "js-lists-values-user-housestreet", "js-lists-values-user-purok", "js-lists-values-user-type"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search" placeholder="Search Household Head, Street, Purok or Type">
                                                 <table id="" class="table dt-responsive nowrap w-100">
                                                     <thead>
                                                         <tr>
-                                                            <th>Household Head</th>
-                                                            <th>House No./Street</th>
-                                                            <th>Purok</th>
-                                                            <th>No. of People</th>
-                                                            <th>Type</th>
-                                                            <th>Active?</th>
-                                                            <th>Action</th>
+                                                            <th style="width: 300px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-householdhead">Household Head<br><br></a>
+                                                            </th>
+                                                            <th style="width: 300px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-housestreet">House No./Street<br><br></a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-purok">Purok<br><br></a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-type">Type<br><br></a>
+                                                            </th>
+                                                            <th style="width: 250px;">No. of People<br><br></th>
+                                                            <th style="width: 250px;">Active?<br><br></th>
+                                                            <th style="width: 250px;">Action<br><br></th>
                                                         </tr>
                                                     </thead>
                                                 
                                                 
-                                                    <tbody>
+                                                    <tbody class="list" id="staff02">
+
                                                         <tr>
-                                                            <td>Tiger Nixon</td>
-                                                            <td>1234 Batumbakal Street</td>
-                                                            <td>Katakutan</td>
-                                                            <td>4</td>
-                                                            <td>Nuclear Family</td>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-householdhead">Tiger Nixon</strong></div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-housestreet">3435 Batumbakal Street</span>
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="js-lists-values-user-purok">Katakutan</span>
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="js-lists-values-user-type">Nuclear Family</span>
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    4
+                                                                </div>
+                                                            </td>
                                                             <td>
                                                                 <div>
                                                                     <input type="checkbox" id="switch1" checked="" data-switch="success">
@@ -353,14 +387,33 @@
                                                                 <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
                                                                         data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
                                                                     </button></a>
+                                                                    <br>
                                                             </td>
                                                         </tr>
+        
                                                         <tr>
-                                                            <td>Garrett Winters</td>
-                                                            <td>1234 Batumbakal Street</td>
-                                                            <td>Katakutan</td>
-                                                            <td>2</td>
-                                                            <td>Childless Family</td>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-householdhead">Grantt Winters</strong></div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-housestreet">3435 Batumbakal Street</span>
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="js-lists-values-user-purok">Karasyahan</span>
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="js-lists-values-user-type">Single</span>
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    4
+                                                                </div>
+                                                            </td>
                                                             <td>
                                                                 <div>
                                                                     <input type="checkbox" id="switch2" checked="" data-switch="success">
@@ -371,14 +424,33 @@
                                                                 <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
                                                                         data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
                                                                     </button></a>
+                                                                    <br>
                                                             </td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Ashton Cox</td>
-                                                            <td>1234 Batumbakal Street</td>
-                                                            <td>Katakutan</td>
-                                                            <td>66</td>
-                                                            <td>Single-Parent Family</td>
+
+                                                         <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-householdhead">Colleen Hurst</strong></div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-housestreet">3435 Batumbakal Street</span>
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="js-lists-values-user-purok">Kakurian</span>
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="js-lists-values-user-type">Step Family</span>
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    4
+                                                                </div>
+                                                            </td>
                                                             <td>
                                                                 <div>
                                                                     <input type="checkbox" id="switch3" checked="" data-switch="success">
@@ -389,132 +461,7 @@
                                                                 <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
                                                                         data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
                                                                     </button></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>1024 Woodensteel Street</td>
-                                                            <td>Kalanturan</td>
-                                                            <td>22</td>
-                                                            <td>Single</td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch4" checked="" data-switch="success">
-                                                                    <label for="switch4" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Airi Satou</td>
-                                                            <td>1024 Woodensteel Street</td>
-                                                            <td>Kalanturan</td>
-                                                            <td>33</td>
-                                                            <td>Extended Family</td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch5" checked="" data-switch="success">
-                                                                    <label for="switch5" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Brielle Williamson</td>
-                                                            <td>1024 Woodensteel Street</td>
-                                                            <td>Kalanturan</td>
-                                                            <td>61</td>
-                                                            <td>Step Family</td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch6" checked="" data-switch="success">
-                                                                    <label for="switch6" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Herrod Chandler</td>
-                                                            <td>925 Tubiglangis Street</td>
-                                                            <td>Kakirutan</td>
-                                                            <td>59</td>
-                                                            <td>Grandparent Family</td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch7" checked="" data-switch="success">
-                                                                    <label for="switch7" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Rhona Davidson</td>
-                                                            <td>925 Tubiglangis Street</td>
-                                                            <td>Kakirutan</td>
-                                                            <td>55</td>
-                                                            <td>Extended Family</td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch8" checked="" data-switch="success">
-                                                                    <label for="switch8" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Colleen Hurst</td>
-                                                            <td>925 Tubiglangis Street</td>
-                                                            <td>Kakirutan</td>
-                                                            <td>39</td>
-                                                            <td>Nuclear Family</td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch9" checked="" data-switch="success">
-                                                                    <label for="switch9" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Sonya Frost</td>
-                                                            <td>925 Tubiglangis Street</td>
-                                                            <td>Kakirutan</td>
-                                                            <td>23</td>
-                                                            <td>Childless Family</td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch10" checked="" data-switch="success">
-                                                                    <label for="switch10" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal" data-bs-target="#edit-user-modal"><i class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
+                                                                    <br>
                                                             </td>
                                                         </tr>
                                                     </tbody>

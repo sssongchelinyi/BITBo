@@ -95,24 +95,10 @@
                     </li>
 
                     <li class="side-nav-item">
-                        <a data-bs-toggle="collapse" href="#sidebarEvents" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
+                        <a href="bitbo-admin-events.html" class="side-nav-link">
                             <i class="uil-trophy"></i>
                             <span> Events </span>
-                            <span class="menu-arrow"></span>
                         </a>
-                        <div class="collapse" id="sidebarEvents">
-                            <ul class="side-nav-second-level">
-                                <li>
-                                    <a href="bitbo-admin-events.html">Calendar</a>
-                                </li>
-                                <li>
-                                    <a href="bitbo-admin-events-ongoing.html">On Going</a>
-                                </li>
-                                <li>
-                                    <a href="bitbo-admin-events-ongoing.html">Done</a>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
 
                     <li class="side-nav-item">
@@ -358,272 +344,285 @@
 
                                     <ul class="nav nav-pills bg-nav-pills mb-3">
                                         <li class="nav-item">
-                                            <a href="#buttons-table-active" data-bs-toggle="tab" aria-expanded="false"
+                                            <a href="#buttons-table-active" data-bs-toggle="tab" aria-expanded="true"
                                                 class="nav-link active">
                                                 Active Complaints
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#buttons-table-history" data-bs-toggle="tab" aria-expanded="true"
-                                                class="nav-link">
+                                            <a href="#buttons-table-resolved" data-bs-toggle="tab"
+                                                aria-expanded="true" class="nav-link">
                                                 History
                                             </a>
                                         </li>
                                     </ul> <!-- end nav-->
                                     <div class="tab-content">
-                                        <div class="tab-pane show active" id="buttons-table-active">
-                                            <table id=""
-                                                class="table dt-responsive nowrap w-100">
+
+                                        <div class="tab-pane show active" id="buttons-table-active"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Blotter ID., Date or Complainant">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-blotter">Blotter ID.</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-date">Date
+                                                                    Recorded</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complainant">Complainant</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-person">Person to Complain</a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                            </th>
+                                                            <th style="width: 180px;">Action Taken</th>
+                                                            <th style="width: 180px;">Status</th>
+                                                            <th style="width: 180px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong></div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-complainant">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                            </td>
+                                                            <td>For Review</td>
+                                                            <td><span class="badge bg-warning">For Review</span></td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-resolve-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong></div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-complainant">Maria Clara</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                            </td>
+                                                            <td>For Review</td>
+                                                            <td><span class="badge bg-warning">For Review</span></td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-resolve-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong></div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-complainant">Sisa Usisa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                            </td>
+                                                            <td>For Review</td>
+                                                            <td><span class="badge bg-warning">For Review</span></td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-resolve-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </table>
+                                        </div> <!-- end active-->
+
+                                        <div class="tab-pane" id="buttons-table-resolved"
+                                        class="table responsive nowrap w-100" data-toggle="lists"
+                                        data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                        <table id="table table-centered" class="table-responsive mb-0">
+                                            <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                    class="form-control search"
+                                                    placeholder="Search Blotter ID., Date or Complainant">
+                                            </div>
+                                            <table id="" class="table dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
-                                                        <th>Blotter ID.</th>
-                                                        <th>Date Recorded</th>
-                                                        <th>Complainant</th>
-                                                        <th>Person to Complaint</th>
-                                                        <th>Complaint</th>
-                                                        <th>Location of Incidence</th>
-                                                        <th>Action Taken</th>
-                                                        <th>Status</th>
-                                                        <th>Action</th>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-user-blotter">Blotter ID.</a>
+                                                        </th>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-user-date">Date
+                                                                Recorded</a>
+                                                        </th>
+                                                        <th style="width: 280px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-user-complainant">Complainant</a>
+                                                        </th>
+                                                        <th style="width: 280px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-user-person">Person to Complain</a>
+                                                        </th>
+                                                        <th style="width: 250px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                        </th>
+                                                        <th style="width: 180px;">Status</th>
+                                                        <th style="width: 180px;">Action</th>
                                                     </tr>
                                                 </thead>
 
+                                                <tbody class="list" id="staff02">
 
-                                                <tbody>
                                                     <tr>
-                                                        <td>BLTR-2022-0001</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-user-blotter">BLTR-2022002</strong></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-user-date">2022-02-02</span>
+                                                        </td>
+                                                        <td><span
+                                                                class="js-lists-values-user-complainant">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                        </td>
+                                                        <td><span
+                                                                class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                        </td>
+                                                        <td><span class="badge bg-success">Resolved</span></td>
                                                         <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-warning"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#edit-blotter-modal"><i
                                                                         class="mdi mdi-file-document-edit-outline"></i>
                                                                 </button></a>
                                                         </td>
                                                     </tr>
+
                                                     <tr>
-                                                        <td>BLTR-2022-0002</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-user-blotter">BLTR-2022003</strong></div>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-user-date">2022-02-02</span>
+                                                        </td>
+                                                        <td><span
+                                                                class="js-lists-values-user-complainant">Maria Clara</span>
+                                                        </td>
+                                                        <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                        </td>
+                                                        <td><span
+                                                                class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                        </td>
+                                                        <td><span class="badge bg-success">Resolved</span></td>
                                                         <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-warning"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#edit-blotter-modal"><i
                                                                         class="mdi mdi-file-document-edit-outline"></i>
                                                                 </button></a>
                                                         </td>
                                                     </tr>
+
                                                     <tr>
-                                                        <td>BLTR-2022-0003</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-user-blotter">BLTR-2022004</strong></div>
+                                                            </div>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0004</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
+                                                        <td><span class="js-lists-values-user-date">2022-02-02</span>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0005</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
+                                                        <td><span
+                                                                class="js-lists-values-user-complainant">Sisa Usisa</span>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0006</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
+                                                        <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0007</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
+                                                        <td><span
+                                                                class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
                                                         </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0008</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
+                                                        <td><span class="badge bg-success">Resolved</span></td>
                                                         <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0009</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0010</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-warning">For Review</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#mark-resolve-modal"><i
-                                                                        class="mdi mdi-check-bold"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-warning"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#edit-blotter-modal"><i
                                                                         class="mdi mdi-file-document-edit-outline"></i>
@@ -632,218 +631,14 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                        </div> <!-- end pending-->
-
-                                        <div class="tab-pane" id="buttons-table-history">
-                                            <table id=""
-                                                class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Blotter ID.</th>
-                                                        <th>Date Recorded</th>
-                                                        <th>Complainant</th>
-                                                        <th>Person to Complaint</th>
-                                                        <th>Complaint</th>
-                                                        <th>Location of Incidence</th>
-                                                        <th>Action Taken</th>
-                                                        <th>Status</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
-
-
-                                                <tbody>
-                                                    <tr>
-                                                        <td>BLTR-2022-0001</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0002</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0003</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0004</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0005</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0006</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0007</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0008</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0009</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BLTR-2022-0010</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Nakitae tas di lumubog</td>
-                                                        <td>Purok Kakurian</td>
-                                                        <td>For Review</td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div> <!-- end declined-->
+                                        </table>
+                                    </div> <!-- end active-->
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card body-->
                             </div> <!-- end card -->
                         </div><!-- end col-->
-                    </div>
-                    <!-- end row-->
+                    </div><!-- end row-->
                 </div> <!-- container -->
-
             </div> <!-- content -->
         </div>
 
@@ -867,8 +662,7 @@
                                 <div class="col-md-7">
                                     <div class="mb-3">
                                         <label for="firstname" class="form-label">Blotter ID</label>
-                                        <input type="text" class="form-control" id="blotterid"
-                                            placeholder="Blotter ID">
+                                        <input type="text" class="form-control" id="blotterid" placeholder="Blotter ID">
                                     </div>
                                 </div>
                                 <div class="col-md-5">
@@ -904,7 +698,8 @@
                                 <div class="col-12">
                                     <div class="mb-3">
                                         <label for="userbio" class="form-label">Complaint</label>
-                                        <textarea class="form-control" id="userbio" rows="4" placeholder="What's your complaint?..."></textarea>
+                                        <textarea class="form-control" id="userbio" rows="4"
+                                            placeholder="What's your complaint?..."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -947,8 +742,10 @@
                             <i class="dripicons-question h1"></i>
                             <h4 class="mt-2">Resolve Confirmation</h4>
                             <p class="mt-3">Are you sure you want to mark this botter as resolved?</p>
-                            <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal" id="toastr-resolve">Confirm</button>
+                            <button type="button" class="btn btn-outline-light my-2"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                id="toastr-resolve">Confirm</button>
                         </div>
                     </div>
                 </div><!-- /.modal-content -->

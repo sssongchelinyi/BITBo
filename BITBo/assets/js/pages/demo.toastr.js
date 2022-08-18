@@ -10,6 +10,8 @@
 		i.NotificationApp.send("Request declined!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-five").on("click", function (t) {
 		i.NotificationApp.send("User updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-five2").on("click", function (t) {
+		i.NotificationApp.send("Brgy official updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-six").on("click", function (t) {
 		i.NotificationApp.send("Blotter updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-resolve").on("click", function (t) {
@@ -34,10 +36,16 @@
 		i.NotificationApp.send("Payment added successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-edittheme").on("click", function (t) {
 		i.NotificationApp.send("Theme updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-editevent").on("click", function (t) {
+		i.NotificationApp.send("Event updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-editproject").on("click", function (t) {
+		i.NotificationApp.send("Project updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-createevent").on("click", function (t) {
+		i.NotificationApp.send("Event / Project created successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-deleteid").on("click", function (t) {
 		i.NotificationApp.send("ID deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
-	}), i("#toastr-seven").on("click", function (t) {
-		i.NotificationApp.send("", "Set the `hideAfter` property to false and the toast will become sticky.", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-endterm").on("click", function (t) {
+		i.NotificationApp.send("Barangay official was terminated!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-eight").on("click", function (t) {
 		i.NotificationApp.send("", "Set the `showHideTransition` property to fade|plain|slide to achieve different transitions.", "top-right", "rgba(0,0,0,0.2)", "info", 3e3, 1, "fade")
 	})
