@@ -345,118 +345,214 @@
                                         <a href="bitbo-admin-brgyid-add.html" class="btn btn-primary mb-2"><i class="mdi mdi-credit-card-plus me-2" ></i> Add Brgy. ID</a>
                                     </div>
                                     <div class="tab-content">
-                                        <div class="tab-pane show active" id="buttons-table-pending">
-                                            <table id="scroll-vertical-datatable"
-                                                class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Brgy ID.</th>
-                                                        <th>Name</th>
-                                                        <th>Date Issued</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
+                                        <div class="tab-pane show active" id="buttons-table-pending" data-toggle="lists"
+                                        data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-brgyid"]'>
+                                        <table id="table table-centered" class="table-responsive mb-0">
+                                            <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                    class="form-control search" placeholder="Search Brgy ID, Name or Date"><button
+                                                    class="btn" type="button" role="button"></button>
+                                            </div>
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 300px;">
+                                                        <a href="javascript:void(0)" class="sort"
+                                                            data-sort="js-lists-values-user-brgyid">Brgy ID.<br><br></a>
+                                                    </th>
+                                                    <th style="width: 400px;">
+                                                        <a href="javascript:void(0)" class="sort"
+                                                            data-sort="js-lists-values-user-name">Name<br><br></a>
+                                                    </th>
+                                                    <th style="width: 250px;">
+                                                        <a href="javascript:void(0)" class="sort"
+                                                            data-sort="js-lists-values-user-date">Date<br><br></a>
+                                                    </th>
+                                                    <th style="width: 350px;">Action<br><br></th>
+                                                </tr>
+                                            </thead>
+                                            
+                                            <tbody class="list" id="staff02">
 
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-brgyid">2022-0001</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Juan Dela
+                                                                    Cruz</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#danger-alert-modal"><i
+                                                                    class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-info"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-view"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-warning"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-edit"><i
+                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>BRGYID-0001</td>
-                                                        <td>Juan Dela Cruz</td>
-                                                        <td>2022-01-01</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-view"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-edit"><i
-                                                                        class="mdi mdi-account-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BRGYID-0002</td>
-                                                        <td>Maria Clara</td>
-                                                        <td>2022-09-18</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-view"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-edit"><i
-                                                                        class="mdi mdi-account-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BRGYID-0003</td>
-                                                        <td>Sisa Usisa</td>
-                                                        <td>2019-08-26</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-view"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-edit"><i
-                                                                        class="mdi mdi-account-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>BRGYID-0004</td>
-                                                        <td>Crisostomo Ibarra</td>
-                                                        <td>2018-08-22</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-view"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal-edit"><i
-                                                                        class="mdi mdi-account-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-brgyid">2022-0002</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Maria Clara</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#danger-alert-modal"><i
+                                                                    class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-info"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-view"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-warning"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-edit"><i
+                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-brgyid">2022-0003</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Sisa Usisa</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#danger-alert-modal"><i
+                                                                    class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-info"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-view"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-warning"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-edit"><i
+                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-brgyid">2022-0004</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Crisostomo Ibarra</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#danger-alert-modal"><i
+                                                                    class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-info"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-view"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-warning"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-edit"><i
+                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-brgyid">2022-0005</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Kuki Kuripot</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#danger-alert-modal"><i
+                                                                    class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-info"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-view"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                        <a href="javascript: void(0);" class="action-icon"> <button
+                                                                type="button" class="btn btn-warning"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#info-header-modal-edit"><i
+                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                         </div> <!-- end certificates-->
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card body-->
@@ -740,11 +836,15 @@
     <script src="../assets/js/vendor/buttons.print.min.js"></script>
     <script src="../assets/js/vendor/dataTables.keyTable.min.js"></script>
     <script src="../assets/js/vendor/dataTables.select.min.js"></script>
+    <script src="../assets/js/vendor/list.min.js"></script>
     <!-- third party js ends -->
 
     <!-- demo app -->
     <script src="../assets/js/pages/demo.datatable-init.js"></script>
     <script src="../assets/js/pages/demo.toastr.js"></script>
+    <script src="../assets/js/pages/demo.datatable-init.js"></script>
+    <script src="../assets/js/pages/demo.toastr.js"></script>
+    <script src="../assets/js/pages/list.js"></script>
     <!-- end demo js-->
 </body>
 

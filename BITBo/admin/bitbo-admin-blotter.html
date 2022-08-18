@@ -95,12 +95,26 @@
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-events.html" class="side-nav-link">
+                        <a data-bs-toggle="collapse" href="#sidebarEvents" aria-expanded="false" aria-controls="sidebarEmail" class="side-nav-link">
                             <i class="uil-trophy"></i>
                             <span> Events </span>
+                            <span class="menu-arrow"></span>
                         </a>
+                        <div class="collapse" id="sidebarEvents">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="bitbo-admin-events.html">Calendar</a>
+                                </li>
+                                <li>
+                                    <a href="bitbo-admin-events-ongoing.html">On Going</a>
+                                </li>
+                                <li>
+                                    <a href="bitbo-admin-events-ongoing.html">Done</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    
+
                     <li class="side-nav-item">
                         <a href="bitbo-admin-logs.html" class="side-nav-link">
                             <i class="uil-notes"></i>
@@ -358,7 +372,7 @@
                                     </ul> <!-- end nav-->
                                     <div class="tab-content">
                                         <div class="tab-pane show active" id="buttons-table-active">
-                                            <table id="scroll-vertical-datatable"
+                                            <table id=""
                                                 class="table dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
@@ -621,7 +635,7 @@
                                         </div> <!-- end pending-->
 
                                         <div class="tab-pane" id="buttons-table-history">
-                                            <table id="scroll-vertical-datatable"
+                                            <table id=""
                                                 class="table dt-responsive nowrap w-100">
                                                 <thead>
                                                     <tr>
@@ -960,11 +974,15 @@
     <script src="../assets/js/vendor/buttons.print.min.js"></script>
     <script src="../assets/js/vendor/dataTables.keyTable.min.js"></script>
     <script src="../assets/js/vendor/dataTables.select.min.js"></script>
+    <script src="../assets/js/vendor/list.min.js"></script>
     <!-- third party js ends -->
 
     <!-- demo app -->
     <script src="../assets/js/pages/demo.datatable-init.js"></script>
     <script src="../assets/js/pages/demo.toastr.js"></script>
+    <script src="../assets/js/pages/demo.datatable-init.js"></script>
+    <script src="../assets/js/pages/demo.toastr.js"></script>
+    <script src="../assets/js/pages/list.js"></script>
     <!-- end demo js-->
 </body>
 

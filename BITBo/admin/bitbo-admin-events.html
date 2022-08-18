@@ -345,11 +345,6 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-lg-3">
-                                            <div class="d-grid">
-                                                <button class="btn btn-lg font-16 btn-danger" id="btn-new-event"><i
-                                                        class="mdi mdi-plus-circle-outline"></i> Create New
-                                                    Event</button>
-                                            </div>
                                             <div id="external-events" class="m-t-20">
                                                 <br>
                                                 <div class="external-event bg-primary-lighten text-primary"
@@ -459,107 +454,250 @@
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane show active" id="events-ongoing">
-                                                    <table id="scroll-vertical-datatable" class="table dt-responsive nowrap w-100">
+                                                <div class="tab-pane show active" id="events-ongoing"
+                                                    data-toggle="lists"
+                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
+                                                    <table id="table table-centered" class="table-responsive mb-0">
+                                                        <div class="search-form search-form--light col-lg-3"><input
+                                                                type="text" class="form-control search"
+                                                                placeholder="Search Name, Date, Time or Theme"><button
+                                                                class="btn" type="button" role="button"></button>
+                                                        </div>
                                                         <thead>
                                                             <tr>
-                                                                <th>Date</th>
-                                                                <th>Time</th>
-                                                                <th>Name</th>
-                                                                <th>Theme</th>
-                                                                <th>Action</th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-date">Date<br><br></a>
+                                                                </th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-time">Time<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-name">Name<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-theme">Theme<br><br></a>
+                                                                </th>
+                                                                <th>Action<br><br></th>
                                                             </tr>
                                                         </thead>
-                                                    
-                                                    
-                                                        <tbody>
+
+                                                        <tbody class="list" id="staff02">
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korique</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="js-lists-values-user-theme">Brgy.
+                                                                        Beauty Contest</span>
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                </td>
+                                                                <td class="mb-3">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korik</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Fiesta
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-date">2021/11/31</span>
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korak</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Fiesta
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <div class="tab-pane" id="events-done">
-                                                    <table id="scroll-vertical-datatable" class="table dt-responsive nowrap w-100">
+                                                <div class="tab-pane" id="events-done" data-toggle="lists"
+                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
+                                                    <table id="table table-centered" class="table-responsive mb-0">
+                                                        <div class="search-form search-form--light col-lg-3"><input
+                                                                type="text" class="form-control search"
+                                                                placeholder="Search Name, Date, Time or Theme"><button
+                                                                class="btn" type="button" role="button"></button>
+                                                        </div>
                                                         <thead>
                                                             <tr>
-                                                                <th>Date</th>
-                                                                <th>Time</th>
-                                                                <th>Name</th>
-                                                                <th>Theme</th>
-                                                                <th>Action</th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-date">Date<br><br></a>
+                                                                </th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-time">Time<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-name">Name<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-theme">Theme<br><br></a>
+                                                                </th>
+                                                                <th>Action<br><br></th>
                                                             </tr>
                                                         </thead>
-                                                    
-                                                    
-                                                        <tbody>
+
+                                                        <tbody class="list" id="staff02">
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korique</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="js-lists-values-user-theme">Brgy.
+                                                                        Beauty Contest</span>
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                </td>
+                                                                <td class="mb-3">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korik</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Mass
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-date">2021/11/31</span>
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korak</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Fiesta
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -571,8 +709,8 @@
                                         <div class="tab-pane" id="buttons-table-projects">
                                             <ul class="nav nav-tabs nav-bordered mb-3">
                                                 <li class="nav-item">
-                                                    <a href="#projects-ongoing" data-bs-toggle="tab" aria-expanded="false"
-                                                        class="nav-link active">
+                                                    <a href="#projects-ongoing" data-bs-toggle="tab"
+                                                        aria-expanded="false" class="nav-link active">
                                                         <i class="mdi mdi-home-variant d-md-none d-block"></i>
                                                         <span class="d-none d-md-block">On Going</span>
                                                     </a>
@@ -587,107 +725,250 @@
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane show active" id="projects-ongoing">
-                                                    <table id="scroll-vertical-datatable" class="table dt-responsive nowrap w-100">
+                                                <div class="tab-pane show active" id="projects-ongoing"
+                                                    data-toggle="lists"
+                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
+                                                    <table id="table table-centered" class="table-responsive mb-0">
+                                                        <div class="search-form search-form--light col-lg-3"><input
+                                                                type="text" class="form-control search"
+                                                                placeholder="Search Name, Date, Time or Theme"><button
+                                                                class="btn" type="button" role="button"></button>
+                                                        </div>
                                                         <thead>
                                                             <tr>
-                                                                <th>Date</th>
-                                                                <th>Time</th>
-                                                                <th>Name</th>
-                                                                <th>Theme</th>
-                                                                <th>Action</th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-date">Date<br><br></a>
+                                                                </th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-time">Time<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-name">Name<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-theme">Theme<br><br></a>
+                                                                </th>
+                                                                <th>Action<br><br></th>
                                                             </tr>
                                                         </thead>
-                                                    
-                                                    
-                                                        <tbody>
+
+                                                        <tbody class="list" id="staff02">
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korique</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="js-lists-values-user-theme">Brgy.
+                                                                        Liga</span>
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                </td>
+                                                                <td class="mb-3">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korik</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Fiesta
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-date">2021/11/31</span>
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korak</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Fiesta
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                <div class="tab-pane" id="projects-done">
-                                                    <table id="scroll-vertical-datatable" class="table dt-responsive nowrap w-100">
+                                                <div class="tab-pane" id="projects-done" data-toggle="lists"
+                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
+                                                    <table id="table table-centered" class="table-responsive mb-0">
+                                                        <div class="search-form search-form--light col-lg-3"><input
+                                                                type="text" class="form-control search"
+                                                                placeholder="Search Name, Date, Time or Theme"><button
+                                                                class="btn" type="button" role="button"></button>
+                                                        </div>
                                                         <thead>
                                                             <tr>
-                                                                <th>Date</th>
-                                                                <th>Time</th>
-                                                                <th>Name</th>
-                                                                <th>Theme</th>
-                                                                <th>Action</th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-date">Date<br><br></a>
+                                                                </th>
+                                                                <th style="width: 250px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-time">Time<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-name">Name<br><br></a>
+                                                                </th>
+                                                                <th style="width: 320px;">
+                                                                    <a href="javascript:void(0)" class="sort"
+                                                                        data-sort="js-lists-values-user-theme">Theme<br><br></a>
+                                                                </th>
+                                                                <th>Action<br><br></th>
                                                             </tr>
                                                         </thead>
-                                                    
-                                                    
-                                                        <tbody>
+
+                                                        <tbody class="list" id="staff02">
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korique</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="js-lists-values-user-theme">Brgy.
+                                                                        Beauty Contest</span>
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                </td>
+                                                                <td><span
+                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                </td>
+                                                                <td class="mb-3">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korik</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Fiesta
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
+
                                                             <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-date">2021/11/31</span>
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-08-22</td>
-                                                                <td>7:00 AM - 11:59 PM</td>
-                                                                <td>Parlor Games</td>
-                                                                <td>Brgy. Fiesta</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-body d-flex flex-column">
+                                                                            <strong
+                                                                                class="js-lists-values-user-name">iThink
+                                                                                Korak</strong></div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    Brgy. Seminar
+                                                                </td>
                                                                 <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#event-edit-modal"><i class="mdi mdi-circle-edit-outline"></i> </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-warning"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                        </button></a>
+                                                                    <br><br>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -772,12 +1053,16 @@
     <script src="../assets/js/vendor/dataTables.keyTable.min.js"></script>
     <script src="../assets/js/vendor/dataTables.select.min.js"></script>
     <script src="../assets/js/vendor/fullcalendar.min.js"></script>
+    <script src="../assets/js/vendor/list.min.js"></script>
     <!-- third party js ends -->
 
     <!-- demo app -->
     <script src="../assets/js/pages/demo.datatable-init.js"></script>
     <script src="../assets/js/pages/demo.toastr.js"></script>
     <script src="../assets/js/pages/demo.calendar.js"></script>
+    <script src="../assets/js/pages/demo.datatable-init.js"></script>
+    <script src="../assets/js/pages/demo.toastr.js"></script>
+    <script src="../assets/js/pages/list.js"></script>
     <!-- end demo js-->
 </body>
 

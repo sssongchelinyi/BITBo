@@ -345,114 +345,208 @@
                                         <a href="bitbo-admin-payment-add.html" class="btn btn-primary mb-2"><i class="mdi mdi-credit-card-plus me-2" ></i> Add Payment</a>
                                     </div>
                                     <div class="tab-content">
-                                        <div class="tab-pane show active" id="buttons-table-pending">
-                                            <table id="scroll-vertical-datatable"
-                                                class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Invoice ID.</th>
-                                                        <th>Name</th>
-                                                        <th>Document Type</th>
-                                                        <th>Date Issued</th>
-                                                        <th>Contact No.</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
+                                        <div class="tab-pane show active" id="buttons-table-pending" data-toggle="lists"
+                                        data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-invoiceid", "js-lists-values-user-document"]'>
+                                        <table id="table table-centered" class="table-responsive mb-0">
+                                            <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                    class="form-control search" placeholder="Search Invoice ID., Name, Document Type or Date"><button
+                                                    class="btn" type="button" role="button"></button>
+                                            </div>
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 150px;">
+                                                        <a href="javascript:void(0)" class="sort"
+                                                            data-sort="js-lists-values-user-invoiceid">Invoice ID.<br><br></a>
+                                                    </th>
+                                                    <th style="width: 250px;">
+                                                        <a href="javascript:void(0)" class="sort"
+                                                            data-sort="js-lists-values-user-name">Name<br><br></a>
+                                                    </th>
+                                                    <th style="width: 280px;">
+                                                        <a href="javascript:void(0)" class="sort"
+                                                            data-sort="js-lists-values-user-document">Document Type<br><br></a>
+                                                    </th>
+                                                    <th style="width: 250px;">
+                                                        <a href="javascript:void(0)" class="sort"
+                                                            data-sort="js-lists-values-user-date">Date<br><br></a>
+                                                    </th>
+                                                    <th style="width: 250px;">Contact No.<br><br></th>
+                                                    <th style="width: 250px;">Action<br><br></th>
+                                                </tr>
+                                            </thead>
+                                            
+                                            <tbody class="list" id="staff02">
 
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-invoiceid">2022-0001</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Juan Dela
+                                                                    Cruz</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-document">Barangay Certificate of Residency</span>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            09987654321
+                                                        </div>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal" data-bs-target="#danger-alert-modal"><i class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button type="button" class="btn btn-info"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>2022-0001</td>
-                                                        <td>Juan Dela Cruz</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td>2022-01-01</td>
-                                                        <td>09987654321</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2022-0002</td>
-                                                        <td>Maria Clara</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td>2022-09-18</td>
-                                                        <td>09672866891</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2019-0003</td>
-                                                        <td>Sisa Usisa</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td>2019-08-26</td>
-                                                        <td>09123456789</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2018-0004</td>
-                                                        <td>Crisostomo Ibarra</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td>2018-08-22</td>
-                                                        <td>09353457639</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2022-0004</td>
-                                                        <td>Kuki Kuripot</td>
-                                                        <td>Brgy. ID.</td>
-                                                        <td>2022-10-11</td>
-                                                        <td>09353457639</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-delete"></i> </button></a>
-                                                            <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"><i
-                                                                        class="mdi mdi-eye"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-invoiceid">2022-0002</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Juan Dela
+                                                                    Cruz</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-document">Barangay Hosuehold Registration</span>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            09987654321
+                                                        </div>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal" data-bs-target="#danger-alert-modal"><i class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button type="button" class="btn btn-info"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-invoiceid">2022-0003</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Juan Dela
+                                                                    Cruz</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-document">Barangay Indigency</span>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            09987654321
+                                                        </div>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal" data-bs-target="#danger-alert-modal"><i class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button type="button" class="btn btn-info"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-invoiceid">2022-0004</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Juan Dela
+                                                                    Cruz</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-document">Barangay Clearance</span>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            09987654321
+                                                        </div>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal" data-bs-target="#danger-alert-modal"><i class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button type="button" class="btn btn-info"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><span
+                                                            class="js-lists-values-user-invoiceid">2022-0005</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body d-flex flex-column"><strong
+                                                                    class="js-lists-values-user-name">Juan Dela
+                                                                    Cruz</strong></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-document">Barangay Identification Card</span>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="js-lists-values-user-date">2022/08/09</span>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            09987654321
+                                                        </div>
+                                                    </td>
+                                                    <td class="table-action">
+                                                        <a href="javascript: void(0);" class="action-icon"> <button type="button" class="btn btn-danger"
+                                                                data-bs-toggle="modal" data-bs-target="#danger-alert-modal"><i class="mdi mdi-delete"></i> </button></a>
+                                                        <a href="bitbo-admin-payment-invoice.html" class="action-icon"> <button type="button" class="btn btn-info"><i
+                                                                    class="mdi mdi-eye"></i>
+                                                            </button></a>
+                                                            <br><br>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                         </div> <!-- end certificates-->
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card body-->
@@ -735,11 +829,15 @@
     <script src="../assets/js/vendor/buttons.print.min.js"></script>
     <script src="../assets/js/vendor/dataTables.keyTable.min.js"></script>
     <script src="../assets/js/vendor/dataTables.select.min.js"></script>
+    <script src="../assets/js/vendor/list.min.js"></script>
     <!-- third party js ends -->
 
     <!-- demo app -->
     <script src="../assets/js/pages/demo.datatable-init.js"></script>
     <script src="../assets/js/pages/demo.toastr.js"></script>
+    <script src="../assets/js/pages/demo.datatable-init.js"></script>
+    <script src="../assets/js/pages/demo.toastr.js"></script>
+    <script src="../assets/js/pages/list.js"></script>
     <!-- end demo js-->
 </body>
 
