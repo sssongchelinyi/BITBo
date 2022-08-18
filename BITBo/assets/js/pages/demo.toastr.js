@@ -40,6 +40,8 @@
 		i.NotificationApp.send("Event updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-editproject").on("click", function (t) {
 		i.NotificationApp.send("Project updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-editaccount").on("click", function (t) {
+		i.NotificationApp.send("Account updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-createevent").on("click", function (t) {
 		i.NotificationApp.send("Event / Project created successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-deleteid").on("click", function (t) {
