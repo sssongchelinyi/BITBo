@@ -9,7 +9,7 @@
 	}), i("#toastr-four").on("click", function (t) {
 		i.NotificationApp.send("Request declined!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-five").on("click", function (t) {
-		i.NotificationApp.send("User updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+		i.NotificationApp.send("Resident updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-five2").on("click", function (t) {
 		i.NotificationApp.send("Brgy official updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-six").on("click", function (t) {
@@ -44,6 +44,14 @@
 		i.NotificationApp.send("Account updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-createevent").on("click", function (t) {
 		i.NotificationApp.send("Event / Project created successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-updateadmin").on("click", function (t) {
+		i.NotificationApp.send("Admin updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-staffupdate").on("click", function (t) {
+		i.NotificationApp.send("Staff updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-hworkerupdate").on("click", function (t) {
+		i.NotificationApp.send("Health Worker updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-pleaderupdate").on("click", function (t) {
+		i.NotificationApp.send("Purok Leader updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-deleteid").on("click", function (t) {
 		i.NotificationApp.send("ID deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-endterm").on("click", function (t) {
