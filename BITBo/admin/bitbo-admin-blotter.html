@@ -346,13 +346,31 @@
                                         <li class="nav-item">
                                             <a href="#buttons-table-active" data-bs-toggle="tab" aria-expanded="true"
                                                 class="nav-link active">
-                                                Active Complaints
+                                                Pending
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#buttons-table-resolved" data-bs-toggle="tab"
-                                                aria-expanded="true" class="nav-link">
-                                                History
+                                            <a href="#buttons-table-forreview" data-bs-toggle="tab" aria-expanded="true"
+                                                class="nav-link">
+                                                For Review
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#buttons-table-summon" data-bs-toggle="tab" aria-expanded="true"
+                                                class="nav-link">
+                                                Summon
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#buttons-table-settled" data-bs-toggle="tab" aria-expanded="true"
+                                                class="nav-link">
+                                                Settled
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#buttons-table-dismissed" data-bs-toggle="tab" aria-expanded="true"
+                                                class="nav-link">
+                                                Dismissed
                                             </a>
                                         </li>
                                     </ul> <!-- end nav-->
@@ -371,7 +389,8 @@
                                                         <tr>
                                                             <th style="width: 180px;">
                                                                 <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-user-blotter">Blotter ID.</a>
+                                                                    data-sort="js-lists-values-user-blotter">Blotter
+                                                                    ID.</a>
                                                             </th>
                                                             <th style="width: 180px;">
                                                                 <a href="javascript:void(0)" class="sort"
@@ -384,14 +403,13 @@
                                                             </th>
                                                             <th style="width: 280px;">
                                                                 <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-user-person">Person to Complain</a>
+                                                                    data-sort="js-lists-values-user-person">Person to
+                                                                    Complain</a>
                                                             </th>
                                                             <th style="width: 250px;">
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-user-complaint">Complaint</a>
                                                             </th>
-                                                            <th style="width: 180px;">Action Taken</th>
-                                                            <th style="width: 180px;">Status</th>
                                                             <th style="width: 180px;">Action</th>
                                                         </tr>
                                                     </thead>
@@ -402,26 +420,27 @@
                                                             <td>
                                                                 <div class="media align-items-center">
                                                                     <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong></div>
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong>
+                                                                    </div>
                                                                 </div>
                                                             </td>
-                                                            <td><span class="js-lists-values-user-date">2022-02-02</span>
-                                                            </td>
                                                             <td><span
-                                                                    class="js-lists-values-user-complainant">Juan Dela Cruz</span>
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
                                                             </td>
-                                                            <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                            <td><span class="js-lists-values-user-complainant">Juan Dela
+                                                                    Cruz</span>
                                                             </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
                                                             </td>
-                                                            <td>For Review</td>
-                                                            <td><span class="badge bg-warning">For Review</span></td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
                                                                     <button type="button" class="btn btn-success"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#mark-resolve-modal"><i
+                                                                        data-bs-target="#mark-forreview-modal"><i
                                                                             class="mdi mdi-check-bold"></i>
                                                                     </button></a>
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -437,26 +456,27 @@
                                                             <td>
                                                                 <div class="media align-items-center">
                                                                     <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong></div>
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong>
+                                                                    </div>
                                                                 </div>
                                                             </td>
-                                                            <td><span class="js-lists-values-user-date">2022-02-02</span>
-                                                            </td>
                                                             <td><span
-                                                                    class="js-lists-values-user-complainant">Maria Clara</span>
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
                                                             </td>
-                                                            <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                            <td><span class="js-lists-values-user-complainant">Maria
+                                                                    Clara</span>
                                                             </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
                                                             </td>
-                                                            <td>For Review</td>
-                                                            <td><span class="badge bg-warning">For Review</span></td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
                                                                     <button type="button" class="btn btn-success"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#mark-resolve-modal"><i
+                                                                        data-bs-target="#mark-forreview-modal"><i
                                                                             class="mdi mdi-check-bold"></i>
                                                                     </button></a>
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -472,26 +492,27 @@
                                                             <td>
                                                                 <div class="media align-items-center">
                                                                     <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong></div>
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong>
+                                                                    </div>
                                                                 </div>
                                                             </td>
-                                                            <td><span class="js-lists-values-user-date">2022-02-02</span>
-                                                            </td>
                                                             <td><span
-                                                                    class="js-lists-values-user-complainant">Sisa Usisa</span>
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
                                                             </td>
-                                                            <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
+                                                            <td><span class="js-lists-values-user-complainant">Sisa
+                                                                    Usisa</span>
                                                             </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
                                                             </td>
-                                                            <td>For Review</td>
-                                                            <td><span class="badge bg-warning">For Review</span></td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
                                                                     <button type="button" class="btn btn-success"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#mark-resolve-modal"><i
+                                                                        data-bs-target="#mark-forreview-modal"><i
                                                                             class="mdi mdi-check-bold"></i>
                                                                     </button></a>
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -507,132 +528,595 @@
                                             </table>
                                         </div> <!-- end active-->
 
-                                        <div class="tab-pane" id="buttons-table-resolved"
-                                        class="table responsive nowrap w-100" data-toggle="lists"
-                                        data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
-                                        <table id="table table-centered" class="table-responsive mb-0">
-                                            <div class="search-form search-form--light col-lg-3"><input type="text"
-                                                    class="form-control search"
-                                                    placeholder="Search Blotter ID., Date or Complainant">
-                                            </div>
-                                            <table id="" class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th style="width: 180px;">
-                                                            <a href="javascript:void(0)" class="sort"
-                                                                data-sort="js-lists-values-user-blotter">Blotter ID.</a>
-                                                        </th>
-                                                        <th style="width: 180px;">
-                                                            <a href="javascript:void(0)" class="sort"
-                                                                data-sort="js-lists-values-user-date">Date
-                                                                Recorded</a>
-                                                        </th>
-                                                        <th style="width: 280px;">
-                                                            <a href="javascript:void(0)" class="sort"
-                                                                data-sort="js-lists-values-user-complainant">Complainant</a>
-                                                        </th>
-                                                        <th style="width: 280px;">
-                                                            <a href="javascript:void(0)" class="sort"
-                                                                data-sort="js-lists-values-user-person">Person to Complain</a>
-                                                        </th>
-                                                        <th style="width: 250px;">
-                                                            <a href="javascript:void(0)" class="sort"
-                                                                data-sort="js-lists-values-user-complaint">Complaint</a>
-                                                        </th>
-                                                        <th style="width: 180px;">Status</th>
-                                                        <th style="width: 180px;">Action</th>
-                                                    </tr>
-                                                </thead>
+                                        <div class="tab-pane" id="buttons-table-forreview"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Blotter ID., Date or Complainant">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-blotter">Blotter
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-date">Date
+                                                                    Recorded</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complainant">Complainant</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-person">Person to
+                                                                    Complain</a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                            </th>
+                                                            <th style="width: 180px;">Action</th>
+                                                        </tr>
+                                                    </thead>
 
-                                                <tbody class="list" id="staff02">
+                                                    <tbody class="list" id="staff02">
 
-                                                    <tr>
-                                                        <td>
-                                                            <div class="media align-items-center">
-                                                                <div class="media-body d-flex flex-column"><strong
-                                                                        class="js-lists-values-user-blotter">BLTR-2022002</strong></div>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="js-lists-values-user-date">2022-02-02</span>
-                                                        </td>
-                                                        <td><span
-                                                                class="js-lists-values-user-complainant">Juan Dela Cruz</span>
-                                                        </td>
-                                                        <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
-                                                        </td>
-                                                        <td><span
-                                                                class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
-                                                        </td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon">
-                                                                <button type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Juan Dela
+                                                                    Costa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-summon-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
 
-                                                    <tr>
-                                                        <td>
-                                                            <div class="media align-items-center">
-                                                                <div class="media-body d-flex flex-column"><strong
-                                                                        class="js-lists-values-user-blotter">BLTR-2022003</strong></div>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="js-lists-values-user-date">2022-02-02</span>
-                                                        </td>
-                                                        <td><span
-                                                                class="js-lists-values-user-complainant">Maria Clara</span>
-                                                        </td>
-                                                        <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
-                                                        </td>
-                                                        <td><span
-                                                                class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
-                                                        </td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon">
-                                                                <button type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Maria
+                                                                    Clara</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-summon-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
 
-                                                    <tr>
-                                                        <td>
-                                                            <div class="media align-items-center">
-                                                                <div class="media-body d-flex flex-column"><strong
-                                                                        class="js-lists-values-user-blotter">BLTR-2022004</strong></div>
-                                                            </div>
-                                                        </td>
-                                                        <td><span class="js-lists-values-user-date">2022-02-02</span>
-                                                        </td>
-                                                        <td><span
-                                                                class="js-lists-values-user-complainant">Sisa Usisa</span>
-                                                        </td>
-                                                        <td><span class="js-lists-values-user-person">Kuki Kuripot</span>
-                                                        </td>
-                                                        <td><span
-                                                                class="js-lists-values-user-complaint">Nakitae tas di lumubog</span>
-                                                        </td>
-                                                        <td><span class="badge bg-success">Resolved</span></td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon">
-                                                                <button type="button" class="btn btn-warning"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#edit-blotter-modal"><i
-                                                                        class="mdi mdi-file-document-edit-outline"></i>
-                                                                </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Sisa
+                                                                    Usisa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-summon-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </table>
-                                        </table>
-                                    </div> <!-- end active-->
+                                        </div> <!-- end for review-->
+
+                                        <div class="tab-pane" id="buttons-table-summon"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Blotter ID., Date or Complainant">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-blotter">Blotter
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-date">Date
+                                                                    Recorded</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complainant">Complainant</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-person">Person to
+                                                                    Complain</a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                            </th>
+                                                            <th style="width: 180px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Juan Dela
+                                                                    Costa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-settled-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-dismiss-modal"><i
+                                                                            class="mdi mdi-cancel"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Maria
+                                                                    Labo</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-settled-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-dismiss-modal"><i
+                                                                            class="mdi mdi-cancel"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Sisa
+                                                                    Usisa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-settled-modal"><i
+                                                                            class="mdi mdi-check-bold"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#mark-dismiss-modal"><i
+                                                                            class="mdi mdi-cancel"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </table>
+                                        </div> <!-- end for review-->
+
+                                        <div class="tab-pane" id="buttons-table-settled"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Blotter ID., Date or Complainant">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-blotter">Blotter
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-date">Date
+                                                                    Recorded</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complainant">Complainant</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-person">Person to
+                                                                    Complain</a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                            </th>
+                                                            <th style="width: 180px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Juan Dela
+                                                                    Cruz</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Maria
+                                                                    Clara</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Sisa
+                                                                    Usisa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Korak</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </table>
+                                        </div> <!-- end settled-->
+
+                                        <div class="tab-pane" id="buttons-table-dismissed"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Blotter ID., Date or Complainant">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-blotter">Blotter
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-date">Date
+                                                                    Recorded</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complainant">Complainant</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-person">Person to
+                                                                    Complain</a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                            </th>
+                                                            <th style="width: 180px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Juan Del
+                                                                    Monte</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Maria
+                                                                    Clara</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Sisa
+                                                                    Usisa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Korak</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </table>
+                                        </div> <!-- end settled-->
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card body-->
                             </div> <!-- end card -->
@@ -651,79 +1135,179 @@
         <!-- Edit Blotter Modal -->
         <div id="edit-blotter-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-primary">
                         <h4 class="modal-title" id="warning-header-modalLabel">Edit Blotter Details</h4>
                     </div>
                     <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Blotter ID</label>
-                                        <input type="text" class="form-control" id="blotterid" placeholder="Blotter ID">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-3">Blotter Details</dt>
+                            <dd class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Blotter ID</label>
+                                            <input type="text" class="form-control" id="blotterid"
+                                                placeholder="Blotter ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Date Recorded</label>
+                                            <input type="date" class="form-control" id="blotterid"
+                                                placeholder="Date Recorded">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Date Recorded</label>
-                                        <input type="date" class="form-control" id="blotterid"
-                                            placeholder="Date Recorded">
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Complainant</label>
-                                        <input type="text" class="form-control" id="complainant"
-                                            placeholder="Complainant">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="userbio" class="form-label">Complaint</label>
+                                            <textarea class="form-control" id="userbio" rows="4"
+                                                placeholder="What's your complaint?..."></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Person to Complain</label>
-                                        <input type="text" class="form-control" id="p2complain"
-                                            placeholder="Person to Complain">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="userbio" class="form-label">Complaint</label>
-                                        <textarea class="form-control" id="userbio" rows="4"
-                                            placeholder="What's your complaint?..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Place of Indident</label>
-                                        <div class="row">
-                                            <div class="col">
-                                                <select class="form-select" id="example-select">
-                                                    <option>Purok Katakutan</option>
-                                                    <option>Purok Kakirutan</option>
-                                                    <option>Purok Kalanturan</option>
-                                                    <option>Purok Kakurian</option>
-                                                    <option>Purok Karasyahan</option>
-                                                    <option>Purok Kakuriputan</option>
-                                                </select>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="lastname" class="form-label">Place of Indident</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <select class="form-select" id="example-select">
+                                                        <option>Purok Katakutan</option>
+                                                        <option>Purok Kakirutan</option>
+                                                        <option>Purok Kalanturan</option>
+                                                        <option>Purok Kakurian</option>
+                                                        <option>Purok Karasyahan</option>
+                                                        <option>Purok Kakuriputan</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </dd>
+
+                            <dt class="col-sm-3">Complainant Details</dt>
+                            <dd class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="complainant"
+                                                placeholder="Complainant Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Contact</label>
+                                            <input type="number" class="form-control" id="complainant_contact"
+                                                placeholder="Complainant Contact">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Age</label>
+                                            <input type="number" class="form-control" id="complainant_age"
+                                                placeholder="Age">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="lastname" class="form-label">Address</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" id="housestreet"
+                                                        placeholder="House No./Street">
+                                                </div>
+                                                <div class="col">
+                                                    <select class="form-select" id="example-select">
+                                                        <option>Purok Katakutan</option>
+                                                        <option>Purok Kakirutan</option>
+                                                        <option>Purok Kalanturan</option>
+                                                        <option>Purok Kakurian</option>
+                                                        <option>Purok Karasyahan</option>
+                                                        <option>Purok Kakuriputan</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" id="birthplace"
+                                                        placeholder="Barangay" value="Brgy. BITBo" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3">Defendant Details</dt>
+                            <dd class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="complainant"
+                                                placeholder="Complainant Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Contact</label>
+                                            <input type="number" class="form-control" id="complainant_contact"
+                                                placeholder="Complainant Contact">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Age</label>
+                                            <input type="number" class="form-control" id="complainant_age"
+                                                placeholder="Age">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="lastname" class="form-label">Address</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" id="housestreet"
+                                                        placeholder="House No./Street">
+                                                </div>
+                                                <div class="col">
+                                                    <select class="form-select" id="example-select">
+                                                        <option>Purok Katakutan</option>
+                                                        <option>Purok Kakirutan</option>
+                                                        <option>Purok Kalanturan</option>
+                                                        <option>Purok Kakurian</option>
+                                                        <option>Purok Karasyahan</option>
+                                                        <option>Purok Kakuriputan</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" id="birthplace"
+                                                        placeholder="Barangay" value="Brgy. BITBo" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
@@ -734,24 +1318,78 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-        <div id="mark-resolve-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div id="mark-forreview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content modal-filled bg-success">
                     <div class="modal-body p-4">
                         <div class="text-center">
                             <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Resolve Confirmation</h4>
-                            <p class="mt-3">Are you sure you want to mark this botter as resolved?</p>
+                            <h4 class="mt-2">For Review Confirmation</h4>
+                            <p class="mt-3">Are you sure you want to mark this botter as for review?</p>
                             <button type="button" class="btn btn-outline-light my-2"
                                 data-bs-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
-                                id="toastr-resolve">Confirm</button>
+                                id="toastr-forreview">Confirm</button>
                         </div>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
+        <div id="mark-summon-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-filled bg-success">
+                    <div class="modal-body p-4">
+                        <div class="text-center">
+                            <i class="dripicons-question h1"></i>
+                            <h4 class="mt-2">Summon Confirmation</h4>
+                            <p class="mt-3">Are you sure you want to mark this botter as summon?</p>
+                            <button type="button" class="btn btn-outline-light my-2"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                id="toastr-summon">Confirm</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="mark-settled-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-filled bg-success">
+                    <div class="modal-body p-4">
+                        <div class="text-center">
+                            <i class="dripicons-question h1"></i>
+                            <h4 class="mt-2">Settle Blotter Confirmation</h4>
+                            <p class="mt-3">Are you sure you want to mark this botter as settled?</p>
+                            <button type="button" class="btn btn-outline-light my-2"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                id="toastr-settled">Confirm</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+        <div id="mark-dismiss-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-filled bg-danger">
+                    <div class="modal-body p-4">
+                        <div class="text-center">
+                            <i class="dripicons-question h1"></i>
+                            <h4 class="mt-2">Dismiss Blotter Confirmation</h4>
+                            <p class="mt-3">Are you sure you want to mark this botter as dismissed?</p>
+                            <button type="button" class="btn btn-outline-light my-2"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                id="toastr-dismiss">Confirm</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
     </div>
     <!-- END wrapper -->
 

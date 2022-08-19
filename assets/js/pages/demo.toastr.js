@@ -14,8 +14,8 @@
 		i.NotificationApp.send("Brgy official updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-six").on("click", function (t) {
 		i.NotificationApp.send("Blotter updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
-	}), i("#toastr-resolve").on("click", function (t) {
-		i.NotificationApp.send("Blotter marked as resolved!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-forreview").on("click", function (t) {
+		i.NotificationApp.send("Blotter marked as for review!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-household").on("click", function (t) {
 		i.NotificationApp.send("Household updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-deletecert").on("click", function (t) {
@@ -52,6 +52,12 @@
 		i.NotificationApp.send("Health Worker updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-pleaderupdate").on("click", function (t) {
 		i.NotificationApp.send("Purok Leader updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-summon").on("click", function (t) {
+		i.NotificationApp.send("Blotter marked as summon!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-settled").on("click", function (t) {
+		i.NotificationApp.send("Blotter marked as settled!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-dismiss").on("click", function (t) {
+		i.NotificationApp.send("Blotter marked as dismissed!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-deleteid").on("click", function (t) {
 		i.NotificationApp.send("ID deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-endterm").on("click", function (t) {
