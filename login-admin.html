@@ -9,11 +9,11 @@
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="../assets/images/bitbo.png">
+        <link rel="shortcut icon" href="assets/images/bitbo.png">
 
         <!-- App css -->
-        <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style"/>        
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style"/>        
 
     </head>
 
@@ -25,7 +25,7 @@
 
                 <!-- logo -->
                 <a href="landing-bitbo.html" class="navbar-brand me-lg-5">
-                    <img src="../assets/images/bitbo-white.png" alt="" class="logo-dark" height="40" />
+                    <img src="assets/images/bitbo-white.png" alt="" class="logo-dark" height="40" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -50,16 +50,15 @@
                                 <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-login me-2"></i> Login <span class="caret"></span> </button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="login-resident.html">Resident</a>
-                                    <a class="dropdown-item" href="#">Purok Leader</a>
+                                    <a class="dropdown-item" href="login-purokleader.html">Purok Leader</a>
                                     <a class="dropdown-item" href="login-healthworker.html">Health Worker</a>
                                     <a class="dropdown-item" href="login-staff.html">Staff</a>
                                     <a class="dropdown-item" href="login-brgyofficial.html">Brgy. Official</a>
-                                    <a class="dropdown-item" href="login-admin.html">Admin</a>
+                                    <a class="dropdown-item" href="#">Admin</a>
                                 </div>
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -76,11 +75,11 @@
                                 <div class="card-body p-4">
                                     
                                     <div class="text-center w-75 m-auto">
-                                        <h4 class="text-dark-50 text-center mt-0 fw-bold">Login as PUROK LEADER</h4>
+                                        <h4 class="text-dark-50 text-center mt-0 fw-bold">Login as ADMIN</h4>
                                         <p class="text-muted mb-4">Enter your email address and password to access your account.</p>
                                     </div>
     
-                                    <form action="#">
+                                    <form action="BITBo/admin/bitbo-admin-index.html">
 
                                         <div class="mb-3">
                                             <label for="emailaddress" class="form-label">Email address</label>
@@ -88,20 +87,12 @@
                                         </div>
     
                                         <div class="mb-3">
-                                            <a href="forgotpassword.html" class="text-muted float-end"><small>Forgot your password?</small></a>
                                             <label for="password" class="form-label">Password</label>
                                             <div class="input-group input-group-merge">
                                                 <input type="password" id="password" class="form-control" placeholder="Enter your password">
                                                 <div class="input-group-text" data-password="false">
                                                     <span class="password-eye"></span>
                                                 </div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="mb-3 mb-3">
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="checkbox-signin" checked>
-                                                <label class="form-check-label" for="checkbox-signin">Remember me</label>
                                             </div>
                                         </div>
     
@@ -117,7 +108,7 @@
                     </div>
                     <div class="col-md-5 offset-md-2">
                         <div class="text-md-end mt-3 mt-md-0">
-                            <img src="../assets/images/bitbo.png" alt="" class="img-fluid" />
+                            <img src="assets/images/bitbo.png" alt="" class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -134,8 +125,8 @@
         </div><br><br>
 
         <!-- bundle -->
-        <script src="../assets/js/vendor.min.js"></script>
-        <script src="../assets/js/app.min.js"></script>
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
 
     </body>
 
