@@ -220,6 +220,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <form class="d-flex">
+                                        <a href="#" class="btn btn-primary ms-1" data-bs-toggle="modal" data-bs-target="#req-certificate-modal">
+                                            <i class="mdi mdi-plus-circle"></i><span> &nbsp;Request
+                                                Certificate</span>
+                                        </a>
+                                    </form>
+                                </div>
                                 <h4 class="page-title">Certificates</h4>
                             </div>
                         </div>
@@ -866,7 +874,7 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-        <!-- Info Header Modal -->
+        <!-- Edit Request Modal -->
         <div id="edit-request-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="info-header-modalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -948,6 +956,84 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-editreq">Save Changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Request Certificate Modal -->
+        <div id="req-certificate-modal" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="info-header-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-colored-header bg-primary">
+                        <h4 class="modal-title" id="info-header-modalLabel">Request Certificate</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Resident Name</label>
+                                        <input type="text" class="form-control" id="firstname"
+                                            placeholder="Resident Name" value="Juan Dela Cruz" disabled>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Certificate Type</label>
+                                        <select class="form-select" id="example-select">
+                                            <option>Barangay Certificate of Residency</option>
+                                            <option>Barangay Clearance</option>
+                                            <option>Barangay Indigency</option>
+                                            <option>Barangay Household Registration</option>
+                                            <option>Barangay Identification Card</option>
+                                            <option>Business Permit</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Date to be Issued</label>
+                                        <input type="date" class="form-control" id="dateissued"
+                                            placeholder="Enter birthday">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Findings</label>
+                                        <select class="form-select" id="example-select">
+                                            <option>No Record on File</option>
+                                            <option>No Derogatory Record</option>
+                                            <option>With Derogatory Record</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="userpassword" class="form-label">Purpose</label>
+                                        <select class="form-select" id="example-select">
+                                            <option>None</option>
+                                            <option>Financial Assistance</option>
+                                            <option>Medical Clearance</option>
+                                            <option>Educational Assistance</option>
+                                            <option>General Requirement</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-reqcert">Submit</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->

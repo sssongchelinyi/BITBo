@@ -18,6 +18,10 @@
 		i.NotificationApp.send("Blotter marked as for review!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-household").on("click", function (t) {
 		i.NotificationApp.send("Household updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-addhousehold").on("click", function (t) {
+		i.NotificationApp.send("Household added successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqblotter").on("click", function (t) {
+		i.NotificationApp.send("Blotter requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-deletecert").on("click", function (t) {
 		i.NotificationApp.send("Certificate deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-deletepay").on("click", function (t) {
@@ -58,6 +62,10 @@
 		i.NotificationApp.send("Blotter marked as settled!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-editreq").on("click", function (t) {
 		i.NotificationApp.send("Request edited successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-joinevent").on("click", function (t) {
+		i.NotificationApp.send("You joined the event successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqcert").on("click", function (t) {
+		i.NotificationApp.send("Certificate requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-dismiss").on("click", function (t) {
 		i.NotificationApp.send("Blotter marked as dismissed!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-cancelblotter").on("click", function (t) {

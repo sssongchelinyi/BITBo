@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Payment | BITBo</title>
+    <title>Logs | BITBo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
     <meta content="Coderthemes" name="author">
@@ -235,140 +235,92 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box">
-                                <h4 class="page-title">Payments</h4>
+                                <h4 class="page-title">Logs</h4>
                             </div>
                         </div>
                     </div>
 
                     <!-- end page title -->
+
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
+                                    <div class="tab-content">
 
-                                    <!-- Invoice Logo-->
-                                    <div class="clearfix">
-                                        <div class="float-start mb-3">
-                                            <img src="../../assets/images/bitbo-logo-with-text-blue.png" alt="" height="40">
-                                        </div>
-                                        <div class="float-end">
-                                            <h4 class="m-0 d-print-none">Invoice</h4>
-                                        </div>
-                                    </div>
-
-                                    <!-- Invoice Detail-->
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="float-end mt-3">
-                                                <p><b>Hello, Juan Dela Cruz!</b></p>
-                                                <p class="text-muted font-13">Please find below a cost-breakdown for the recent work completed. Please make payment at your earliest convenience, and do not hesitate to contact us with any questions.</p>
-                                            </div>
-        
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4 offset-sm-2">
-                                            <div class="mt-3 float-sm-end">
-                                                <p class="font-13"><strong>Transaction Date: </strong><span class="float-end">Jan 17, 2018</span></p>
-                                                <p class="font-13"><strong>Transaction Status: </strong> <span class="badge bg-warning float-end">Pending</span></p>
-                                                <p class="font-13"><strong>Order ID: </strong> <span class="float-end">#123456</span></p>
-                                            </div>
-                                        </div><!-- end col -->
-                                    </div>
-                                    <!-- end row -->
-        
-                                    <div class="row mt-4">
-                                        <div class="col-sm-4">
-                                            <h6>Billing Address</h6>
-                                            <address>
-                                                Brgy. BITBo Hall<br>
-                                                1024 Woodensteel Street, Purok Kakurian<br>
-                                                Brgy. BITBo<br>
-                                                <abbr title="phone">P:</abbr> (63) 998-456-7890
-                                            </address>
-                                        </div> <!-- end col-->
-        
-                                        <div class="col-sm-4">
-                                            <h6>Receiver Address</h6>
-                                            <address>
-                                                Juan Dela Cruz<br>
-                                                1024 Tubiglangis Street, Purok Karasyahan<br>
-                                                Brgy. BITBo<br>
-                                                <abbr title="Phone">P:</abbr> (63) 997-456-7890
-                                            </address>
-                                        </div> <!-- end col-->
-        
-                                        <div class="col-sm-4">
-                                            <div class="text-sm-end">
-                                                <img src="../../assets/images/barcode.png" alt="barcode-image" class="img-fluid me-2">
-                                            </div>
-                                        </div> <!-- end col-->
-                                    </div>    
-                                    <!-- end row -->        
-
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="table-responsive">
-                                                <table class="table mt-4">
-                                                    <thead>
-                                                    <tr><th>#</th>
-                                                        <th>Document Type</th>
-                                                        <th>Quantity</th>
-                                                        <th>Unit Cost</th>
-                                                        <th class="text-end">Total</th>
-                                                    </tr></thead>
-                                                    <tbody>
+                                        <div class="tab-pane show active"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search" placeholder="Search Date or Time">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                <thead>
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td>
-                                                            <b>Barangay Identification Card</b> <br>
-                                                            Physical Copy (3.375 x 2.125 | PVC Printed)
-                                                        </td>
-                                                        <td>1</td>
-                                                        <td>₱ 220.00</td>
-                                                        <td class="text-end">₱ 220.00</td>
+                                                        <th style="width: 250px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-user-date">Date</a>
+                                                        </th>
+                                                        <th style="width: 250px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-user-time">Time</a>
+                                                        </th>
+                                                        <th>Action</th>
                                                     </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> <!-- end table-responsive-->
-                                        </div> <!-- end col -->
-                                    </div>
-                                    <!-- end row -->
+                                                </thead>
+                                                
+                                                <tbody class="list" id="staff02">
 
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="clearfix pt-3">
-                                                <h6 class="text-muted">Notes:</h6>
-                                                <small>
-                                                    All accounts are to be paid within 7 days from receipt of
-                                                    invoice. To be paid by cheque or credit card or direct payment
-                                                    online. If account is not paid within 7 days the credits details
-                                                    supplied as confirmation of work undertaken will be charged the
-                                                    agreed quoted fee noted above.
-                                                </small>
-                                            </div>
-                                        </div> <!-- end col -->
-                                        <div class="col-sm-6">
-                                            <div class="float-end mt-3 mt-sm-0">
-                                                <p><b>Sub-total:</b> <span class="float-end">₱ 220.00</span></p>
-                                                <h3>₱ 220.00 PHP</h3>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div> <!-- end col -->
-                                    </div>
-                                    <!-- end row-->
+                                                    <tr>
+                                                        <td><span
+                                                                class="js-lists-values-user-date">2022/08/09</span>
+                                                        </td>
+                                                        <td><span
+                                                                class="js-lists-values-user-time">18:56:57</span>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                Approved Blotter Request by BITBo. Admin
+                                                            </div>
+                                                        </td>
+                                                    </tr>
 
-                                    <div class="d-print-none mt-4">
-                                        <div class="text-end">
-                                            <a href="javascript:window.print()" class="btn btn-primary"><i class="mdi mdi-printer"></i> Print</a>
-                                        </div>
-                                    </div>   
-                                    <!-- end buttons -->
-
-                                </div> <!-- end card-body-->
+                                                    <tr>
+                                                        <td><span 
+                                                            class="js-lists-values-user-date">2018/10/18</span>
+                                                        </td>
+                                                        <td><span
+                                                                class="js-lists-values-user-time">04:24:11</span>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                Approved Blotter Request by BITBo. Admin
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td><span 
+                                                            class="js-lists-values-user-date">2021/11/31</span>
+                                                        </td>
+                                                        <td><span
+                                                                class="js-lists-values-user-time">07:48:27</span>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                Approved Blotter Request by BITBo. Admin
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-->
+                                    </div> <!-- end tab-content-->
+                                </div> <!-- end card body-->
                             </div> <!-- end card -->
-                        </div> <!-- end col-->
-                    </div>
-                    <!-- end row -->
-                    
+                        </div><!-- end col-->
+                    </div><!-- end row-->
                 </div> <!-- container -->
 
             </div> <!-- content -->
