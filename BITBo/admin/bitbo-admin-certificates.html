@@ -380,7 +380,7 @@
 
                                         <div class="tab-pane show active" id="buttons-table-pending"
                                             class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose"]'>
+                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date", "js-lists-values-certtype"]'>
                                             <table id="table table-centered" class="table-responsive mb-0">
                                                 <div class="search-form search-form--light col-lg-3"><input type="text"
                                                         class="form-control search"
@@ -389,7 +389,7 @@
                                                 <table id="" class="table dt-responsive nowrap w-100">
                                                     <thead>
                                                         <tr>
-                                                            <th style="width: 280px;">
+                                                            <th style="width: 180px;">
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-requestid">Request
                                                                     ID.</a>
@@ -398,11 +398,23 @@
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-name">Name</a>
                                                             </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-date">Date Issued</a>
+                                                            </th>
+                                                            <th style="width: 300px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-certtype">Certificate Type</a>
+                                                            </th>
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Findings</a>
+                                                            </th>
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-purpose">Purpose</a>
                                                             </th>
-                                                            <th style="width: 200px;">Action</th>
+                                                            <th style="width: 400px;">Action</th>
                                                         </tr>
                                                     </thead>
 
@@ -416,10 +428,20 @@
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            <td>
+                                                                <span class="js-lists-values-name">Juan Dela Cruz</span>
                                                             </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Indigency</span>
+                                                            <td>
+                                                                <span class="js-lists-values-date">2022/08/01</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Medical Assistance</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -433,10 +455,10 @@
                                                                         data-bs-target="#danger-alert-modal"><i
                                                                             class="mdi mdi-cancel"></i> </button></a>
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
+                                                                    <button type="button" class="btn btn-warning"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i> </button></a>
                                                             </td>
                                                         </tr>
 
@@ -450,8 +472,17 @@
                                                             </td>
                                                             <td><span class="js-lists-values-name">Juan Dela Cruz</span>
                                                             </td>
-                                                            <td><span class="js-lists-values-purpose"> Barangay
-                                                                    Household Registration</span>
+                                                            <td>
+                                                                <span class="js-lists-values-date">2022/08/01</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Educational Assistance</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -465,10 +496,10 @@
                                                                         data-bs-target="#danger-alert-modal"><i
                                                                             class="mdi mdi-cancel"></i> </button></a>
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
+                                                                    <button type="button" class="btn btn-warning"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i> </button></a>
                                                             </td>
                                                         </tr>
 
@@ -482,8 +513,17 @@
                                                             </td>
                                                             <td><span class="js-lists-values-name">Juan Dela Cruz</span>
                                                             </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Identification Card</span>
+                                                            <td>
+                                                                <span class="js-lists-values-date">2022/08/01</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Financial Assistance</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -497,10 +537,10 @@
                                                                         data-bs-target="#danger-alert-modal"><i
                                                                             class="mdi mdi-cancel"></i> </button></a>
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
+                                                                    <button type="button" class="btn btn-warning"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i> </button></a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -509,303 +549,423 @@
                                         </div> <!-- end pending-->
 
                                         <div class="tab-pane" id="buttons-table-approved"
-                                            class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose"]'>
-                                            <table id="table table-centered" class="table-responsive mb-0">
-                                                <div class="search-form search-form--light col-lg-3"><input type="text"
-                                                        class="form-control search"
-                                                        placeholder="Search Request No., Name or Purpose">
-                                                </div>
-                                                <table id="" class="table dt-responsive nowrap w-100">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 280px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-requestid">Request
-                                                                    ID.</a>
-                                                            </th>
-                                                            <th style="width: 350px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-name">Name</a>
-                                                            </th>
-                                                            <th style="width: 390px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-purpose">Purpose</a>
-                                                            </th>
-                                                            <th style="width: 200px;">Action</th>
-                                                        </tr>
-                                                    </thead>
+                                        class="table responsive nowrap w-100" data-toggle="lists"
+                                        data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date", "js-lists-values-certtype"]'>
+                                        <table id="table table-centered" class="table-responsive mb-0">
+                                            <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                    class="form-control search"
+                                                    placeholder="Search Request No., Name or Purpose">
+                                            </div>
+                                            <table id="" class="table dt-responsive nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-requestid">Request
+                                                                ID.</a>
+                                                        </th>
+                                                        <th style="width: 350px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-name">Name</a>
+                                                        </th>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-date">Date Issued</a>
+                                                        </th>
+                                                        <th style="width: 300px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-certtype">Certificate Type</a>
+                                                        </th>
+                                                        <th style="width: 390px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-purpose">Findings</a>
+                                                        </th>
+                                                        <th style="width: 390px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-purpose">Purpose</a>
+                                                        </th>
+                                                        <th style="width: 400px;">Action</th>
+                                                    </tr>
+                                                </thead>
 
-                                                    <tbody class="list" id="staff02">
+                                                <tbody class="list" id="staff02">
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0001</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0001</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Maria Clara</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Indigency</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Medical Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#edit-request-modal"><i
+                                                                        class="mdi mdi-file-document-edit"></i> </button></a>
+                                                        </td>
+                                                    </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0002</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0002</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Maria Clara</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose"> Barangay
-                                                                    Household Registration</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Educational Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#edit-request-modal"><i
+                                                                        class="mdi mdi-file-document-edit"></i> </button></a>
+                                                        </td>
+                                                    </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0003</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0003</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Maria Clara</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Identification Card</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Certificate of Residency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Financial Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#edit-request-modal"><i
+                                                                        class="mdi mdi-file-document-edit"></i> </button></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
+                                        </table>
                                         </div> <!-- end approved-->
 
                                         <div class="tab-pane" id="buttons-table-declined"
-                                            class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose"]'>
-                                            <table id="table table-centered" class="table-responsive mb-0">
-                                                <div class="search-form search-form--light col-lg-3"><input type="text"
-                                                        class="form-control search"
-                                                        placeholder="Search Request No., Name or Purpose">
-                                                </div>
-                                                <table id="" class="table dt-responsive nowrap w-100">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 280px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-requestid">Request
-                                                                    ID.</a>
-                                                            </th>
-                                                            <th style="width: 350px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-name">Name</a>
-                                                            </th>
-                                                            <th style="width: 390px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-purpose">Purpose</a>
-                                                            </th>
-                                                            <th style="width: 200px;">Action</th>
-                                                        </tr>
-                                                    </thead>
+                                        class="table responsive nowrap w-100" data-toggle="lists"
+                                        data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date", "js-lists-values-certtype"]'>
+                                        <table id="table table-centered" class="table-responsive mb-0">
+                                            <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                    class="form-control search"
+                                                    placeholder="Search Request No., Name or Purpose">
+                                            </div>
+                                            <table id="" class="table dt-responsive nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-requestid">Request
+                                                                ID.</a>
+                                                        </th>
+                                                        <th style="width: 350px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-name">Name</a>
+                                                        </th>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-date">Date Issued</a>
+                                                        </th>
+                                                        <th style="width: 300px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-certtype">Certificate Type</a>
+                                                        </th>
+                                                        <th style="width: 390px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-purpose">Findings</a>
+                                                        </th>
+                                                        <th style="width: 390px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-purpose">Purpose</a>
+                                                        </th>
+                                                        <th style="width: 400px;">Action</th>
+                                                    </tr>
+                                                </thead>
 
-                                                    <tbody class="list" id="staff02">
+                                                <tbody class="list" id="staff02">
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0001</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0001</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Crisostomo Ibarra</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Indigency</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Medical Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-info"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#view-request-modal"><i
+                                                                        class="mdi mdi-eye"></i> </button></a>
+                                                        </td>
+                                                    </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0002</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0002</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Crisostomo Ibarra</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose"> Barangay
-                                                                    Household Registration</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Educational Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-info"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#view-request-modal"><i
+                                                                        class="mdi mdi-eye"></i> </button></a>
+                                                        </td>
+                                                    </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0003</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0003</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Crisostomo Ibarra</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Identification Card</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Certificate of Residency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Financial Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-info"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#view-request-modal"><i
+                                                                        class="mdi mdi-eye"></i> </button></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
+                                        </table>
                                         </div> <!-- end declined-->
 
                                         <div class="tab-pane" id="buttons-table-history"
-                                            class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose"]'>
-                                            <table id="table table-centered" class="table-responsive mb-0">
-                                                <div class="search-form search-form--light col-lg-3"><input type="text"
-                                                        class="form-control search"
-                                                        placeholder="Search Request No., Name or Purpose">
-                                                </div>
-                                                <table id="" class="table dt-responsive nowrap w-100">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 280px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-requestid">Request
-                                                                    ID.</a>
-                                                            </th>
-                                                            <th style="width: 350px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-name">Name</a>
-                                                            </th>
-                                                            <th style="width: 390px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-purpose">Purpose</a>
-                                                            </th>
-                                                            <th style="width: 200px;">Action</th>
-                                                        </tr>
-                                                    </thead>
+                                        class="table responsive nowrap w-100" data-toggle="lists"
+                                        data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date", "js-lists-values-certtype"]'>
+                                        <table id="table table-centered" class="table-responsive mb-0">
+                                            <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                    class="form-control search"
+                                                    placeholder="Search Request No., Name or Purpose">
+                                            </div>
+                                            <table id="" class="table dt-responsive nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-requestid">Request
+                                                                ID.</a>
+                                                        </th>
+                                                        <th style="width: 350px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-name">Name</a>
+                                                        </th>
+                                                        <th style="width: 180px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-date">Date Issued</a>
+                                                        </th>
+                                                        <th style="width: 300px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-certtype">Certificate Type</a>
+                                                        </th>
+                                                        <th style="width: 390px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-purpose">Findings</a>
+                                                        </th>
+                                                        <th style="width: 390px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-purpose">Purpose</a>
+                                                        </th>
+                                                        <th style="width: 400px;">Action</th>
+                                                    </tr>
+                                                </thead>
 
-                                                    <tbody class="list" id="staff02">
+                                                <tbody class="list" id="staff02">
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0001</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0001</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Sisa Usisa</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Indigency</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Indigency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Medical Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-info"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#view-request-modal"><i
+                                                                        class="mdi mdi-eye"></i> </button></a>
+                                                        </td>
+                                                    </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0002</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0002</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Sisa Usisa</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose"> Barangay
-                                                                    Household Registration</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Clearance</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Educational Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-info"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#view-request-modal"><i
+                                                                        class="mdi mdi-eye"></i> </button></a>
+                                                        </td>
+                                                    </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-requestid">RQ-2022-0003</strong>
-                                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <div class="media-body d-flex flex-column"><strong
+                                                                        class="js-lists-values-requestid">RQ-2022-0003</strong>
                                                                 </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-name">Sisa Usisa</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-purpose">Barangay
-                                                                    Identification Card</span>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-info"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#info-header-modal"><i
-                                                                            class="mdi mdi-eye"></i> </button></a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-date">2022/08/01</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-certtype">Barangay Certificate of Residency</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-findings">No Record on File</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="js-lists-values-purpose">Financial Assistance</span>
+                                                        </td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon">
+                                                                <button type="button" class="btn btn-info"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#view-request-modal"><i
+                                                                        class="mdi mdi-eye"></i> </button></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
+                                        </table>
                                         </div> <!-- end history-->
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card body-->
@@ -860,18 +1020,83 @@
         </div><!-- /.modal -->
 
         <!-- Info Header Modal -->
-        <div id="info-header-modal" class="modal fade" tabindex="-1" role="dialog"
+        <div id="edit-request-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="info-header-modalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="info-header-modalLabel">Request Details</h4>
+                        <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Request No.: </strong>RQ-2022-0001</p>
-                        <p><strong>Name: </strong>Juan Dela Cruz</p>
-                        <p><strong>Purpose: </strong>Barangay Certificate of Residency</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Request ID</label>
+                                        <input type="text" class="form-control" id="firstname"
+                                            placeholder="Resident Name" value="RQ-2022-0001" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Resident Name</label>
+                                        <input type="text" class="form-control" id="firstname"
+                                            placeholder="Resident Name" value="Juan Dela Cruz" disabled>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Certificate Type</label>
+                                        <select class="form-select" id="example-select">
+                                            <option>Barangay Certificate of Residency</option>
+                                            <option>Barangay Clearance</option>
+                                            <option>Barangay Indigency</option>
+                                            <option>Barangay Household Registration</option>
+                                            <option>Barangay Identification Card</option>
+                                            <option>Business Permit</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Date Issued</label>
+                                        <input type="date" class="form-control" id="dateissued"
+                                            placeholder="Enter birthday">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Findings</label>
+                                        <select class="form-select" id="example-select">
+                                            <option>No Record on File</option>
+                                            <option>No Derogatory Record</option>
+                                            <option>With Derogatory Record</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="userpassword" class="form-label">Purpose</label>
+                                        <select class="form-select" id="example-select">
+                                            <option>None</option>
+                                            <option>Financial Assistance</option>
+                                            <option>Medical Clearance</option>
+                                            <option>Educational Assistance</option>
+                                            <option>General Requirement</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
@@ -879,6 +1104,32 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+
+         <!-- View Request Modal -->
+         <div id="view-request-modal" class="modal fade" tabindex="-1" role="dialog"
+         aria-labelledby="info-header-modalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header modal-colored-header bg-primary">
+                     <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                 </div>
+                 <div class="modal-body">
+                     <form>
+                        <p><strong>Request ID.: </strong>RQ-2022-0001</p>
+                        <p><strong>Resident Name: </strong>Juan Dela Cruz</p>
+                        <p><strong>Certificate Type: </strong>Barangay Certificate of Residency</p>
+                        <p><strong>Date Issued: </strong>2022/01/01</p>
+                        <p><strong>Findings: </strong>No Record on File</p>
+                        <p><strong>Purpose: </strong>Financial Assistance</p>
+                     </form>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                 </div>
+             </div><!-- /.modal-content -->
+         </div><!-- /.modal-dialog -->
+     </div><!-- /.modal -->
 
     </div>
     <!-- END wrapper -->
