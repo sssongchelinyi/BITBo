@@ -56,8 +56,12 @@
 		i.NotificationApp.send("Blotter marked as summon!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-settled").on("click", function (t) {
 		i.NotificationApp.send("Blotter marked as settled!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-editreq").on("click", function (t) {
+		i.NotificationApp.send("Request edited successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-dismiss").on("click", function (t) {
 		i.NotificationApp.send("Blotter marked as dismissed!", "", "top-right", "rgba(0,0,0,0.2)", "error")
+	}), i("#toastr-cancelreq").on("click", function (t) {
+		i.NotificationApp.send("Request cancelled!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-deleteid").on("click", function (t) {
 		i.NotificationApp.send("ID deleted!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-endterm").on("click", function (t) {
