@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Blotter | BITBo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+        <meta content="Coderthemes" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="../../assets/images/bitbo.png">
+
+        <!-- third party css -->
+        <link href="../../assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="../../assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="../../assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+
+    </head>
+
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="../../assets/images/bitbo-logo-with-text.png" alt="" height="40">
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar="">
+
+                    <!--- Sidemenu -->
+                    <ul class="side-nav">
+
+                        <li class="side-nav-title side-nav-item">Menu</li>
+
+                        <li class="side-nav-item">
+                            <a href="index.html" class="side-nav-link">
+                                <i class="uil-chart-pie"></i>
+                                <span> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="certificates.html" class="side-nav-link">
+                                <i class="uil-clipboard-alt"></i>
+                                <span> Certificates </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="blotter.html" class="side-nav-link">
+                                <i class="uil-comment-exclamation"></i>
+                                <span> Blotter </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="payment.html" class="side-nav-link">
+                                <i class="uil-bill"></i>
+                                <span> Payment </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="events.html" class="side-nav-link">
+                                <i class="uil-trophy"></i>
+                                <span> Events </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="logs.html" class="side-nav-link">
+                                <i class="uil-notes"></i>
+                                <span> Logs </span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-menu float-end mb-0">
+                            <li class="dropdown notification-list d-lg-none">
+                                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="dripicons-search noti-icon"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
+                                    <form class="p-3">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    </form>
+                                </div>
+                            </li>
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="dripicons-bell noti-icon"></i>
+                                    <span class="noti-icon-badge"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg">
+
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="m-0">
+                                            <span class="float-end">
+                                                <a href="javascript: void(0);" class="text-dark">
+                                                    <small>Clear All</small>
+                                                </a>
+                                            </span>Notification
+                                        </h5>
+                                    </div>
+
+                                    <div style="max-height: 230px;" data-simplebar="">
+
+                                        <!-- item-->
+                                        <a href="blotter.html" class="dropdown-item notify-item">
+                                            <div class="notify-icon">
+                                                <img src="../../assets/images/bitbo.png" class="img-fluid rounded-circle" alt=""> </div>
+                                            <p class="notify-details">Blotter Approved</p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Your requested blotter is on review.</small>
+                                            </p>
+                                        </a>
+
+                                        <!-- item-->
+                                        <a href="blotter.html" class="dropdown-item notify-item">
+                                            <div class="notify-icon">
+                                                <img src="../../assets/images/bitbo.png" class="img-fluid rounded-circle" alt=""> </div>
+                                            <p class="notify-details">Brgy. ID</p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Your requested Brgy. ID is approved.</small>
+                                            </p>
+                                        </a>
+
+                                        <!-- item-->
+                                        <a href="blotter.html" class="dropdown-item notify-item">
+                                            <div class="notify-icon">
+                                                <img src="../../assets/images/bitbo.png" class="img-fluid rounded-circle" alt=""> </div>
+                                            <p class="notify-details">Certificate Request</p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>Your requested certificate for residency is approved.</small>
+                                            </p>
+                                        </a>
+                                    </div>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                        View All
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <li class="notification-list">
+                                <a class="nav-link" href="../../iHealth/admin/ihealth-resident-index.html">
+                                    <i class="noti-icon"><button type="button" class="btn btn-info"><strong>iHealth</strong></button></i>
+                                </a>
+                            </li>
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <span class="account-user-avatar"> 
+                                        <img src="../../assets/images/users/profile1.png" alt="user-image" class="rounded-circle">
+                                    </span>
+                                    <span>
+                                        <span class="account-user-name">Juan Dela Cruz</span>
+                                        <span class="account-position">Resident</span>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                    <!-- item-->
+                                    <div class=" dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Welcome !</h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="account.html" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-account-circle me-1"></i>
+                                        <span>My Account</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="../../login-resident.html" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-logout me-1"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </div>
+                    <!-- end Topbar -->
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <h4 class="page-title">Blotter</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <ul class="nav nav-pills bg-nav-pills mb-3">
+                                        <li class="nav-item">
+                                            <a href="#buttons-table-active" data-bs-toggle="tab" aria-expanded="true"
+                                                class="nav-link active">
+                                                My Blotters
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#buttons-table-complaintsrec" data-bs-toggle="tab" aria-expanded="true"
+                                                class="nav-link">
+                                                Complaints Received
+                                            </a>
+                                        </li>
+                                    </ul> <!-- end nav-->
+                                    <div class="tab-content">
+
+                                        <div class="tab-pane show active" id="buttons-table-active"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-blotter">Blotter
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-date">Date
+                                                                    Recorded</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-person">Person to
+                                                                    Complain</a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                            </th>
+                                                            <th style="width: 180px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#cancel-blotter-modal"><i
+                                                                            class="mdi mdi-cancel"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#cancel-blotter-modal"><i
+                                                                            class="mdi mdi-cancel"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-person">Kuki
+                                                                    Kuripot</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#cancel-blotter-modal"><i
+                                                                            class="mdi mdi-cancel"></i>
+                                                                    </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-blotter-modal"><i
+                                                                            class="mdi mdi-file-document-edit-outline"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </table>
+                                        </div> <!-- end active-->
+
+                                        <div class="tab-pane" id="buttons-table-complaintsrec"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-user-blotter", "js-lists-values-user-date", "js-lists-values-user-complainant", "js-lists-values-user-person", "js-lists-values-user-complaint"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Blotter ID., Date or Complainant">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-blotter">Blotter
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-date">Date
+                                                                    Recorded</a>
+                                                            </th>
+                                                            <th style="width: 280px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complainant">Complainant</a>
+                                                            </th>
+                                                            <th style="width: 250px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-user-complaint">Complaint</a>
+                                                            </th>
+                                                            <th style="width: 180px;">Status</th>
+                                                            <th style="width: 180px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Juan Dela
+                                                                    Costa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-warning">For Review</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-blotter-modal"><i
+                                                                            class="mdi mdi-eye"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Maria
+                                                                    Clara</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-warning">For Review</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-blotter-modal"><i
+                                                                            class="mdi mdi-eye"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-user-blotter">BLTR-2022004</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span
+                                                                    class="js-lists-values-user-date">2022-02-02</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complainant">Sisa
+                                                                    Usisa</span>
+                                                            </td>
+                                                            <td><span class="js-lists-values-user-complaint">Nakitae tas
+                                                                    di lumubog</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-warning">For Review</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-blotter-modal"><i
+                                                                            class="mdi mdi-eye"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </table>
+                                        </div> <!-- end for review-->
+                                    </div> <!-- end tab-content-->
+                                </div> <!-- end card body-->
+                            </div> <!-- end card -->
+                        </div><!-- end col-->
+                    </div><!-- end row-->
+                </div> <!-- container -->
+            </div> <!-- content -->
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+        <!--MODALS-->
+
+        <!-- Edit Blotter Modal -->
+        <div id="edit-blotter-modal" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header modal-colored-header bg-primary">
+                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Blotter Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-3">Blotter Details</dt>
+                            <dd class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Blotter ID</label>
+                                            <input type="text" class="form-control" id="blotterid"
+                                                placeholder="Blotter ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Date Recorded</label>
+                                            <input type="date" class="form-control" id="blotterid"
+                                                placeholder="Date Recorded">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="userbio" class="form-label">Complaint</label>
+                                            <textarea class="form-control" id="userbio" rows="4"
+                                                placeholder="What's your complaint?..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="lastname" class="form-label">Place of Indident</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <select class="form-select" id="example-select">
+                                                        <option>Purok Katakutan</option>
+                                                        <option>Purok Kakirutan</option>
+                                                        <option>Purok Kalanturan</option>
+                                                        <option>Purok Kakurian</option>
+                                                        <option>Purok Karasyahan</option>
+                                                        <option>Purok Kakuriputan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3">Defendant Details</dt>
+                            <dd class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="firstname" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="complainant"
+                                                placeholder="Complainant Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="lastname" class="form-label">Address</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" id="housestreet"
+                                                        placeholder="House No./Street">
+                                                </div>
+                                                <div class="col">
+                                                    <select class="form-select" id="example-select">
+                                                        <option>Purok Katakutan</option>
+                                                        <option>Purok Kakirutan</option>
+                                                        <option>Purok Kalanturan</option>
+                                                        <option>Purok Kakurian</option>
+                                                        <option>Purok Karasyahan</option>
+                                                        <option>Purok Kakuriputan</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" id="birthplace"
+                                                        placeholder="Barangay" value="Brgy. BITBo" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-six">Save
+                            changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="cancel-blotter-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-filled bg-danger">
+                    <div class="modal-body p-4">
+                        <div class="text-center">
+                            <i class="dripicons-question h1"></i>
+                            <h4 class="mt-2">Cancel Blotter Confirmation</h4>
+                            <p class="mt-3">Are you sure you want to cancel this blotter?</p>
+                            <button type="button" class="btn btn-outline-light my-2"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                id="toastr-cancelblotter">Confirm</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- View Blotter Modal -->
+        <div id="view-blotter-modal" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="info-header-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-colored-header bg-primary">
+                        <h4 class="modal-title" id="info-header-modalLabel">Blotter Details</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <p><strong>Blotter ID.: </strong>BLTR-2022001</p>
+                            <p><strong>Date Recorded: </strong>2022/08/01</p>
+                            <p><strong>Complainant: </strong>Juan Dela Cruz</p>
+                            <p><strong>Complaint: </strong>Nakitae tas di lumubog</p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- bundle -->
+        <script src="../../assets/js/vendor.min.js"></script>
+        <script src="../../assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="../../assets/js/vendor/apexcharts.min.js"></script>
+        <script src="../../assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="../../assets/js/vendor/jquery.dataTables.min.js"></script>
+        <script src="../../assets/js/vendor/dataTables.bootstrap5.js"></script>
+        <script src="../../assets/js/vendor/dataTables.responsive.min.js"></script>
+        <script src="../../assets/js/vendor/responsive.bootstrap5.min.js"></script>
+        <script src="../../assets/js/vendor/dataTables.buttons.min.js"></script>
+        <script src="../../assets/js/vendor/buttons.bootstrap5.min.js"></script>
+        <script src="../../assets/js/vendor/buttons.html5.min.js"></script>
+        <script src="../../assets/js/vendor/buttons.flash.min.js"></script>
+        <script src="../../assets/js/vendor/buttons.print.min.js"></script>
+        <script src="../../assets/js/vendor/dataTables.keyTable.min.js"></script>
+        <script src="../../assets/js/vendor/dataTables.select.min.js"></script>
+        <script src="../../assets/js/vendor/apexcharts.min.js"></script>
+        <script src="../../assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="../../assets/js/vendor/dropzone.min.js"></script>
+        <script src="../../assets/js/vendor/list.min.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="../../assets/js/pages/demo.dashboard.js"></script>
+        <script src="../../assets/js/pages/demo.datatable-init.js"></script>
+        <script src="../../assets/js/pages/demo.toastr.js"></script>
+        <script src="../../assets/js/pages/demo.datatable-init.js"></script>
+        <script src="../../assets/js/pages/demo.toastr.js"></script>
+        <script src="../../assets/js/pages/list.js"></script>
+        <!-- end demo js-->
+    </body>
+</html>

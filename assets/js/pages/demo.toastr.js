@@ -60,6 +60,8 @@
 		i.NotificationApp.send("Request edited successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-dismiss").on("click", function (t) {
 		i.NotificationApp.send("Blotter marked as dismissed!", "", "top-right", "rgba(0,0,0,0.2)", "error")
+	}), i("#toastr-cancelblotter").on("click", function (t) {
+		i.NotificationApp.send("Blotter cancelled!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-cancelreq").on("click", function (t) {
 		i.NotificationApp.send("Request cancelled!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-deleteid").on("click", function (t) {

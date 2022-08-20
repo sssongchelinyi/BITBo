@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Payment Invoice | BITBo</title>
+    <title>Manage Certificates | BITBo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
     <meta content="Coderthemes" name="author">
@@ -32,7 +32,7 @@
         <div class="leftside-menu">
 
             <!-- LOGO -->
-            <a href="bitbo-admin-index.html" class="logo text-center logo-light">
+            <a href="index.html" class="logo text-center logo-light">
                 <span class="logo-lg">
                     <img src="../../assets/images/bitbo-logo-with-text.png" alt="" height="40">
                 </span>
@@ -46,63 +46,63 @@
                     <li class="side-nav-title side-nav-item">Menu</li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-index.html" class="side-nav-link">
+                        <a href="index.html" class="side-nav-link">
                             <i class="uil-chart-pie"></i>
                             <span> Dashboard </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-certificates.html" class="side-nav-link">
+                        <a href="certificates.html" class="side-nav-link">
                             <i class="uil-clipboard-alt"></i>
                             <span> Certificates </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-blotter.html" class="side-nav-link">
+                        <a href="blotter.html" class="side-nav-link">
                             <i class="uil-comment-exclamation"></i>
                             <span> Blotter </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-users.html" class="side-nav-link">
+                        <a href="users.html" class="side-nav-link">
                             <i class="uil-user-square"></i>
                             <span> Users </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-households.html" class="side-nav-link">
+                        <a href="households.html" class="side-nav-link">
                             <i class="uil-home-alt"></i>
                             <span> Households </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-brgyid.html" class="side-nav-link">
+                        <a href="brgyid.html" class="side-nav-link">
                             <i class="uil-postcard"></i>
                             <span> Brgy. ID </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-payment.html" class="side-nav-link">
+                        <a href="payment.html" class="side-nav-link">
                             <i class="uil-bill"></i>
                             <span> Payment </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-events.html" class="side-nav-link">
+                        <a href="events.html" class="side-nav-link">
                             <i class="uil-trophy"></i>
                             <span> Events </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-logs.html" class="side-nav-link">
+                        <a href="logs.html" class="side-nav-link">
                             <i class="uil-notes"></i>
                             <span> Logs </span>
                         </a>
@@ -169,7 +169,7 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="bitbo-admin-blotter.html" class="dropdown-item notify-item">
+                                    <a href="blotter.html" class="dropdown-item notify-item">
                                         <div class="notify-icon">
                                             <img src="../../assets/images/users/profile1.png"
                                                 class="img-fluid rounded-circle" alt="">
@@ -181,7 +181,7 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="bitbo-admin-blotter.html" class="dropdown-item notify-item">
+                                    <a href="blotter.html" class="dropdown-item notify-item">
                                         <div class="notify-icon">
                                             <img src="../../assets/images/users/profile2.png"
                                                 class="img-fluid rounded-circle" alt="">
@@ -241,7 +241,7 @@
                                 </div>
 
                                 <!-- item-->
-                                <a href="bitbo-admin-account.html" class="dropdown-item notify-item">
+                                <a href="account.html" class="dropdown-item notify-item">
                                     <i class="mdi mdi-account-circle me-1"></i>
                                     <span>My Account</span>
                                 </a>
@@ -331,141 +331,134 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box">
-                                <h4 class="page-title">Payment Invoice</h4>
+                                <h4 class="page-title">Manage Certificates</h4>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
+
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-
-                                    <!-- Invoice Logo-->
-                                    <div class="clearfix">
-                                        <div class="float-start mb-3">
-                                            <img src="../../assets/images/bitbo-logo-with-text-blue.png" alt="" height="40">
-                                        </div>
-                                        <div class="float-end">
-                                            <h4 class="m-0 d-print-none">Invoice</h4>
-                                        </div>
+                                    <div class="col-sm-4">
+                                        <a href="javascript:void(0);" class="btn btn-primary mb-2" data-bs-toggle="modal"
+                                        data-bs-target="#info-header-modal-addcert"><i class="mdi mdi-plus-circle me-2" ></i> Add Certificate</a>
                                     </div>
-
-                                    <!-- Invoice Detail-->
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="float-end mt-3">
-                                                <p><b>Hello, Juan Dela Cruz!</b></p>
-                                                <p class="text-muted font-13">Please find below a cost-breakdown for the recent work completed. Please make payment at your earliest convenience, and do not hesitate to contact us with any questions.</p>
-                                            </div>
-        
-                                        </div><!-- end col -->
-                                        <div class="col-sm-4 offset-sm-2">
-                                            <div class="mt-3 float-sm-end">
-                                                <p class="font-13"><strong>Transaction Date: </strong><span class="float-end">Jan 17, 2018</span></p>
-                                                <p class="font-13"><strong>Transaction Status: </strong> <span class="badge bg-warning float-end">Pending</span></p>
-                                                <p class="font-13"><strong>Order ID: </strong> <span class="float-end">#123456</span></p>
-                                            </div>
-                                        </div><!-- end col -->
-                                    </div>
-                                    <!-- end row -->
-        
-                                    <div class="row mt-4">
-                                        <div class="col-sm-4">
-                                            <h6>Billing Address</h6>
-                                            <address>
-                                                Brgy. BITBo Hall<br>
-                                                1024 Woodensteel Street, Purok Kakurian<br>
-                                                Brgy. BITBo<br>
-                                                <abbr title="phone">P:</abbr> (63) 998-456-7890
-                                            </address>
-                                        </div> <!-- end col-->
-        
-                                        <div class="col-sm-4">
-                                            <h6>Receiver Address</h6>
-                                            <address>
-                                                Juan Dela Cruz<br>
-                                                1024 Tubiglangis Street, Purok Karasyahan<br>
-                                                Brgy. BITBo<br>
-                                                <abbr title="Phone">P:</abbr> (63) 997-456-7890
-                                            </address>
-                                        </div> <!-- end col-->
-        
-                                        <div class="col-sm-4">
-                                            <div class="text-sm-end">
-                                                <img src="../../assets/images/barcode.png" alt="barcode-image" class="img-fluid me-2">
-                                            </div>
-                                        </div> <!-- end col-->
-                                    </div>    
-                                    <!-- end row -->        
-
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="table-responsive">
-                                                <table class="table mt-4">
-                                                    <thead>
-                                                    <tr><th>#</th>
-                                                        <th>Document Type</th>
-                                                        <th>Quantity</th>
-                                                        <th>Unit Cost</th>
-                                                        <th class="text-end">Total</th>
-                                                    </tr></thead>
-                                                    <tbody>
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="buttons-table-pending">
+                                            <table id=""
+                                                class="table dt-responsive nowrap w-100">
+                                                <thead>
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td>
-                                                            <b>Barangay Identification Card</b> <br>
-                                                            Physical Copy (3.375 x 2.125 | PVC Printed)
-                                                        </td>
-                                                        <td>1</td>
-                                                        <td>₱ 220.00</td>
-                                                        <td class="text-end">₱ 220.00</td>
+                                                        <th>Certificate ID.</th>
+                                                        <th>Type</th>
+                                                        <th>Amount</th>
+                                                        <th>Action</th>
                                                     </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div> <!-- end table-responsive-->
-                                        </div> <!-- end col -->
-                                    </div>
-                                    <!-- end row -->
+                                                </thead>
 
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="clearfix pt-3">
-                                                <h6 class="text-muted">Notes:</h6>
-                                                <small>
-                                                    All accounts are to be paid within 7 days from receipt of
-                                                    invoice. To be paid by cheque or credit card or direct payment
-                                                    online. If account is not paid within 7 days the credits details
-                                                    supplied as confirmation of work undertaken will be charged the
-                                                    agreed quoted fee noted above.
-                                                </small>
-                                            </div>
-                                        </div> <!-- end col -->
-                                        <div class="col-sm-6">
-                                            <div class="float-end mt-3 mt-sm-0">
-                                                <p><b>Sub-total:</b> <span class="float-end">₱ 220.00</span></p>
-                                                <h3>₱ 220.00 PHP</h3>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div> <!-- end col -->
-                                    </div>
-                                    <!-- end row-->
 
-                                    <div class="d-print-none mt-4">
-                                        <div class="text-end">
-                                            <a href="javascript:window.print()" class="btn btn-primary"><i class="mdi mdi-printer"></i> Print</a>
-                                            <a href="javascript: void(0);" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#edit-invoice-modal">Edit</a>
-                                        </div>
-                                    </div>   
-                                    <!-- end buttons -->
-
-                                </div> <!-- end card-body-->
+                                                <tbody>
+                                                    <tr>
+                                                        <td>CERT-0001</td>
+                                                        <td>Barangay Certificate of Residency</td>
+                                                        <td>50</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-danger"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#danger-alert-modal"><i
+                                                                        class="mdi mdi-delete"></i> </button></a>
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#info-header-modal"><i
+                                                                        class="mdi mdi-file-document-edit-outline"></i>
+                                                                </button></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CERT-0002</td>
+                                                        <td>Barangay Clearance</td>
+                                                        <td>120</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-danger"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#danger-alert-modal"><i
+                                                                        class="mdi mdi-delete"></i> </button></a>
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#info-header-modal"><i
+                                                                        class="mdi mdi-file-document-edit-outline"></i>
+                                                                </button></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CERT-0003</td>
+                                                        <td>Barangay Indigency</td>
+                                                        <td>50</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-danger"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#danger-alert-modal"><i
+                                                                        class="mdi mdi-delete"></i> </button></a>
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#info-header-modal"><i
+                                                                        class="mdi mdi-file-document-edit-outline"></i>
+                                                                </button></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CERT-0004</td>
+                                                        <td>Barangay Household Registration</td>
+                                                        <td>200</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-danger"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#danger-alert-modal"><i
+                                                                        class="mdi mdi-delete"></i> </button></a>
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#info-header-modal"><i
+                                                                        class="mdi mdi-file-document-edit-outline"></i>
+                                                                </button></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CERT-0005</td>
+                                                        <td>Business Permit</td>
+                                                        <td>200</td>
+                                                        <td class="table-action">
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-danger"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#danger-alert-modal"><i
+                                                                        class="mdi mdi-delete"></i> </button></a>
+                                                            <a href="javascript: void(0);" class="action-icon"> <button
+                                                                    type="button" class="btn btn-warning"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#info-header-modal"><i
+                                                                        class="mdi mdi-file-document-edit-outline"></i>
+                                                                </button></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end certificates-->
+                                    </div> <!-- end tab-content-->
+                                </div> <!-- end card body-->
                             </div> <!-- end card -->
-                        </div> <!-- end col-->
+                        </div><!-- end col-->
                     </div>
-                    <!-- end row -->
-                    
+                    <!-- end row-->
                 </div> <!-- container -->
 
             </div> <!-- content -->
@@ -477,138 +470,86 @@
 
         <!--MODALS-->
 
+        <!--Decline Modal-->
+        <div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-filled bg-danger">
+                    <div class="modal-body p-4">
+                        <div class="text-center">
+                            <i class="dripicons-question h1"></i>
+                            <h4 class="mt-2">Delete Certificate Confirmation</h4>
+                            <p class="mt-3">Are you sure you want to delete this type of certificate?</p>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal"
+                                id="toastr-deletecert">Delete</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-filled bg-success">
+                    <div class="modal-body p-4">
+                        <div class="text-center">
+                            <i class="dripicons-question h1"></i>
+                            <h4 class="mt-2">Confirm Approve Request</h4>
+                            <p class="mt-3">Are you sure you want to approve Juan Dela Cruz's request?</p>
+                            <button type="button" class="btn btn-outline-light my-2"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                id="toastr-three">Confirm</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
         <!-- Info Header Modal -->
-        <div id="edit-invoice-modal" class="modal fade" tabindex="-1" role="dialog"
+        <div id="info-header-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="info-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="info-header-modalLabel">Edit Invoice Details</h4>
+                        <h4 class="modal-title" id="info-header-modalLabel">Certificate Details</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                     </div>
                     <div class="modal-body">
                         <form>
-                            <dl class="row mb-0">
-                                <dt class="col-sm-3">Payment Details</dt>
-                                <dd class="col-sm-9">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="firstname" class="form-label">Transaction Date</label>
-                                                <input type="date" class="form-control" id="transacdate" placeholder="Transaction Date">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="firstname" class="form-label">Transaction Status</label>
-                                                <select class="form-select" id="example-select">
-                                                    <option>Pending</option>
-                                                    <option>Paid</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="firstname" class="form-label">Order ID.</label>
-                                                <input type="text" class="form-control" id="idno" placeholder="ID No.">
-                                            </div>
-                                        </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Certificate ID</label>
+                                        <input type="text" class="form-control" id="certid" placeholder="Certificate ID">
                                     </div>
-                                </dd>
-                                        
-                                <dt class="col-sm-3">Receiver Details</dt>
-                                <dd class="col-sm-9">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label for="lastname" class="form-label">Receiver's Name</label>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" id="firstname" placeholder="Enter first name">
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" id="middlename" placeholder="Enter middle name">
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Certificate Name</label>
+                                        <input type="text" class="form-control" id="certtype"
+                                            placeholder="Certificate Name">
                                     </div>
-        
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label for="lastname" class="form-label">Receiver's Address</label>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" id="housestreet"
-                                                            placeholder="House No./Street">
-                                                    </div>
-                                                    <div class="col">
-                                                        <select class="form-select" id="example-select">
-                                                            <option>Purok Katakutan</option>
-                                                            <option>Purok Kakirutan</option>
-                                                            <option>Purok Kalanturan</option>
-                                                            <option>Purok Kakurian</option>
-                                                            <option>Purok Karasyahan</option>
-                                                            <option>Purok Kakuriputan</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" id="birthplace"
-                                                            placeholder="Barangay" value="Brgy. BITBo" disabled>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Amount</label>
+                                        <input type="number" class="form-control" id="certamount"
+                                            placeholder="Amount">
                                     </div>
-                                </dd>
-                            </dl>
-                            <div class="table-responsive">
-                                <table class="table table-centered mb-0">
-                                    <thead class="table-light">
-                                        <tr>
-                                            <th style="width: 20px;">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="customCheck1">
-                                                    <label class="form-check-label" for="customCheck1">&nbsp;</label>
-                                                </div>
-                                            </th>
-                                            <th>#</th>
-                                            <th>Document Type</th>
-                                            <th>Quantity</th>
-                                            <th>Unit Cost</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="customCheck2">
-                                                    <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">1</a> </td>
-                                            <td>
-                                                Barangay Identification Card <small class="text-muted"><br>Physical Copy (3.375 x 2.125 | PVC Printed)</small>
-                                            </td>
-                                            <td>
-                                                1
-                                            </td>
-                                            <td>
-                                                ₱ 220.00
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                </div>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-updatedinvoice">Save
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-updatecert">Save
                             changes</button>
                     </div>
                 </div><!-- /.modal-content -->
@@ -630,8 +571,7 @@
                                 <div class="col">
                                     <div class="mb-3">
                                         <label for="firstname" class="form-label">Blotter ID</label>
-                                        <input type="text" class="form-control" id="certid"
-                                            placeholder="Certificate ID">
+                                        <input type="text" class="form-control" id="certid" placeholder="Certificate ID">
                                     </div>
                                 </div>
                             </div>
@@ -650,7 +590,8 @@
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label for="firstname" class="form-label">Amount</label>
-                                        <input type="number" class="form-control" id="certamount" placeholder="Amount">
+                                        <input type="number" class="form-control" id="certamount"
+                                            placeholder="Amount">
                                     </div>
                                 </div>
                             </div>
