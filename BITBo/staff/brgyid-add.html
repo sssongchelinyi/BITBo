@@ -3,18 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Add Payment | BITBo</title>
+    <title>Brgy. ID | BITBo - Staff</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
     <meta content="Coderthemes" name="author">
+
     <!-- App favicon -->
     <link rel="shortcut icon" href="../../assets/images/bitbo.png">
 
     <!-- third party css -->
-    <link href="../../assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/vendor/buttons.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/vendor/select.bootstrap5.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
     <!-- third party css end -->
 
     <!-- App css -->
@@ -214,13 +212,6 @@
                             </div>
                         </li>
 
-                        <li class="notification-list">
-                            <a class="nav-link" href="../../iHealth/admin/ihealth-admin-index.html">
-                                <i class="noti-icon"><button type="button" class="btn btn-info">Switch to
-                                        <strong>iHealth</strong></button></i>
-                            </a>
-                        </li>
-
                         <li class="dropdown notification-list">
                             <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown"
                                 href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -230,7 +221,7 @@
                                 </span>
                                 <span>
                                     <span class="account-user-name">Juan Dela Cruz</span>
-                                    <span class="account-position">Admin</span>
+                                    <span class="account-position">Staff</span>
                                 </span>
                             </a>
                             <div
@@ -247,7 +238,7 @@
                                 </a>
 
                                 <!-- item-->
-                                <a href="../../login-admin.html" class="dropdown-item notify-item">
+                                <a href="../../login-staff.html" class="dropdown-item notify-item">
                                     <i class="mdi mdi-logout me-1"></i>
                                     <span>Logout</span>
                                 </a>
@@ -331,22 +322,34 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box">
-                                <h4 class="page-title">Add Payment</h4>
+                                <h4 class="page-title">Add Brgy. ID</h4>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
-
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3 text-center">
+                                            <img src="../../assets/images/bitbo.png" class="rounded-circle" height="100" alt="profile-image">
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <h3>BARANGAY</h3>
+                                            <h1>IT ROBOTs</h1>
+                                        </div>
+                                        <div class="col-lg-3 text-center">
+                                            <img src="../../assets/images/bitbo.png" class="rounded-circle" height="100" alt="profile-image">
+                                        </div>
+                                    </div>
+                                    <br><br><br>
                                     <form>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="mb-3">
-                                                    <label for="firstname" class="form-label">Invoice ID.</label>
-                                                    <input type="number" class="form-control" id="idno"
+                                                    <label for="firstname" class="form-label">ID No.</label>
+                                                    <input type="text" class="form-control" id="idno"
                                                         placeholder="ID No.">
                                                 </div>
                                             </div>
@@ -372,60 +375,6 @@
                                                     <label for="lastname" class="form-label">Last Name</label>
                                                     <input type="text" class="form-control" id="lastname"
                                                         placeholder="Enter last name">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="mb-3">
-                                                    <label for="lastname" class="form-label">Document Type</label>
-                                                    <div class="row">
-                                                        <div class="col-lg-8">
-                                                            <select class="form-select" id="example-select">
-                                                                <option>None</option>
-                                                                <option>Barangay Certificate of Residency</option>
-                                                                <option>Barangay Indigency</option>
-                                                                <option>Barangay Clearance</option>
-                                                                <option>Business Permit</option>
-                                                                <option>Barangay Identification Card</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-lg-4">
-                                                            <select class="form-select" id="example-select" disabled>
-                                                                <option>₱0</option>
-                                                                <option>₱50</option>
-                                                                <option>₱120</option>
-                                                                <option>₱50</option>
-                                                                <option>₱200</option>
-                                                                <option>₱200</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <select class="form-select" id="example-select">
-                                                                <option>None</option>
-                                                                <option>Physical Copy (8.375 x 2.125 | Printed)</option>
-                                                                <option>Electronic Copy (8.375 x 2.125 | PDF)</option>
-                                                                <option>Physical Copy (3.375 x 2.125 | PVC Printed)</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="mb-3">
-                                                    <label for="lastname" class="form-label">Date Issued</label>
-                                                    <input type="date" class="form-control" id="Date Issued"
-                                                        placeholder="Date">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="mb-3">
-                                                    <label for="lastname" class="form-label">Contact No.</label>
-                                                    <input type="number" class="form-control" id="contactno"
-                                                        placeholder="Contact No.">
                                                 </div>
                                             </div>
                                         </div>
@@ -457,10 +406,51 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Birthday</label>
+                                                    <input type="date" class="form-control" id="bday"
+                                                        placeholder="Birthday">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Contact No.</label>
+                                                    <input type="number" class="form-control" id="contact"
+                                                        placeholder="Contact No.">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">SSS No.</label>
+                                                    <input type="number" class="form-control" id="sss"
+                                                        placeholder="SSS No.">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">TIN No.</label>
+                                                    <input type="number" class="form-control" id="tin"
+                                                        placeholder="TIN No.">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="lastname" class="form-label">Photo</label>
+                                                <input type="file" class="form-control" id="phot" placeholder="Photo">
+                                            </div>
+                                        </div>
                                     </form>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cancel-alert-modal">Cancel</button>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generate-alert-modal">Add Payment
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generate-alert-modal">Generate
                                             ID</button>
                                     </div>
                                 </div> <!-- end card-body -->
@@ -485,28 +475,260 @@
                     <div class="modal-body p-4">
                         <div class="text-center">
                             <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Cancel Payment Generation</h4>
-                            <p class="mt-3">Are you sure you want to cancel this payment generation? This cannot be undone.</p>
+                            <h4 class="mt-2">Cancel ID Generation</h4>
+                            <p class="mt-3">Are you sure you want to cancel the generation of this ID? This cannot be undone.</p>
                             <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">No</button>
-                            <a href="payment.html"><button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal">Yes</button></a>
+                            <a href="brgyid.html"><button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal">Yes</button></a>
                         </div>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-        <!--Decline Modal-->
-        <div id="generate-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+         <!--Decline Modal-->
+         <div id="generate-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content modal-filled bg-success">
                     <div class="modal-body p-4">
                         <div class="text-center">
                             <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Confirm Payment Generation</h4>
-                            <p class="mt-3">Are you sure you want to add this payment?</p>
+                            <h4 class="mt-2">Confirm ID Generation</h4>
+                            <p class="mt-3">Are you sure you want to generate this ID?</p>
                             <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal">No</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal" id="toastr-addpayment">Yes</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal" id="toastr-generateid">Yes</button>
                         </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-filled bg-success">
+                    <div class="modal-body p-4">
+                        <div class="text-center">
+                            <i class="dripicons-question h1"></i>
+                            <h4 class="mt-2">Confirm Approve Request</h4>
+                            <p class="mt-3">Are you sure you want to approve Juan Dela Cruz's request?</p>
+                            <button type="button" class="btn btn-outline-light my-2"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                id="toastr-three">Confirm</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+        <!-- Info Header Modal -->
+        <div id="info-header-modal-view" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="info-header-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="card">
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <img src="../../assets/images/bitbo.png" class="rounded-circle" height="70"
+                                        alt="profile-image">
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <h5>BARANGAY</h5>
+                                    <h3>IT ROBOTs</h3>
+                                </div>
+                                <div class="col-lg-3 text-center">
+                                    <img src="../../assets/images/bitbo.png" class="rounded-circle" height="70"
+                                        alt="profile-image">
+                                </div>
+                                <br><br><br><br><br>
+                                <div class="col-lg-3 text-center">
+                                    <img src="../../assets/images/users/profile1.png" class="" height="150"
+                                        alt="profile-image">
+                                    <h4 class="mb-0 mt-2">BRGYID-0001</h4>
+                                    <p class="text-muted font-14">ID NO.</p>
+                                </div>
+                                <div class="col-lg-9 text-left">
+                                    <p>Name: <strong>DELA CRUZ, JUAN</strong></p>
+                                    <p>Address: <strong>3435 Batumbakal Street, Purok Katakutan, Brgy. Bitbo</strong>
+                                    </p>
+                                    <p>Birthday: <strong>2001-05-13</strong></p>
+                                    <p>Contact No: <strong>09987654321</strong></p>
+                                    <p>SSS No.: <strong></strong></p>
+                                    <p>TIN No.: <strong></strong></p>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <h2><span class="badge bg-info">BARANGAY IDENTIFICATION CARD</span></h2>
+                                </div>
+                            </div>
+                        </div> <!-- end card -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Info Header Modal -->
+        <div id="info-header-modal-edit" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="info-header-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header modal-colored-header bg-primary">
+                        <h4 class="modal-title" id="info-header-modalLabel">Edit ID Details</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">ID No.</label>
+                                        <input type="text" class="form-control" id="idno" placeholder="ID No.">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstname"
+                                            placeholder="Enter first name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Middle Name</label>
+                                        <input type="text" class="form-control" id="middlename"
+                                            placeholder="Enter middle name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastname"
+                                            placeholder="Enter last name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Address</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" id="housestreet"
+                                                    placeholder="House No./Street">
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-select" id="example-select">
+                                                    <option>Purok Katakutan</option>
+                                                    <option>Purok Kakirutan</option>
+                                                    <option>Purok Kalanturan</option>
+                                                    <option>Purok Kakurian</option>
+                                                    <option>Purok Karasyahan</option>
+                                                    <option>Purok Kakuriputan</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" id="birthplace"
+                                                    placeholder="Barangay" value="Brgy. BITBo" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Birthday</label>
+                                        <input type="date" class="form-control" id="bday" placeholder="Birthday">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Contact No.</label>
+                                        <input type="number" class="form-control" id="contact"
+                                            placeholder="Contact No.">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">SSS No.</label>
+                                        <input type="number" class="form-control" id="sss" placeholder="SSS No.">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">TIN No.</label>
+                                        <input type="number" class="form-control" id="tin" placeholder="TIN No.">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-updateid">Save
+                            changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Info Header Add Certificate -->
+        <div id="info-header-modal-addcert" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="info-header-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-colored-header bg-primary">
+                        <h4 class="modal-title" id="info-header-modalLabel">Add Certificate</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Blotter ID</label>
+                                        <input type="text" class="form-control" id="certid"
+                                            placeholder="Certificate ID">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Certificate Name</label>
+                                        <input type="text" class="form-control" id="certtype"
+                                            placeholder="Certificate Name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Amount</label>
+                                        <input type="number" class="form-control" id="certamount" placeholder="Amount">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-addcert">Save
+                            changes</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->

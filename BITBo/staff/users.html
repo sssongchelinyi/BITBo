@@ -3,18 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Users | BITBo</title>
+    <title>Users | BITBo - Staff</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
     <meta content="Coderthemes" name="author">
+
     <!-- App favicon -->
     <link rel="shortcut icon" href="../../assets/images/bitbo.png">
 
     <!-- third party css -->
-    <link href="../../assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/vendor/buttons.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/vendor/select.bootstrap5.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
     <!-- third party css end -->
 
@@ -215,13 +212,6 @@
                             </div>
                         </li>
 
-                        <li class="notification-list">
-                            <a class="nav-link" href="../../iHealth/admin/ihealth-admin-index.html">
-                                <i class="noti-icon"><button type="button" class="btn btn-info">Switch to
-                                        <strong>iHealth</strong></button></i>
-                            </a>
-                        </li>
-
                         <li class="dropdown notification-list">
                             <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown"
                                 href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -231,7 +221,7 @@
                                 </span>
                                 <span>
                                     <span class="account-user-name">Juan Dela Cruz</span>
-                                    <span class="account-position">Admin</span>
+                                    <span class="account-position">Staff</span>
                                 </span>
                             </a>
                             <div
@@ -248,7 +238,7 @@
                                 </a>
 
                                 <!-- item-->
-                                <a href="../../login-admin.html" class="dropdown-item notify-item">
+                                <a href="../../login-staff.html" class="dropdown-item notify-item">
                                     <i class="mdi mdi-logout me-1"></i>
                                     <span>Logout</span>
                                 </a>
@@ -372,12 +362,6 @@
                                             <a href="#buttons-table-brgyofficials" data-bs-toggle="tab"
                                                 aria-expanded="true" class="nav-link">
                                                 Brgy. Officials
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#buttons-table-admin" data-bs-toggle="tab" aria-expanded="false"
-                                                class="nav-link">
-                                                Admin
                                             </a>
                                         </li>
                                     </ul> <!-- end nav-->
@@ -609,10 +593,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-purokleader-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-purokleader-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -647,10 +631,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-purokleader-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-purokleader-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -685,10 +669,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-purokleader-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-purokleader-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -766,10 +750,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-healthworker-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-healthworker-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -804,10 +788,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-healthworker-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-healthworker-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -842,10 +826,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-healthworker-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-healthworker-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -923,10 +907,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-staff-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-staff-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -961,10 +945,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-staff-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-staff-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -999,10 +983,10 @@
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
+                                                                    <button type="button" class="btn btn-info"
                                                                         data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-staff-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
+                                                                        data-bs-target="#view-staff-modal"><i
+                                                                            class="mdi mdi-eye"></i>
                                                                     </button></a>
                                                             </td>
                                                         </tr>
@@ -1126,10 +1110,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1172,10 +1156,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1218,10 +1202,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1305,10 +1289,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1351,10 +1335,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1397,10 +1381,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1484,10 +1468,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1530,10 +1514,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1576,10 +1560,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1663,10 +1647,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1709,10 +1693,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1755,10 +1739,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1842,10 +1826,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1888,10 +1872,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1934,10 +1918,10 @@
                                                                         <a href="javascript: void(0);"
                                                                             class="action-icon">
                                                                             <button type="button"
-                                                                                class="btn btn-warning"
+                                                                                class="btn btn-info"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#edit-official-modal"><i
-                                                                                    class="mdi mdi-account-edit-outline"></i>
+                                                                                data-bs-target="#view-official-modal"><i
+                                                                                    class="mdi mdi-eye"></i>
                                                                             </button></a>
                                                                     </td>
                                                                 </tr>
@@ -1947,163 +1931,6 @@
                                                 </div>
                                             </div>
                                         </div> <!-- end brgy officials-->
-
-                                        <div class="tab-pane" id="buttons-table-admin"
-                                            class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-user-name", "js-lists-values-user-housestreet", "js-lists-values-user-purok", "js-lists-values-user-age", "js-lists-values-user-bday"]'>
-                                            <table id="table table-centered" class="table-responsive mb-0">
-                                                <div class="search-form search-form--light col-lg-3"><input type="text"
-                                                        class="form-control search"
-                                                        placeholder="Search User, House No., Purok, Age or Birthday">
-                                                </div>
-                                                <table id="" class="table dt-responsive nowrap w-100">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 280px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-user-name">Name</a>
-                                                            </th>
-                                                            <th style="width: 300px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-user-housestreet">House
-                                                                    No./Street</a>
-                                                            </th>
-                                                            <th style="width: 250px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-user-purok">Purok</a>
-                                                            </th>
-                                                            <th style="width: 100px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-user-age">Age</a>
-                                                            </th>
-                                                            <th style="width: 250px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-user-bday">Birthday</a>
-                                                            </th>
-                                                            <th>Active?</th>
-                                                            <th>Action</th>
-                                                        </tr>
-                                                    </thead>
-
-                                                    <tbody class="list" id="staff02">
-
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-user-name">Juan Dela
-                                                                            Cruz</strong></div>
-                                                                </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-user-housestreet">3435
-                                                                    Batumbakal Street</span>
-                                                            </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-purok">Katakutan</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-user-age">24</span>
-                                                            </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-bday">1998/07/29</span>
-                                                            </td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch16" checked=""
-                                                                        data-switch="success">
-                                                                    <label for="switch16" data-on-label="Yes"
-                                                                        data-off-label="No"
-                                                                        class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-admin-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="mb-3">
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-user-name">Crisostomo
-                                                                            Ibarra</strong></div>
-                                                                </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-user-housestreet">3435
-                                                                    Batumbakal Street</span>
-                                                            </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-purok">Katakutan</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-user-age">24</span>
-                                                            </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-bday">1998/07/30</span>
-                                                            </td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch17" checked=""
-                                                                        data-switch="success">
-                                                                    <label for="switch17" data-on-label="Yes"
-                                                                        data-off-label="No"
-                                                                        class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-admin-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                <div class="media align-items-center">
-                                                                    <div class="media-body d-flex flex-column"><strong
-                                                                            class="js-lists-values-user-name">Maria
-                                                                            Clara</strong></div>
-                                                                </div>
-                                                            </td>
-                                                            <td><span class="js-lists-values-user-housestreet">3435
-                                                                    Batumbakal Street</span>
-                                                            </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-purok">Katakutan</span>
-                                                            </td>
-                                                            <td><span class="js-lists-values-user-age">24</span>
-                                                            </td>
-                                                            <td><span
-                                                                    class="js-lists-values-user-bday">1998/07/31</span>
-                                                            </td>
-                                                            <td>
-                                                                <div>
-                                                                    <input type="checkbox" id="switch18" checked=""
-                                                                        data-switch="success">
-                                                                    <label for="switch18" data-on-label="Yes"
-                                                                        data-off-label="No"
-                                                                        class="mb-0 d-block"></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="table-action">
-                                                                <a href="javascript: void(0);" class="action-icon">
-                                                                    <button type="button" class="btn btn-warning"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#edit-admin-modal"><i
-                                                                            class="mdi mdi-account-edit-outline"></i>
-                                                                    </button></a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </table>
-                                        </div> <!-- end admin-->
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card body-->
                             </div> <!-- end card -->
@@ -2364,109 +2191,13 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-        <!-- Edit Admin Modal -->
-        <div id="edit-admin-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Admin Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" id="firstname"
-                                            placeholder="Enter first name">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Middle Name</label>
-                                        <input type="text" class="form-control" id="middlename"
-                                            placeholder="Enter middle name">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="lastname"
-                                            placeholder="Enter last name">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Birthday</label>
-                                        <input type="date" class="form-control" id="birthday"
-                                            placeholder="Enter birthday">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Phone No.</label>
-                                        <input type="number" class="form-control" id="phone"
-                                            placeholder="Enter phone no.">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Username</label>
-                                        <input type="text" class="form-control" id="admin_username"
-                                            placeholder="Enter username">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="useremail" class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" id="admin_email"
-                                            placeholder="Enter email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="userpassword" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="admin_userpassword"
-                                            placeholder="Enter password">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="useremail" class="form-label">Profile Picture</label>
-                                        <input type="file" class="form-control" id="admin_profile_pic"
-                                            placeholder="Upload Photo">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                            id="toastr-updateadmin">Save
-                            changes</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
         <!-- Official Edit Modal -->
-        <div id="edit-official-modal" class="modal fade" tabindex="-1" role="dialog"
+        <div id="view-official-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="warning-header-modalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Brgy. Official Details</h4>
+                        <h4 class="modal-title" id="warning-header-modalLabel">Brgy. Official Details</h4>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -2633,20 +2364,18 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-five2">Save
-                            changes</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
         <!-- Staff Edit Modal -->
-        <div id="edit-staff-modal" class="modal fade" tabindex="-1" role="dialog"
+        <div id="view-staff-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="warning-header-modalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Staff Details</h4>
+                        <h4 class="modal-title" id="warning-header-modalLabel">Staff Details</h4>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -2813,21 +2542,18 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                            id="toastr-staffupdate">Save
-                            changes</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
         <!-- Health Worker Edit Modal -->
-        <div id="edit-healthworker-modal" class="modal fade" tabindex="-1" role="dialog"
+        <div id="view-healthworker-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="warning-header-modalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Health Worker Details</h4>
+                        <h4 class="modal-title" id="warning-header-modalLabel">Health Worker Details</h4>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -2994,21 +2720,18 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                            id="toastr-hworkerupdate">Save
-                            changes</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
         <!-- Health Worker Edit Modal -->
-        <div id="edit-purokleader-modal" class="modal fade" tabindex="-1" role="dialog"
+        <div id="view-purokleader-modal" class="modal fade" tabindex="-1" role="dialog"
             aria-labelledby="warning-header-modalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Purok Leader Details</h4>
+                        <h4 class="modal-title" id="warning-header-modalLabel">Purok Leader Details</h4>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -3175,14 +2898,10 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                            id="toastr-pleaderupdate">Save
-                            changes</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
     </div>
     <!-- END wrapper -->
 
@@ -3202,10 +2921,6 @@
     <script src="../../assets/js/vendor/buttons.print.min.js"></script>
     <script src="../../assets/js/vendor/dataTables.keyTable.min.js"></script>
     <script src="../../assets/js/vendor/dataTables.select.min.js"></script>
-    <script src="../../assets/js/vendor/apexcharts.min.js"></script>
-    <script src="../../assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="../../assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="../../assets/js/vendor/dropzone.min.js"></script>
     <script src="../../assets/js/vendor/list.min.js"></script>
     <!-- third party js ends -->
 
