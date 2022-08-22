@@ -545,6 +545,78 @@
                             </div> <!-- end card -->
                         </div> <!-- end col-12 -->
                     </div> <!-- end row -->
+
+                            <!--MODALS-->
+
+        <!-- View Event Modal -->
+        <div id="event-view-modal" class="modal fade" tabindex="-1" role="dialog"
+        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-colored-header bg-primary">
+                    <h4 class="modal-title" id="warning-header-modalLabel">Event Details</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p><strong>Name: </strong>iTHINK Korique</p>
+                        <p><strong>Type: </strong>Beauty Contest</p>
+                        <p><strong>Theme: </strong>iTHINK Korique: Good Action, Risk Prevention</p>
+                        <p><strong>Date: </strong>2022/08/01</p>
+                        <p><strong>Time: </strong>7:30 AM - 10:00 AM</p>
+                        <p><strong>Instructions: </strong>Kailagan p maganda kau saka beautiful</p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                    data-bs-target="#event-join-modal">Join Event</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- My Event Modal -->
+    <div id="myevent-view-modal" class="modal fade" tabindex="-1" role="dialog"
+        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-colored-header bg-primary">
+                    <h4 class="modal-title" id="warning-header-modalLabel">Event Details</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p><strong>Name: </strong>iTHINK Korique</p>
+                        <p><strong>Type: </strong>Beauty Contest</p>
+                        <p><strong>Theme: </strong>iTHINK Korique: Good Action, Risk Prevention</p>
+                        <p><strong>Date: </strong>2022/08/01</p>
+                        <p><strong>Time: </strong>7:30 AM - 10:00 AM</p>
+                        <p><strong>Instructions: </strong>Kailagan p maganda kau saka beautiful</p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Join Event Modal -->
+    <div id="event-join-modal" class="modal fade" tabindex="-1" role="dialog"
+        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content modal-filled bg-success">
+                <div class="modal-body p-4">
+                    <div class="text-center">
+                        <i class="dripicons-question h1"></i>
+                        <h4 class="mt-2">Join Event Confirmation</h4>
+                        <p class="mt-3">Are you sure you want to join this event?</p>
+                        <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal" id="toastr-joinevent">Yes</button>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
                 </div> <!-- container -->
 
             </div> <!-- content -->

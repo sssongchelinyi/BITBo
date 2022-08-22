@@ -986,6 +986,163 @@
                             </div> <!-- end card -->
                         </div><!-- end col-->
                     </div><!-- end row-->
+
+
+                    <!--MODALS-->
+
+                    <!--Decline Modal-->
+                    <div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-danger">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Confirm Decline Request</h4>
+                                        <p class="mt-3">Are you sure you want to decline Juan Dela Cruz's request?</p>
+                                        <button type="button" class="btn btn-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-four">Decline</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-success">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Confirm Approve Request</h4>
+                                        <p class="mt-3">Are you sure you want to approve Juan Dela Cruz's request?</p>
+                                        <button type="button" class="btn btn-outline-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-three">Confirm</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- Info Header Modal -->
+                    <div id="edit-request-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="info-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Request ID</label>
+                                                    <input type="text" class="form-control" id="firstname"
+                                                        placeholder="Resident Name" value="RQ-2022-0001" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Resident Name</label>
+                                                    <input type="text" class="form-control" id="firstname"
+                                                        placeholder="Resident Name" value="Juan Dela Cruz" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Certificate Type</label>
+                                                    <select class="form-select" id="example-select">
+                                                        <option>Barangay Certificate of Residency</option>
+                                                        <option>Barangay Clearance</option>
+                                                        <option>Barangay Indigency</option>
+                                                        <option>Barangay Household Registration</option>
+                                                        <option>Barangay Identification Card</option>
+                                                        <option>Business Permit</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Date Issued</label>
+                                                    <input type="date" class="form-control" id="dateissued"
+                                                        placeholder="Enter birthday">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Findings</label>
+                                                    <select class="form-select" id="example-select">
+                                                        <option>No Record on File</option>
+                                                        <option>No Derogatory Record</option>
+                                                        <option>With Derogatory Record</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="userpassword" class="form-label">Purpose</label>
+                                                    <select class="form-select" id="example-select">
+                                                        <option>None</option>
+                                                        <option>Financial Assistance</option>
+                                                        <option>Medical Clearance</option>
+                                                        <option>Educational Assistance</option>
+                                                        <option>General Requirement</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-editreq">Save
+                                        Changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- View Request Modal -->
+                    <div id="view-request-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="info-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <p><strong>Request ID.: </strong>RQ-2022-0001</p>
+                                        <p><strong>Resident Name: </strong>Juan Dela Cruz</p>
+                                        <p><strong>Certificate Type: </strong>Barangay Certificate of Residency</p>
+                                        <p><strong>Date Issued: </strong>2022/01/01</p>
+                                        <p><strong>Findings: </strong>No Record on File</p>
+                                        <p><strong>Purpose: </strong>Financial Assistance</p>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
                 </div> <!-- container -->
 
             </div> <!-- content -->
@@ -995,157 +1152,6 @@
         <!-- End Page content -->
         <!-- ============================================================== -->
 
-        <!--MODALS-->
-
-        <!--Decline Modal-->
-        <div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-danger">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Confirm Decline Request</h4>
-                            <p class="mt-3">Are you sure you want to decline Juan Dela Cruz's request?</p>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal"
-                                id="toastr-four">Decline</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-success">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Confirm Approve Request</h4>
-                            <p class="mt-3">Are you sure you want to approve Juan Dela Cruz's request?</p>
-                            <button type="button" class="btn btn-outline-light my-2"
-                                data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
-                                id="toastr-three">Confirm</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <!-- Info Header Modal -->
-        <div id="edit-request-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="info-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Request ID</label>
-                                        <input type="text" class="form-control" id="firstname"
-                                            placeholder="Resident Name" value="RQ-2022-0001" disabled>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Resident Name</label>
-                                        <input type="text" class="form-control" id="firstname"
-                                            placeholder="Resident Name" value="Juan Dela Cruz" disabled>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Certificate Type</label>
-                                        <select class="form-select" id="example-select">
-                                            <option>Barangay Certificate of Residency</option>
-                                            <option>Barangay Clearance</option>
-                                            <option>Barangay Indigency</option>
-                                            <option>Barangay Household Registration</option>
-                                            <option>Barangay Identification Card</option>
-                                            <option>Business Permit</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Date Issued</label>
-                                        <input type="date" class="form-control" id="dateissued"
-                                            placeholder="Enter birthday">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Findings</label>
-                                        <select class="form-select" id="example-select">
-                                            <option>No Record on File</option>
-                                            <option>No Derogatory Record</option>
-                                            <option>With Derogatory Record</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="userpassword" class="form-label">Purpose</label>
-                                        <select class="form-select" id="example-select">
-                                            <option>None</option>
-                                            <option>Financial Assistance</option>
-                                            <option>Medical Clearance</option>
-                                            <option>Educational Assistance</option>
-                                            <option>General Requirement</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-editreq">Save
-                            Changes</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <!-- View Request Modal -->
-        <div id="view-request-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="info-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <p><strong>Request ID.: </strong>RQ-2022-0001</p>
-                            <p><strong>Resident Name: </strong>Juan Dela Cruz</p>
-                            <p><strong>Certificate Type: </strong>Barangay Certificate of Residency</p>
-                            <p><strong>Date Issued: </strong>2022/01/01</p>
-                            <p><strong>Findings: </strong>No Record on File</p>
-                            <p><strong>Purpose: </strong>Financial Assistance</p>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
 
     </div>
     <!-- END wrapper -->
