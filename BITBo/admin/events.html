@@ -347,8 +347,9 @@
                                         <div class="col-lg-3">
                                             <div id="external-events" class="m-t-20">
                                                 <div class="d-grid">
-                                                    <button class="btn btn-lg font-16 btn-success" id="btn-new-event" data-bs-toggle="modal"
-                                                    data-bs-target="#event-create-modal"><i class="mdi mdi-plus-circle-outline"></i> Create New
+                                                    <button class="btn btn-lg font-16 btn-success" id="btn-new-event"
+                                                        data-bs-toggle="modal" data-bs-target="#event-create-modal"><i
+                                                            class="mdi mdi-plus-circle-outline"></i> Create New
                                                         Event / Project</button>
                                                 </div>
                                                 <br>
@@ -377,7 +378,8 @@
                                                     </li>
                                                 </ul>
                                                 <div class="text-md-end mt-3 mt-md-0">
-                                                    <img src="../../assets/images/people.jpg" alt="" class="img-fluid" />
+                                                    <img src="../../assets/images/people.jpg" alt=""
+                                                        class="img-fluid" />
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -393,6 +395,760 @@
                                             </div>
                                         </div> <!-- end col -->
 
+                                        <div class="col-12">
+                                            <div class="card-body">
+
+                                                <ul class="nav nav-pills bg-nav-pills mb-3">
+                                                    <li class="nav-item">
+                                                        <a href="#buttons-table-events" data-bs-toggle="tab"
+                                                            aria-expanded="false" class="nav-link active">
+                                                            Events
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#buttons-table-projects" data-bs-toggle="tab"
+                                                            aria-expanded="true" class="nav-link">
+                                                            Projects
+                                                        </a>
+                                                    </li>
+                                                </ul> <!-- end nav-->
+                                                <div class="tab-content">
+                                                    <div class="tab-pane show active" id="buttons-table-events">
+                                                        <ul class="nav nav-tabs nav-bordered mb-3">
+                                                            <li class="nav-item">
+                                                                <a href="#events-ongoing" data-bs-toggle="tab"
+                                                                    aria-expanded="false" class="nav-link active">
+                                                                    <i
+                                                                        class="mdi mdi-home-variant d-md-none d-block"></i>
+                                                                    <span class="d-none d-md-block">On Going</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#events-done" data-bs-toggle="tab"
+                                                                    aria-expanded="true" class="nav-link">
+                                                                    <i
+                                                                        class="mdi mdi-account-circle d-md-none d-block"></i>
+                                                                    <span class="d-none d-md-block">Done</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane show active" id="events-ongoing"
+                                                                data-toggle="lists"
+                                                                data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme", "js-lists-values-type"]'>
+                                                                <table id="table table-centered"
+                                                                    class="table-responsive mb-0">
+                                                                    <div
+                                                                        class="search-form search-form--light col-lg-3">
+                                                                        <input type="text" class="form-control search"
+                                                                            placeholder="Search Name, Date, Time or Theme">
+                                                                    </div>
+                                                                    <table id=""
+                                                                        class="table dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-date">Date</a>
+                                                                                </th>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-time">Time</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-name">Name</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-type">Type</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-theme">Theme</a>
+                                                                                </th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        <tbody class="list" id="staff02">
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korique</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                                </td>
+                                                                                <td class="mb-3">
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korik</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-date">2021/11/31</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korak</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                            </div>
+                                                            <div class="tab-pane" id="events-done" data-toggle="lists"
+                                                                data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
+                                                                <table id="table table-centered"
+                                                                    class="table-responsive mb-0">
+                                                                    <div
+                                                                        class="search-form search-form--light col-lg-3">
+                                                                        <input type="text" class="form-control search"
+                                                                            placeholder="Search Name, Date, Time or Theme">
+                                                                    </div>
+                                                                    <table id=""
+                                                                        class="table dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-date">Date</a>
+                                                                                </th>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-time">Time</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-name">Name</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-type">Type</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-theme">Theme</a>
+                                                                                </th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        <tbody class="list" id="staff02">
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korique</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                                </td>
+                                                                                <td class="mb-3">
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korik</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-date">2021/11/31</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korak</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korek madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#event-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end events-->
+
+                                                    <div class="tab-pane" id="buttons-table-projects">
+                                                        <ul class="nav nav-tabs nav-bordered mb-3">
+                                                            <li class="nav-item">
+                                                                <a href="#projects-ongoing" data-bs-toggle="tab"
+                                                                    aria-expanded="false" class="nav-link active">
+                                                                    <i
+                                                                        class="mdi mdi-home-variant d-md-none d-block"></i>
+                                                                    <span class="d-none d-md-block">On Going</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#projects-done" data-bs-toggle="tab"
+                                                                    aria-expanded="true" class="nav-link">
+                                                                    <i
+                                                                        class="mdi mdi-account-circle d-md-none d-block"></i>
+                                                                    <span class="d-none d-md-block">Done</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane show active" id="projects-ongoing"
+                                                                data-toggle="lists"
+                                                                data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
+                                                                <table id="table table-centered"
+                                                                    class="table-responsive mb-0">
+                                                                    <div
+                                                                        class="search-form search-form--light col-lg-3">
+                                                                        <input type="text" class="form-control search"
+                                                                            placeholder="Search Name, Date, Time or Theme">
+                                                                    </div>
+                                                                    <table id=""
+                                                                        class="table dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-date">Date</a>
+                                                                                </th>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-time">Time</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-name">Name</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-type">Type</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-theme">Theme</a>
+                                                                                </th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        <tbody class="list" id="staff02">
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korique</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#project-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                                </td>
+                                                                                <td class="mb-3">
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korik</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#project-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-date">2021/11/31</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korak</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#project-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                            </div>
+                                                            <div class="tab-pane" id="projects-done" data-toggle="lists"
+                                                                data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
+                                                                <table id="table table-centered"
+                                                                    class="table-responsive mb-0">
+                                                                    <div
+                                                                        class="search-form search-form--light col-lg-3">
+                                                                        <input type="text" class="form-control search"
+                                                                            placeholder="Search Name, Date, Time or Theme">
+                                                                    </div>
+                                                                    <table id=""
+                                                                        class="table dt-responsive nowrap w-100">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-date">Date</a>
+                                                                                </th>
+                                                                                <th style="width: 250px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-time">Time</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-name">Name</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-type">Type</a>
+                                                                                </th>
+                                                                                <th style="width: 320px;">
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="sort"
+                                                                                        data-sort="js-lists-values-user-theme">Theme</a>
+                                                                                </th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        <tbody class="list" id="staff02">
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2022/08/09</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">18:56:57</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korique</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#project-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-date">2018/10/18</span>
+                                                                                </td>
+                                                                                <td><span
+                                                                                        class="js-lists-values-user-time">04:24:11</span>
+                                                                                </td>
+                                                                                <td class="mb-3">
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korik</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#project-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-date">2021/11/31</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-time">07:48:27</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="media align-items-center">
+                                                                                        <div
+                                                                                            class="media-body d-flex flex-column">
+                                                                                            <strong
+                                                                                                class="js-lists-values-user-name">iThink
+                                                                                                Korak</strong>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-type">Brgy.
+                                                                                        Beauty Contest</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span
+                                                                                        class="js-lists-values-user-theme">ithink
+                                                                                        korak madam</span>
+                                                                                </td>
+                                                                                <td class="table-action">
+                                                                                    <a href="javascript: void(0);"
+                                                                                        class="action-icon">
+                                                                                        <button type="button"
+                                                                                            class="btn btn-warning"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#project-edit-modal"><i
+                                                                                                class="mdi mdi-circle-edit-outline"></i>
+                                                                                        </button></a>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end events-->
+                                                </div> <!-- end tab-content-->
+                                            </div> <!-- end card body-->
+                                        </div><!-- end col-->
                                     </div> <!-- end row -->
                                 </div> <!-- end card body-->
                             </div> <!-- end card -->
@@ -410,635 +1166,279 @@
                     </div> <!-- end row -->
 
                     <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
 
-                                    <ul class="nav nav-pills bg-nav-pills mb-3">
-                                        <li class="nav-item">
-                                            <a href="#buttons-table-events" data-bs-toggle="tab" aria-expanded="false"
-                                                class="nav-link active">
-                                                Events
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#buttons-table-projects" data-bs-toggle="tab" aria-expanded="true"
-                                                class="nav-link">
-                                                Projects
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="buttons-table-events">
-                                            <ul class="nav nav-tabs nav-bordered mb-3">
-                                                <li class="nav-item">
-                                                    <a href="#events-ongoing" data-bs-toggle="tab" aria-expanded="false"
-                                                        class="nav-link active">
-                                                        <i class="mdi mdi-home-variant d-md-none d-block"></i>
-                                                        <span class="d-none d-md-block">On Going</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#events-done" data-bs-toggle="tab" aria-expanded="true"
-                                                        class="nav-link">
-                                                        <i class="mdi mdi-account-circle d-md-none d-block"></i>
-                                                        <span class="d-none d-md-block">Done</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                    </div><!-- end row-->
 
-                                            <div class="tab-content">
-                                                <div class="tab-pane show active" id="events-ongoing"
-                                                    data-toggle="lists"
-                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme", "js-lists-values-type"]'>
-                                                    <table id="table table-centered" class="table-responsive mb-0">
-                                                        <div class="search-form search-form--light col-lg-3"><input
-                                                                type="text" class="form-control search"
-                                                                placeholder="Search Name, Date, Time or Theme">
-                                                        </div>
-                                                        <table id="" class="table dt-responsive nowrap w-100">
-                                                        <thead>
-                                                            <tr>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-date">Date</a>
-                                                                </th>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-time">Time</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-name">Name</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-type">Type</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-theme">Theme</a>
-                                                                </th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </thead>
+                    <!--MODALS-->
 
-                                                        <tbody class="list" id="staff02">
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2022/08/09</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">18:56:57</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korique</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#event-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2018/10/18</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">04:24:11</span>
-                                                                </td>
-                                                                <td class="mb-3">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korik</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#event-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-date">2021/11/31</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-time">07:48:27</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korak</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#event-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="tab-pane" id="events-done" data-toggle="lists"
-                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
-                                                    <table id="table table-centered" class="table-responsive mb-0">
-                                                        <div class="search-form search-form--light col-lg-3"><input
-                                                                type="text" class="form-control search"
-                                                                placeholder="Search Name, Date, Time or Theme">
-                                                        </div>
-                                                        <table id="" class="table dt-responsive nowrap w-100">
-                                                        <thead>
-                                                            <tr>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-date">Date</a>
-                                                                </th>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-time">Time</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-name">Name</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-type">Type</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-theme">Theme</a>
-                                                                </th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </thead>
-
-                                                        <tbody class="list" id="staff02">
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2022/08/09</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">18:56:57</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korique</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#event-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2018/10/18</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">04:24:11</span>
-                                                                </td>
-                                                                <td class="mb-3">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korik</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#event-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-date">2021/11/31</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-time">07:48:27</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korak</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korek madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#event-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                    <!-- Edit Theme Modal -->
+                    <div id="edit-theme-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="warning-header-modalLabel">Edit Theme Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Theme:</label>
+                                                    <input type="text" class="form-control" id="theme_name"
+                                                        placeholder="Theme"
+                                                        value="iThink Korique: Good Action, Risk Prevention">
                                                 </div>
                                             </div>
-                                        </div> <!-- end events-->
+                                        </div>
 
-                                        <div class="tab-pane" id="buttons-table-projects">
-                                            <ul class="nav nav-tabs nav-bordered mb-3">
-                                                <li class="nav-item">
-                                                    <a href="#projects-ongoing" data-bs-toggle="tab"
-                                                        aria-expanded="false" class="nav-link active">
-                                                        <i class="mdi mdi-home-variant d-md-none d-block"></i>
-                                                        <span class="d-none d-md-block">On Going</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#projects-done" data-bs-toggle="tab" aria-expanded="true"
-                                                        class="nav-link">
-                                                        <i class="mdi mdi-account-circle d-md-none d-block"></i>
-                                                        <span class="d-none d-md-block">Done</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-
-                                            <div class="tab-content">
-                                                <div class="tab-pane show active" id="projects-ongoing"
-                                                    data-toggle="lists"
-                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
-                                                    <table id="table table-centered" class="table-responsive mb-0">
-                                                        <div class="search-form search-form--light col-lg-3"><input
-                                                                type="text" class="form-control search"
-                                                                placeholder="Search Name, Date, Time or Theme">
-                                                        </div>
-                                                        <table id="" class="table dt-responsive nowrap w-100">
-                                                        <thead>
-                                                            <tr>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-date">Date</a>
-                                                                </th>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-time">Time</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-name">Name</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-type">Type</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-theme">Theme</a>
-                                                                </th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </thead>
-
-                                                        <tbody class="list" id="staff02">
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2022/08/09</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">18:56:57</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korique</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#project-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2018/10/18</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">04:24:11</span>
-                                                                </td>
-                                                                <td class="mb-3">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korik</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#project-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-date">2021/11/31</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-time">07:48:27</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korak</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#project-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="tab-pane" id="projects-done" data-toggle="lists"
-                                                    data-lists-values='["js-lists-values-user-name", "js-lists-values-user-date", "js-lists-values-user-time", "js-lists-values-user-theme"]'>
-                                                    <table id="table table-centered" class="table-responsive mb-0">
-                                                        <div class="search-form search-form--light col-lg-3"><input
-                                                                type="text" class="form-control search"
-                                                                placeholder="Search Name, Date, Time or Theme">
-                                                        </div>
-                                                        <table id="" class="table dt-responsive nowrap w-100">
-                                                        <thead>
-                                                            <tr>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-date">Date</a>
-                                                                </th>
-                                                                <th style="width: 250px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-time">Time</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-name">Name</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-type">Type</a>
-                                                                </th>
-                                                                <th style="width: 320px;">
-                                                                    <a href="javascript:void(0)" class="sort"
-                                                                        data-sort="js-lists-values-user-theme">Theme</a>
-                                                                </th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </thead>
-
-                                                        <tbody class="list" id="staff02">
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2022/08/09</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">18:56:57</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korique</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#project-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td><span
-                                                                        class="js-lists-values-user-date">2018/10/18</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="js-lists-values-user-time">04:24:11</span>
-                                                                </td>
-                                                                <td class="mb-3">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korik</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#project-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-date">2021/11/31</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span
-                                                                        class="js-lists-values-user-time">07:48:27</span>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-body d-flex flex-column">
-                                                                            <strong
-                                                                                class="js-lists-values-user-name">iThink
-                                                                                Korak</strong></div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-type">Brgy.
-                                                                        Beauty Contest</span>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="js-lists-values-user-theme">ithink korak madam</span>
-                                                                </td>
-                                                                <td class="table-action">
-                                                                    <a href="javascript: void(0);" class="action-icon">
-                                                                        <button type="button" class="btn btn-warning"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#project-edit-modal"><i
-                                                                                class="mdi mdi-circle-edit-outline"></i>
-                                                                        </button></a>
-                                                                    
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="userbio" class="form-label">Description</label>
+                                                    <textarea class="form-control" id="theme_description" rows="4"
+                                                        placeholder="What's the theme about?..."></textarea>
                                                 </div>
                                             </div>
-                                        </div> <!-- end events-->
-                                    </div> <!-- end tab-content-->
-                                </div> <!-- end card body-->
-                            </div> <!-- end card -->
-                        </div><!-- end col-->
-                    </div>
-                    <!-- end row-->
+                                        </div>
 
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="userbio" class="form-label">Theme Photo</label>
+                                                    <input type="file" class="form-control" id="theme photo"
+                                                        placeholder="Theme Photo" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-edittheme">Save
+                                        changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- Edit Event Modal -->
+                    <div id="event-edit-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="warning-header-modalLabel">Edit Event Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Event Name</label>
+                                                    <input type="text" class="form-control" id="eventname"
+                                                        placeholder="Event Name" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Theme</label>
+                                                    <input type="text" class="form-control" id="blotterid"
+                                                        placeholder="Theme"
+                                                        value="iThink Korique: Good Action, Risk Prevention">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Date</label>
+                                                    <input type="date" class="form-control" id="blotterid"
+                                                        placeholder="Date" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Time</label>
+                                                    <input type="time" class="form-control" id="blotterid"
+                                                        placeholder="Time" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="userbio" class="form-label">Description</label>
+                                                    <textarea class="form-control" id="userbio" rows="4"
+                                                        placeholder="What's the event about?..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-editevent">Save
+                                        changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- Edit Project Modal -->
+                    <div id="project-edit-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="warning-header-modalLabel">Edit Project Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Event Name</label>
+                                                    <input type="text" class="form-control" id="eventname"
+                                                        placeholder="Event Name" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Theme</label>
+                                                    <input type="text" class="form-control" id="blotterid"
+                                                        placeholder="Theme"
+                                                        value="iThink Korique: Good Action, Risk Prevention">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Date</label>
+                                                    <input type="date" class="form-control" id="blotterid"
+                                                        placeholder="Date" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Time</label>
+                                                    <input type="time" class="form-control" id="blotterid"
+                                                        placeholder="Time" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="userbio" class="form-label">Description</label>
+                                                    <textarea class="form-control" id="userbio" rows="4"
+                                                        placeholder="What's the event about?..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-editproject">Save
+                                        changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- Create Event / Project Modal -->
+                    <div id="event-create-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="warning-header-modalLabel">Create Event / Project</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Event Name</label>
+                                                    <input type="text" class="form-control" id="eventname"
+                                                        placeholder="Event Name" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Theme</label>
+                                                    <input type="text" class="form-control" id="blotterid"
+                                                        placeholder="Theme" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Date</label>
+                                                    <input type="date" class="form-control" id="blotterid"
+                                                        placeholder="Date" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Time</label>
+                                                    <input type="time" class="form-control" id="blotterid"
+                                                        placeholder="Time" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="lastname" class="form-label">Type</label>
+                                                <select class="form-select" id="example-select">
+                                                    <option>Event</option>
+                                                    <option>Project</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="userbio" class="form-label">Description</label>
+                                                    <textarea class="form-control" id="userbio" rows="4"
+                                                        placeholder="What's the event about?..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-createevent">Save
+                                        changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
                 </div> <!-- container -->
-
             </div> <!-- content -->
         </div>
 
@@ -1046,268 +1446,7 @@
         <!-- End Page content -->
         <!-- ============================================================== -->
 
-        <!--MODALS-->
 
-        <!-- Edit Theme Modal -->
-        <div id="edit-theme-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Theme Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Theme:</label>
-                                        <input type="text" class="form-control" id="theme_name" placeholder="Theme"
-                                            value="iThink Korique: Good Action, Risk Prevention">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="userbio" class="form-label">Description</label>
-                                        <textarea class="form-control" id="theme_description" rows="4"
-                                            placeholder="What's the theme about?..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="userbio" class="form-label">Theme Photo</label>
-                                        <input type="file" class="form-control" id="theme photo" placeholder="Theme Photo"
-                                            value="">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-edittheme">Save
-                            changes</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <!-- Edit Event Modal -->
-        <div id="event-edit-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Event Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Event Name</label>
-                                        <input type="text" class="form-control" id="eventname" placeholder="Event Name"
-                                            value="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Theme</label>
-                                        <input type="text" class="form-control" id="blotterid" placeholder="Theme"
-                                            value="iThink Korique: Good Action, Risk Prevention">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Date</label>
-                                        <input type="date" class="form-control" id="blotterid" placeholder="Date"
-                                            value="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Time</label>
-                                        <input type="time" class="form-control" id="blotterid" placeholder="Time"
-                                            value="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="userbio" class="form-label">Description</label>
-                                        <textarea class="form-control" id="userbio" rows="4"
-                                            placeholder="What's the event about?..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-editevent">Save
-                            changes</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-         <!-- Edit Project Modal -->
-         <div id="project-edit-modal" class="modal fade" tabindex="-1" role="dialog"
-         aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-         <div class="modal-dialog">
-             <div class="modal-content">
-                 <div class="modal-header modal-colored-header bg-primary">
-                     <h4 class="modal-title" id="warning-header-modalLabel">Edit Project Details</h4>
-                 </div>
-                 <div class="modal-body">
-                     <form>
-                         <div class="row">
-                             <div class="col-md-12">
-                                 <div class="mb-3">
-                                     <label for="firstname" class="form-label">Event Name</label>
-                                     <input type="text" class="form-control" id="eventname" placeholder="Event Name"
-                                         value="">
-                                 </div>
-                             </div>
-                         </div>
-
-                         <div class="row">
-                             <div class="col-md-12">
-                                 <div class="mb-3">
-                                     <label for="firstname" class="form-label">Theme</label>
-                                     <input type="text" class="form-control" id="blotterid" placeholder="Theme"
-                                         value="iThink Korique: Good Action, Risk Prevention">
-                                 </div>
-                             </div>
-                         </div>
-
-                         <div class="row">
-                             <div class="col-md-6">
-                                 <div class="mb-3">
-                                     <label for="firstname" class="form-label">Date</label>
-                                     <input type="date" class="form-control" id="blotterid" placeholder="Date"
-                                         value="">
-                                 </div>
-                             </div>
-                             <div class="col-md-6">
-                                 <div class="mb-3">
-                                     <label for="firstname" class="form-label">Time</label>
-                                     <input type="time" class="form-control" id="blotterid" placeholder="Time"
-                                         value="">
-                                 </div>
-                             </div>
-                         </div>
-
-                         <div class="row">
-                             <div class="col-12">
-                                 <div class="mb-3">
-                                     <label for="userbio" class="form-label">Description</label>
-                                     <textarea class="form-control" id="userbio" rows="4"
-                                         placeholder="What's the event about?..."></textarea>
-                                 </div>
-                             </div>
-                         </div>
-                     </form>
-                 </div>
-                 <div class="modal-footer">
-                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-editproject">Save
-                         changes</button>
-                 </div>
-             </div><!-- /.modal-content -->
-         </div><!-- /.modal-dialog -->
-     </div><!-- /.modal -->
-
-        <!-- Create Event / Project Modal -->
-        <div id="event-create-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Create Event / Project</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Event Name</label>
-                                        <input type="text" class="form-control" id="eventname" placeholder="Event Name"
-                                            value="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Theme</label>
-                                        <input type="text" class="form-control" id="blotterid" placeholder="Theme"
-                                            value="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Date</label>
-                                        <input type="date" class="form-control" id="blotterid" placeholder="Date"
-                                            value="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">Time</label>
-                                        <input type="time" class="form-control" id="blotterid" placeholder="Time"
-                                            value="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <label for="lastname" class="form-label">Type</label>
-                                    <select class="form-select" id="example-select">
-                                        <option>Event</option>
-                                        <option>Project</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="userbio" class="form-label">Description</label>
-                                        <textarea class="form-control" id="userbio" rows="4"
-                                            placeholder="What's the event about?..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-createevent">Save
-                            changes</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
     </div><!-- END wrapper -->
 
     <!-- bundle -->

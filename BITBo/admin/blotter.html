@@ -1122,6 +1122,267 @@
                             </div> <!-- end card -->
                         </div><!-- end col-->
                     </div><!-- end row-->
+
+                    <!-- Edit Blotter Modal -->
+                    <div id="edit-blotter-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="warning-header-modalLabel">Edit Blotter Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <dl class="row mb-0">
+                                        <dt class="col-sm-3">Blotter Details</dt>
+                                        <dd class="col-sm-9">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Blotter ID</label>
+                                                        <input type="text" class="form-control" id="blotterid"
+                                                            placeholder="Blotter ID">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Date Recorded</label>
+                                                        <input type="date" class="form-control" id="blotterid"
+                                                            placeholder="Date Recorded">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label for="userbio" class="form-label">Complaint</label>
+                                                        <textarea class="form-control" id="userbio" rows="4"
+                                                            placeholder="What's your complaint?..."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="lastname" class="form-label">Place of
+                                                            Indident</label>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <select class="form-select" id="example-select">
+                                                                    <option>Purok Katakutan</option>
+                                                                    <option>Purok Kakirutan</option>
+                                                                    <option>Purok Kalanturan</option>
+                                                                    <option>Purok Kakurian</option>
+                                                                    <option>Purok Karasyahan</option>
+                                                                    <option>Purok Kakuriputan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </dd>
+
+                                        <dt class="col-sm-3">Complainant Details</dt>
+                                        <dd class="col-sm-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Name</label>
+                                                        <input type="text" class="form-control" id="complainant"
+                                                            placeholder="Complainant Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Contact</label>
+                                                        <input type="number" class="form-control"
+                                                            id="complainant_contact" placeholder="Complainant Contact">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Age</label>
+                                                        <input type="number" class="form-control" id="complainant_age"
+                                                            placeholder="Age">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="lastname" class="form-label">Address</label>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="housestreet"
+                                                                    placeholder="House No./Street">
+                                                            </div>
+                                                            <div class="col">
+                                                                <select class="form-select" id="example-select">
+                                                                    <option>Purok Katakutan</option>
+                                                                    <option>Purok Kakirutan</option>
+                                                                    <option>Purok Kalanturan</option>
+                                                                    <option>Purok Kakurian</option>
+                                                                    <option>Purok Karasyahan</option>
+                                                                    <option>Purok Kakuriputan</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="birthplace"
+                                                                    placeholder="Barangay" value="Brgy. BITBo" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </dd>
+
+                                        <dt class="col-sm-3">Defendant Details</dt>
+                                        <dd class="col-sm-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Name</label>
+                                                        <input type="text" class="form-control" id="complainant"
+                                                            placeholder="Complainant Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Contact</label>
+                                                        <input type="number" class="form-control"
+                                                            id="complainant_contact" placeholder="Complainant Contact">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="firstname" class="form-label">Age</label>
+                                                        <input type="number" class="form-control" id="complainant_age"
+                                                            placeholder="Age">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="lastname" class="form-label">Address</label>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="housestreet"
+                                                                    placeholder="House No./Street">
+                                                            </div>
+                                                            <div class="col">
+                                                                <select class="form-select" id="example-select">
+                                                                    <option>Purok Katakutan</option>
+                                                                    <option>Purok Kakirutan</option>
+                                                                    <option>Purok Kalanturan</option>
+                                                                    <option>Purok Kakurian</option>
+                                                                    <option>Purok Karasyahan</option>
+                                                                    <option>Purok Kakuriputan</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="birthplace"
+                                                                    placeholder="Barangay" value="Brgy. BITBo" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-six">Save
+                                        changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div id="mark-forreview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-success">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">For Review Confirmation</h4>
+                                        <p class="mt-3">Are you sure you want to mark this botter as for review?</p>
+                                        <button type="button" class="btn btn-outline-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-forreview">Confirm</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div id="mark-summon-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-success">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Summon Confirmation</h4>
+                                        <p class="mt-3">Are you sure you want to mark this botter as summon?</p>
+                                        <button type="button" class="btn btn-outline-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-summon">Confirm</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div id="mark-settled-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-success">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Settle Blotter Confirmation</h4>
+                                        <p class="mt-3">Are you sure you want to mark this botter as settled?</p>
+                                        <button type="button" class="btn btn-outline-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-settled">Confirm</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+
+                    <div id="mark-dismiss-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-danger">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Dismiss Blotter Confirmation</h4>
+                                        <p class="mt-3">Are you sure you want to mark this botter as dismissed?</p>
+                                        <button type="button" class="btn btn-outline-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-dismiss">Confirm</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
                 </div> <!-- container -->
             </div> <!-- content -->
         </div>
@@ -1132,264 +1393,7 @@
 
         <!--MODALS-->
 
-        <!-- Edit Blotter Modal -->
-        <div id="edit-blotter-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Blotter Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <dl class="row mb-0">
-                            <dt class="col-sm-3">Blotter Details</dt>
-                            <dd class="col-sm-9">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Blotter ID</label>
-                                            <input type="text" class="form-control" id="blotterid"
-                                                placeholder="Blotter ID">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Date Recorded</label>
-                                            <input type="date" class="form-control" id="blotterid"
-                                                placeholder="Date Recorded">
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="userbio" class="form-label">Complaint</label>
-                                            <textarea class="form-control" id="userbio" rows="4"
-                                                placeholder="What's your complaint?..."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="mb-3">
-                                            <label for="lastname" class="form-label">Place of Indident</label>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <select class="form-select" id="example-select">
-                                                        <option>Purok Katakutan</option>
-                                                        <option>Purok Kakirutan</option>
-                                                        <option>Purok Kalanturan</option>
-                                                        <option>Purok Kakurian</option>
-                                                        <option>Purok Karasyahan</option>
-                                                        <option>Purok Kakuriputan</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </dd>
-
-                            <dt class="col-sm-3">Complainant Details</dt>
-                            <dd class="col-sm-9">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="complainant"
-                                                placeholder="Complainant Name">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Contact</label>
-                                            <input type="number" class="form-control" id="complainant_contact"
-                                                placeholder="Complainant Contact">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Age</label>
-                                            <input type="number" class="form-control" id="complainant_age"
-                                                placeholder="Age">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="mb-3">
-                                            <label for="lastname" class="form-label">Address</label>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <input type="text" class="form-control" id="housestreet"
-                                                        placeholder="House No./Street">
-                                                </div>
-                                                <div class="col">
-                                                    <select class="form-select" id="example-select">
-                                                        <option>Purok Katakutan</option>
-                                                        <option>Purok Kakirutan</option>
-                                                        <option>Purok Kalanturan</option>
-                                                        <option>Purok Kakurian</option>
-                                                        <option>Purok Karasyahan</option>
-                                                        <option>Purok Kakuriputan</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col">
-                                                    <input type="text" class="form-control" id="birthplace"
-                                                        placeholder="Barangay" value="Brgy. BITBo" disabled>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </dd>
-
-                            <dt class="col-sm-3">Defendant Details</dt>
-                            <dd class="col-sm-9">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="complainant"
-                                                placeholder="Complainant Name">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Contact</label>
-                                            <input type="number" class="form-control" id="complainant_contact"
-                                                placeholder="Complainant Contact">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">Age</label>
-                                            <input type="number" class="form-control" id="complainant_age"
-                                                placeholder="Age">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="mb-3">
-                                            <label for="lastname" class="form-label">Address</label>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <input type="text" class="form-control" id="housestreet"
-                                                        placeholder="House No./Street">
-                                                </div>
-                                                <div class="col">
-                                                    <select class="form-select" id="example-select">
-                                                        <option>Purok Katakutan</option>
-                                                        <option>Purok Kakirutan</option>
-                                                        <option>Purok Kalanturan</option>
-                                                        <option>Purok Kakurian</option>
-                                                        <option>Purok Karasyahan</option>
-                                                        <option>Purok Kakuriputan</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col">
-                                                    <input type="text" class="form-control" id="birthplace"
-                                                        placeholder="Barangay" value="Brgy. BITBo" disabled>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="toastr-six">Save
-                            changes</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <div id="mark-forreview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-success">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">For Review Confirmation</h4>
-                            <p class="mt-3">Are you sure you want to mark this botter as for review?</p>
-                            <button type="button" class="btn btn-outline-light my-2"
-                                data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
-                                id="toastr-forreview">Confirm</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <div id="mark-summon-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-success">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Summon Confirmation</h4>
-                            <p class="mt-3">Are you sure you want to mark this botter as summon?</p>
-                            <button type="button" class="btn btn-outline-light my-2"
-                                data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
-                                id="toastr-summon">Confirm</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <div id="mark-settled-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-success">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Settle Blotter Confirmation</h4>
-                            <p class="mt-3">Are you sure you want to mark this botter as settled?</p>
-                            <button type="button" class="btn btn-outline-light my-2"
-                                data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
-                                id="toastr-settled">Confirm</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-
-        <div id="mark-dismiss-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-danger">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Dismiss Blotter Confirmation</h4>
-                            <p class="mt-3">Are you sure you want to mark this botter as dismissed?</p>
-                            <button type="button" class="btn btn-outline-light my-2"
-                                data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
-                                id="toastr-dismiss">Confirm</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
     </div>
     <!-- END wrapper -->
 
