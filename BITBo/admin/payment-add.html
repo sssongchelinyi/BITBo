@@ -408,7 +408,8 @@
                                                                 <option>None</option>
                                                                 <option>Physical Copy (8.375 x 2.125 | Printed)</option>
                                                                 <option>Electronic Copy (8.375 x 2.125 | PDF)</option>
-                                                                <option>Physical Copy (3.375 x 2.125 | PVC Printed)</option>
+                                                                <option>Physical Copy (3.375 x 2.125 | PVC Printed)
+                                                                </option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -459,14 +460,58 @@
                                         </div>
                                     </form>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cancel-alert-modal">Cancel</button>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generate-alert-modal">Add Payment
+                                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                            data-bs-target="#cancel-alert-modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#generate-alert-modal">Add Payment
                                             ID</button>
                                     </div>
                                 </div> <!-- end card-body -->
                             </div> <!-- end card -->
                         </div><!-- end col -->
                     </div><!-- end row -->
+
+
+                    <!--MODALS-->
+
+                    <!--Decline Modal-->
+                    <div id="cancel-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-danger">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Cancel Payment Generation</h4>
+                                        <p class="mt-3">Are you sure you want to cancel this payment generation? This
+                                            cannot be undone.</p>
+                                        <button type="button" class="btn btn-light my-2"
+                                            data-bs-dismiss="modal">No</button>
+                                        <a href="payment.html"><button type="button" class="btn btn-outline-light my-2"
+                                                data-bs-dismiss="modal">Yes</button></a>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!--Decline Modal-->
+                    <div id="generate-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-success">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Confirm Payment Generation</h4>
+                                        <p class="mt-3">Are you sure you want to add this payment?</p>
+                                        <button type="button" class="btn btn-outline-light my-2"
+                                            data-bs-dismiss="modal">No</button>
+                                        <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-addpayment">Yes</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
                 </div> <!-- container -->
 
             </div> <!-- content -->
@@ -476,41 +521,6 @@
         <!-- End Page content -->
         <!-- ============================================================== -->
 
-        <!--MODALS-->
-
-        <!--Decline Modal-->
-        <div id="cancel-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-danger">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Cancel Payment Generation</h4>
-                            <p class="mt-3">Are you sure you want to cancel this payment generation? This cannot be undone.</p>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">No</button>
-                            <a href="payment.html"><button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal">Yes</button></a>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <!--Decline Modal-->
-        <div id="generate-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-success">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Confirm Payment Generation</h4>
-                            <p class="mt-3">Are you sure you want to add this payment?</p>
-                            <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal">No</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal" id="toastr-addpayment">Yes</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
     </div>
     <!-- END wrapper -->
 

@@ -277,8 +277,106 @@
                             </div> <!-- end card -->
                         </div><!-- end col-->
                     </div><!-- end row-->
-                </div> <!-- container -->
 
+                    <!--MODALS-->
+
+                    <!-- Edit Account Modal -->
+                    <div id="edit-account-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="warning-header-modalLabel">Edit Account Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="firstname"
+                                                        placeholder="Enter first name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Middle Name</label>
+                                                    <input type="text" class="form-control" id="middlename"
+                                                        placeholder="Enter middle name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="lastname"
+                                                        placeholder="Enter last name">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Birthday</label>
+                                                    <input type="date" class="form-control" id="birthday"
+                                                        placeholder="Enter birthday">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Mobile No.</label>
+                                                    <input type="number" class="form-control" id="phone"
+                                                        placeholder="Enter phone no.">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="mb-3">
+                                                    <label for="useremail" class="form-label">Email Address</label>
+                                                    <input type="email" class="form-control" id="useremail"
+                                                        placeholder="Enter email">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Address</label>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" id="housestreet"
+                                                                placeholder="House No./Street">
+                                                        </div>
+                                                        <div class="col">
+                                                            <select class="form-select" id="example-select">
+                                                                <option>Purok Katakutan</option>
+                                                                <option>Purok Kakirutan</option>
+                                                                <option>Purok Kalanturan</option>
+                                                                <option>Purok Kakurian</option>
+                                                                <option>Purok Karasyahan</option>
+                                                                <option>Purok Kakuriputan</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" id="birthplace"
+                                                                placeholder="Barangay" value="Brgy. BITBo" disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-editaccount">Save
+                                        changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </div> <!-- container -->
             </div> <!-- content -->
         </div>
 
@@ -286,104 +384,7 @@
         <!-- End Page content -->
         <!-- ============================================================== -->
 
-        <!--MODALS-->
 
-        <!-- Edit Account Modal -->
-        <div id="edit-account-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="warning-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="warning-header-modalLabel">Edit Account Details</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="firstname" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" id="firstname"
-                                            placeholder="Enter first name">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Middle Name</label>
-                                        <input type="text" class="form-control" id="middlename"
-                                            placeholder="Enter middle name">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="lastname"
-                                            placeholder="Enter last name">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Birthday</label>
-                                        <input type="date" class="form-control" id="birthday"
-                                            placeholder="Enter birthday">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Mobile No.</label>
-                                        <input type="number" class="form-control" id="phone"
-                                            placeholder="Enter phone no.">
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="mb-3">
-                                        <label for="useremail" class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" id="useremail"
-                                            placeholder="Enter email">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="lastname" class="form-label">Address</label>
-                                        <div class="row">
-                                            <div class="col">
-                                                <input type="text" class="form-control" id="housestreet"
-                                                    placeholder="House No./Street">
-                                            </div>
-                                            <div class="col">
-                                                <select class="form-select" id="example-select">
-                                                    <option>Purok Katakutan</option>
-                                                    <option>Purok Kakirutan</option>
-                                                    <option>Purok Kalanturan</option>
-                                                    <option>Purok Kakurian</option>
-                                                    <option>Purok Karasyahan</option>
-                                                    <option>Purok Kakuriputan</option>
-                                                </select>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control" id="birthplace"
-                                                    placeholder="Barangay" value="Brgy. BITBo" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                            id="toastr-editaccount">Save
-                            changes</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
     </div><!-- END wrapper -->
 
     <!-- bundle -->
