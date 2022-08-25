@@ -3,24 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BITBo | iHealth</title>
+    <title>Health Certificates | iHealth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
     <meta content="Coderthemes" name="author">
     <!-- App favicon -->
-    <link rel="shortcut icon" href="../assets/images/brgyms-icon-white.png">
+    <link rel="shortcut icon" href="../../assets/images/brgyms-icon-white.png">
 
     <!-- third party css -->
-    <link href="../assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/vendor/buttons.bootstrap5.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/vendor/select.bootstrap5.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
     <!-- third party css end -->
 
     <!-- App css -->
-    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/app-i.min.css" rel="stylesheet" type="text/css" id="light-style">
-    <link href="../assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+    <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/app-i.min.css" rel="stylesheet" type="text/css" id="light-style">
+    <link href="../../assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
 </head>
 
@@ -34,7 +31,7 @@
             <!-- LOGO -->
             <a href="admin-index.html" class="logo text-center logo-light">
                 <span class="logo-lg">
-                    <img src="../assets/images/ihealth-logo-with-text.png" alt="" height="40">
+                    <img src="../../assets/images/ihealth-logo-with-text.png" alt="" height="40">
                 </span>
             </a>
 
@@ -53,15 +50,22 @@
                     </li>
 
                     <li class="side-nav-item">
+                        <a href="patients.html" class="side-nav-link">
+                            <i class="uil-user-square"></i>
+                            <span> Patients </span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
                         <a href="vaccination.html" class="side-nav-link">
-                            <i class="uil-clipboard-alt"></i>
+                            <i class="uil-syringe"></i>
                             <span> Vaccination </span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
                         <a href="healthcertificates.html" class="side-nav-link">
-                            <i class="uil-user-square"></i>
+                            <i class="uil-clipboard-alt"></i>
                             <span> Health Certificates </span>
                         </a>
                     </li>
@@ -86,6 +90,7 @@
 
         </div>
         <!-- Left Sidebar End -->
+
         <!-- ============================================================== -->
         <!-- Start Page Content here -->
         <!-- ============================================================== -->
@@ -140,38 +145,38 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="bitbo-admin-blotter.html" class="dropdown-item notify-item">
+                                    <a href="blotter.html" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="../assets/images/users/profile1.png"
+                                            <img src="../../assets/images/users/profile1.png"
                                                 class="img-fluid rounded-circle" alt="">
                                         </div>
                                         <p class="notify-details">Juan Dela Cruz</p>
                                         <p class="text-muted mb-0 user-msg">
-                                            <small>Requested a blotter.</small>
+                                            <small>Requested a vaccination.</small>
                                         </p>
                                     </a>
 
                                     <!-- item-->
-                                    <a href="bitbo-admin-blotter.html" class="dropdown-item notify-item">
+                                    <a href="blotter.html" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="../assets/images/users/profile2.png"
+                                            <img src="../../assets/images/users/profile2.png"
                                                 class="img-fluid rounded-circle" alt="">
                                         </div>
                                         <p class="notify-details">Maria Clara</p>
                                         <p class="text-muted mb-0 user-msg">
-                                            <small>Requested a business permit.</small>
+                                            <small>Requested a booster.</small>
                                         </p>
                                     </a>
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="../assets/images/users/profile3.png"
+                                            <img src="../../assets/images/users/profile3.png"
                                                 class="img-fluid rounded-circle" alt="">
                                         </div>
                                         <p class="notify-details">Sisa Usisa</p>
                                         <p class="text-muted mb-0 user-msg">
-                                            <small>Requested a Brgy. Indigency.</small>
+                                            <small>Requested a vaccine.</small>
                                         </p>
                                     </a>
                                 </div>
@@ -186,7 +191,7 @@
                         </li>
 
                         <li class="notification-list">
-                            <a class="nav-link" href="../../BITBo/admin/bitbo-admin-index.html">
+                            <a class="nav-link" href="../../BITBo/admin/index.html">
                                 <i class="noti-icon"><button type="button" class="btn btn-primary">Switch to
                                         <strong>BITBo.</strong></button></i>
                             </a>
@@ -196,7 +201,7 @@
                             <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown"
                                 href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                 <span class="account-user-avatar">
-                                    <img src="../assets/images/users/profile1.png" alt="user-image"
+                                    <img src="../../assets/images/users/profile1.png" alt="user-image"
                                         class="rounded-circle">
                                 </span>
                                 <span>
@@ -212,13 +217,13 @@
                                 </div>
 
                                 <!-- item-->
-                                <a href="bitbo-admin-account.html" class="dropdown-item notify-item">
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <i class="mdi mdi-account-circle me-1"></i>
                                     <span>My Account</span>
                                 </a>
 
                                 <!-- item-->
-                                <a href="../login-admin.html" class="dropdown-item notify-item">
+                                <a href="/BITBo/login-admin.html" class="dropdown-item notify-item">
                                     <i class="mdi mdi-logout me-1"></i>
                                     <span>Logout</span>
                                 </a>
@@ -255,7 +260,7 @@
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="d-flex">
                                         <img class="d-flex me-2 rounded-circle"
-                                            src="../assets/images/users/profile1.png" alt="Generic placeholder image"
+                                            src="../../assets/images/users/profile1.png" alt="Generic placeholder image"
                                             height="32">
                                         <div class="w-100">
                                             <h5 class="m-0 font-14">Juan Dela Cruz</h5>
@@ -268,7 +273,7 @@
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="d-flex">
                                         <img class="d-flex me-2 rounded-circle"
-                                            src="../assets/images/users/profile2.png" alt="Generic placeholder image"
+                                            src="../../assets/images/users/profile2.png" alt="Generic placeholder image"
                                             height="32">
                                         <div class="w-100">
                                             <h5 class="m-0 font-14">Maria Clara</h5>
@@ -281,7 +286,7 @@
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="d-flex">
                                         <img class="d-flex me-2 rounded-circle"
-                                            src="../assets/images/users/profile3.png" alt="Generic placeholder image"
+                                            src="../../assets/images/users/profile3.png" alt="Generic placeholder image"
                                             height="32">
                                         <div class="w-100">
                                             <h5 class="m-0 font-14">Sisa Usisa</h5>
@@ -372,7 +377,7 @@
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-date">Date Issued</a>
                                                             </th>
-                                                          
+
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-purpose">Findings</a>
@@ -401,12 +406,14 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                    
+
                                                             <td>
-                                                                <span class="js-lists-values-findings">Fit to Work</span>
+                                                                <span class="js-lists-values-findings">Fit to
+                                                                    Work</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-purpose">Employment Requirement</span>
+                                                                <span class="js-lists-values-purpose">Employment
+                                                                    Requirement</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -441,7 +448,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                         
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -482,7 +489,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                     
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -538,7 +545,7 @@
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-date">Date Issued</a>
                                                             </th>
-                                                           
+
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-purpose">Findings</a>
@@ -567,7 +574,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                           
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -598,13 +605,14 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                          
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-purpose">Employment Requirements</span>
+                                                                <span class="js-lists-values-purpose">Employment
+                                                                    Requirements</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -629,7 +637,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                          
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -676,7 +684,7 @@
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-date">Date Issued</a>
                                                             </th>
-                                                           
+
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-purpose">Findings</a>
@@ -705,7 +713,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                           
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -736,7 +744,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                            
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -767,7 +775,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                          
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -813,7 +821,7 @@
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-date">Date Issued</a>
                                                             </th>
-                                                           
+
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
                                                                     data-sort="js-lists-values-purpose">Findings</a>
@@ -842,7 +850,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                           
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -873,7 +881,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                            
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -904,7 +912,7 @@
                                                             <td>
                                                                 <span class="js-lists-values-date">09/13/2022</span>
                                                             </td>
-                                                            
+
                                                             <td>
                                                                 <span class="js-lists-values-findings">No Record on
                                                                     File</span>
@@ -1002,12 +1010,12 @@
                                         </div>
 
                                         <div class="row">
-                                          
-                                            <div class="col-md-4">
+
+                                            <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="lastname" class="form-label">Date Issued</label>
-                                                    <input type="date" min="2022-08-01" max="2023-12-31" class="form-control" id="dateissued"
-                                                        placeholder="Enter date">
+                                                    <input type="date" min="2022-08-01" max="2023-12-31"
+                                                        class="form-control" id="dateissued" placeholder="Enter date">
                                                 </div>
                                             </div>
                                         </div>
@@ -1019,7 +1027,7 @@
                                                     <select class="form-select" id="example-select">
                                                         <option>No Record on File</option>
                                                         <option>Fit to Work</option>
-                                                      
+
                                                     </select>
                                                 </div>
                                             </div>
@@ -1086,128 +1094,136 @@
     </div>
     <!-- END wrapper -->
 
-        <!-- Right Sidebar -->
-        <div class="end-bar">
+    <!-- Right Sidebar -->
+    <div class="end-bar">
 
-            <div class="rightbar-title">
-                <a href="javascript:void(0);" class="end-bar-toggle float-end">
-                    <i class="dripicons-cross noti-icon"></i>
-                </a>
-                <h5 class="m-0">Settings</h5>
-            </div>
-
-            <div class="rightbar-content h-100" data-simplebar="">
-
-                <div class="p-3">
-                    <div class="alert alert-warning" role="alert">
-                        <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
-                    </div>
-
-                    <!-- Settings -->
-                    <h5 class="mt-3">Color Scheme</h5>
-                    <hr class="mt-1">
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light" id="light-mode-check" checked="">
-                        <label class="form-check-label" for="light-mode-check">Light Mode</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark" id="dark-mode-check">
-                        <label class="form-check-label" for="dark-mode-check">Dark Mode</label>
-                    </div>
-
-
-                    <!-- Width -->
-                    <h5 class="mt-4">Width</h5>
-                    <hr class="mt-1">
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check" checked="">
-                        <label class="form-check-label" for="fluid-check">Fluid</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
-                        <label class="form-check-label" for="boxed-check">Boxed</label>
-                    </div>
-
-
-                    <!-- Left Sidebar-->
-                    <h5 class="mt-4">Left Sidebar</h5>
-                    <hr class="mt-1">
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="theme" value="default" id="default-check">
-                        <label class="form-check-label" for="default-check">Default</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="theme" value="light" id="light-check" checked="">
-                        <label class="form-check-label" for="light-check">Light</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" name="theme" value="dark" id="dark-check">
-                        <label class="form-check-label" for="dark-check">Dark</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="compact" value="fixed" id="fixed-check" checked="">
-                        <label class="form-check-label" for="fixed-check">Fixed</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="compact" value="condensed" id="condensed-check">
-                        <label class="form-check-label" for="condensed-check">Condensed</label>
-                    </div>
-
-                    <div class="form-check form-switch mb-1">
-                        <input class="form-check-input" type="checkbox" name="compact" value="scrollable" id="scrollable-check">
-                        <label class="form-check-label" for="scrollable-check">Scrollable</label>
-                    </div>
-
-                    <div class="d-grid mt-4">
-                        <button class="btn btn-primary" id="resetBtn">Reset to Default</button>
-
-                        <a href="../../product/hyper-responsive-admin-dashboard-template/index.htm" class="btn btn-danger mt-3" target="_blank"><i class="mdi mdi-basket me-1"></i> Purchase Now</a>
-                    </div>
-                </div> <!-- end padding-->
-
-            </div>
+        <div class="rightbar-title">
+            <a href="javascript:void(0);" class="end-bar-toggle float-end">
+                <i class="dripicons-cross noti-icon"></i>
+            </a>
+            <h5 class="m-0">Settings</h5>
         </div>
 
-        <div class="rightbar-overlay"></div>
-        <!-- /End-bar -->
+        <div class="rightbar-content h-100" data-simplebar="">
 
-        <!-- bundle -->
-        <script src="../assets/js/vendor.min.js"></script>
-        <script src="../assets/js/app.min.js"></script>
+            <div class="p-3">
+                <div class="alert alert-warning" role="alert">
+                    <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
+                </div>
 
-        <!-- third party js -->
-        <script src="../assets/js/vendor/apexcharts.min.js"></script>
-        <script src="../assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="../assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
-        <script src="../../assets/js/vendor/jquery.dataTables.min.js"></script>
-        <script src="../../assets/js/vendor/dataTables.bootstrap5.js"></script>
-        <script src="../../assets/js/vendor/dataTables.responsive.min.js"></script>
-        <script src="../../assets/js/vendor/responsive.bootstrap5.min.js"></script>
-        <script src="../../assets/js/vendor/dataTables.buttons.min.js"></script>
-        <script src="../../assets/js/vendor/buttons.bootstrap5.min.js"></script>
-        <script src="../../assets/js/vendor/buttons.html5.min.js"></script>
-        <script src="../../assets/js/vendor/buttons.flash.min.js"></script>
-        <script src="../../assets/js/vendor/buttons.print.min.js"></script>
-        <script src="../../assets/js/vendor/dataTables.keyTable.min.js"></script>
-        <script src="../../assets/js/vendor/dataTables.select.min.js"></script>
-        <script src="../../assets/js/vendor/list.min.js"></script>
-        <!-- third party js ends -->
+                <!-- Settings -->
+                <h5 class="mt-3">Color Scheme</h5>
+                <hr class="mt-1">
 
-        <!-- demo app -->
-        <script src="../assets/js/pages/demo.dashboard.js"></script>
-        <script src="../../assets/js/pages/demo.datatable-init.js"></script>
-        <script src="../../assets/js/pages/demo.toastr.js"></script>
-        <script src="../../assets/js/pages/demo.datatable-init.js"></script>
-        <script src="../../assets/js/pages/demo.toastr.js"></script>
-        <script src="../../assets/js/pages/list.js"></script>
-        <!-- end demo js-->
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="light"
+                        id="light-mode-check" checked="">
+                    <label class="form-check-label" for="light-mode-check">Light Mode</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="color-scheme-mode" value="dark"
+                        id="dark-mode-check">
+                    <label class="form-check-label" for="dark-mode-check">Dark Mode</label>
+                </div>
+
+
+                <!-- Width -->
+                <h5 class="mt-4">Width</h5>
+                <hr class="mt-1">
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="width" value="fluid" id="fluid-check"
+                        checked="">
+                    <label class="form-check-label" for="fluid-check">Fluid</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="width" value="boxed" id="boxed-check">
+                    <label class="form-check-label" for="boxed-check">Boxed</label>
+                </div>
+
+
+                <!-- Left Sidebar-->
+                <h5 class="mt-4">Left Sidebar</h5>
+                <hr class="mt-1">
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="theme" value="default" id="default-check">
+                    <label class="form-check-label" for="default-check">Default</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="theme" value="light" id="light-check"
+                        checked="">
+                    <label class="form-check-label" for="light-check">Light</label>
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" name="theme" value="dark" id="dark-check">
+                    <label class="form-check-label" for="dark-check">Dark</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="compact" value="fixed" id="fixed-check"
+                        checked="">
+                    <label class="form-check-label" for="fixed-check">Fixed</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="compact" value="condensed"
+                        id="condensed-check">
+                    <label class="form-check-label" for="condensed-check">Condensed</label>
+                </div>
+
+                <div class="form-check form-switch mb-1">
+                    <input class="form-check-input" type="checkbox" name="compact" value="scrollable"
+                        id="scrollable-check">
+                    <label class="form-check-label" for="scrollable-check">Scrollable</label>
+                </div>
+
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary" id="resetBtn">Reset to Default</button>
+
+                    <a href="../../product/hyper-responsive-admin-dashboard-template/index.htm"
+                        class="btn btn-danger mt-3" target="_blank"><i class="mdi mdi-basket me-1"></i> Purchase Now</a>
+                </div>
+            </div> <!-- end padding-->
+
+        </div>
+    </div>
+
+    <div class="rightbar-overlay"></div>
+    <!-- /End-bar -->
+
+    <!-- bundle -->
+    <script src="../../assets/js/vendor.min.js"></script>
+    <script src="../../assets/js/app.min.js"></script>
+
+    <!-- third party js -->
+    <script src="../../assets/js/vendor/apexcharts.min.js"></script>
+    <script src="../../assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../../assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../../assets/js/vendor/jquery.dataTables.min.js"></script>
+    <script src="../../assets/js/vendor/dataTables.bootstrap5.js"></script>
+    <script src="../../assets/js/vendor/dataTables.responsive.min.js"></script>
+    <script src="../../assets/js/vendor/responsive.bootstrap5.min.js"></script>
+    <script src="../../assets/js/vendor/dataTables.buttons.min.js"></script>
+    <script src="../../assets/js/vendor/buttons.bootstrap5.min.js"></script>
+    <script src="../../assets/js/vendor/buttons.html5.min.js"></script>
+    <script src="../../assets/js/vendor/buttons.flash.min.js"></script>
+    <script src="../../assets/js/vendor/buttons.print.min.js"></script>
+    <script src="../../assets/js/vendor/dataTables.keyTable.min.js"></script>
+    <script src="../../assets/js/vendor/dataTables.select.min.js"></script>
+    <script src="../../assets/js/vendor/list.min.js"></script>
+    <!-- third party js ends -->
+
+    <!-- demo app -->
+    <script src="../../assets/js/pages/demo.dashboard.js"></script>
+    <script src="../../assets/js/pages/demo.datatable-init.js"></script>
+    <script src="../../assets/js/pages/demo.toastr.js"></script>
+    <script src="../../assets/js/pages/demo.datatable-init.js"></script>
+    <script src="../../assets/js/pages/demo.toastr.js"></script>
+    <script src="../../assets/js/pages/list.js"></script>
+    <!-- end demo js-->
 </body>
 
 </html>

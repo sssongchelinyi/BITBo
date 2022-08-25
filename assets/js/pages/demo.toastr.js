@@ -50,6 +50,10 @@
 		i.NotificationApp.send("Event / Project created successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-updateadmin").on("click", function (t) {
 		i.NotificationApp.send("Admin updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-updatesenior").on("click", function (t) {
+		i.NotificationApp.send("Senior Citizen updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-updatepatient").on("click", function (t) {
+		i.NotificationApp.send("Patient updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-staffupdate").on("click", function (t) {
 		i.NotificationApp.send("Staff updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-hworkerupdate").on("click", function (t) {
@@ -66,6 +70,8 @@
 		i.NotificationApp.send("You joined the event successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-reqcert").on("click", function (t) {
 		i.NotificationApp.send("Certificate requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-editpatient").on("click", function (t) {
+		i.NotificationApp.send("Patient updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-dismiss").on("click", function (t) {
 		i.NotificationApp.send("Blotter marked as dismissed!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-cancelblotter").on("click", function (t) {

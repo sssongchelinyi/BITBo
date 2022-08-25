@@ -16493,17 +16493,17 @@ select.form-control-sm:not([size]):not([multiple]) {
 
 .nav-pills>li>a,
 .nav-tabs>li>a {
-    color: #6c757d;
+    color: #fff;
     font-weight: 600
 }
 
 .nav-pills>a {
-    color: #6c757d;
+    color: #fff;
     font-weight: 600
 }
 
 .bg-nav-pills {
-    background-color: #eef2f7
+    background-color: #fff;
 }
 
 .nav-tabs.nav-bordered {
