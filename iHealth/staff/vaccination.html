@@ -67,10 +67,13 @@
                                     <a href="vaccination.html">COVID-19 Vaccine</a>
                                 </li>
                                 <li>
-                                    <a href="#">Dental Check-Up</a>
+                                    <a href="dental.html">Dental Check-Up</a>
                                 </li>
                                 <li>
                                     <a href="#">Infant Check-Up</a>
+                                </li>
+                                <li>
+                                    <a href="#">Medical Check-Up</a>
                                 </li>
                                 <li>
                                     <a href="#">Rabies Vaccination</a>
@@ -383,7 +386,7 @@
 
                                         <div class="tab-pane show active" id="buttons-table-pending"
                                             class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-manufacturer", "js-lists-values-dosestatus"]'>
+                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-service"]'>
                                             <table id="table table-centered" class="table-responsive mb-0">
                                                 <div class="search-form search-form--light col-lg-3"><input type="text"
                                                         class="form-control search"
@@ -410,11 +413,7 @@
                                                             </th>
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-manufacturer">Vaccine Manufacturer</a>
-                                                            </th>
-                                                            <th style="width: 390px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-dose">Dosage Status</a>
+                                                                    data-sort="js-lists-values-service">Service Type</a>
                                                             </th>
                                                             <th style="width: 500px;">Action</th>
                                                         </tr>
@@ -440,10 +439,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">Booster</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -483,10 +479,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Moderna</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">1st Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
 
                                                             <td class="table-action">
@@ -527,10 +520,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Astrazeneca</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -558,7 +548,7 @@
 
                                         <div class="tab-pane" id="buttons-table-approved"
                                             class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-manufacturer", "js-lists-values-dosestatus"]'>
+                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-service"]'>
                                             <table id="table table-centered" class="table-responsive mb-0">
                                                 <div class="search-form search-form--light col-lg-3"><input type="text"
                                                         class="form-control search"
@@ -585,12 +575,9 @@
                                                             </th>
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-manufacturer">Vaccine Manufacturer</a>
+                                                                    data-sort="js-lists-values-service">Service Type</a>
                                                             </th>
-                                                            <th style="width: 390px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-dose">Dosage Status</a>
-                                                            </th>
+                                                        
                                                             <th style="width: 400px;">Action</th>
                                                         </tr>
                                                     </thead>
@@ -616,10 +603,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -628,6 +612,11 @@
                                                                         data-bs-target="#edit-request-modal"><i
                                                                             class="mdi mdi-file-document-edit"></i>
                                                                     </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-info"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#view-request-modal"><i
+                                                                                class="mdi mdi-eye"></i> </button></a>
                                                             </td>
                                                         </tr>
 
@@ -649,10 +638,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -661,6 +647,11 @@
                                                                         data-bs-target="#edit-request-modal"><i
                                                                             class="mdi mdi-file-document-edit"></i>
                                                                     </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-info"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#view-request-modal"><i
+                                                                                class="mdi mdi-eye"></i> </button></a>
                                                             </td>
                                                         </tr>
 
@@ -682,10 +673,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -694,6 +682,11 @@
                                                                         data-bs-target="#edit-request-modal"><i
                                                                             class="mdi mdi-file-document-edit"></i>
                                                                     </button></a>
+                                                                    <a href="javascript: void(0);" class="action-icon">
+                                                                        <button type="button" class="btn btn-info"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#view-request-modal"><i
+                                                                                class="mdi mdi-eye"></i> </button></a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -703,7 +696,7 @@
 
                                         <div class="tab-pane" id="buttons-table-declined"
                                             class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-manufacturer", "js-lists-values-dosestatus"]'>
+                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-service", "js-lists-values-dosestatus"]'>
                                             <table id="table table-centered" class="table-responsive mb-0">
                                                 <div class="search-form search-form--light col-lg-3"><input type="text"
                                                         class="form-control search"
@@ -730,12 +723,9 @@
                                                             </th>
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-manufacturer">Vaccine Manufacturer</a>
+                                                                    data-sort="js-lists-values-service">Service Type</a>
                                                             </th>
-                                                            <th style="width: 390px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-dose">Dosage Status</a>
-                                                            </th>
+                                                           
                                                             <th style="width: 400px;">Action</th>
                                                         </tr>
                                                     </thead>
@@ -760,10 +750,7 @@
                                                                 <span class="js-lists-values-time">10:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -792,10 +779,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -824,10 +808,7 @@
                                                                 <span class="js-lists-values-time">7:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -844,7 +825,7 @@
 
                                         <div class="tab-pane" id="buttons-table-history"
                                             class="table responsive nowrap w-100" data-toggle="lists"
-                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-manufacturer", "js-lists-values-dosestatus"]'>
+                                            data-lists-values='["js-lists-values-appointmentid", "js-lists-values-name", "js-lists-values-date", "js-lists-values-time", "js-lists-values-service", "js-lists-values-dosestatus"]'>
                                             <table id="table table-centered" class="table-responsive mb-0">
                                                 <div class="search-form search-form--light col-lg-3"><input type="text"
                                                         class="form-control search"
@@ -871,12 +852,9 @@
                                                             </th>
                                                             <th style="width: 390px;">
                                                                 <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-manufacturer">Vaccine Manufacturer</a>
+                                                                    data-sort="js-lists-values-service">Service Type</a>
                                                             </th>
-                                                            <th style="width: 390px;">
-                                                                <a href="javascript:void(0)" class="sort"
-                                                                    data-sort="js-lists-values-dose">Dosage Status</a>
-                                                            </th>
+                                                           
                                                             <th style="width: 400px;">Action</th>
                                                         </tr>
                                                     </thead>
@@ -902,10 +880,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -934,10 +909,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
@@ -966,10 +938,7 @@
                                                                 <span class="js-lists-values-time">9:00 AM</span>
                                                             </td>
                                                             <td>
-                                                                <span class="js-lists-values-manufacturer">Pfizer</span>
-                                                            </td>
-                                                            <td>
-                                                                <span class="js-lists-values-dosestatus">2nd Dose</span>
+                                                                <span class="js-lists-values-service">COVID-19 Vaccine</span>
                                                             </td>
                                                             <td class="table-action">
                                                                 <a href="javascript: void(0);" class="action-icon">
