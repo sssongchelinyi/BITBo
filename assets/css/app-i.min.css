@@ -16493,12 +16493,12 @@ select.form-control-sm:not([size]):not([multiple]) {
 
 .nav-pills>li>a,
 .nav-tabs>li>a {
-    color: #fff;
+    color: #6c757d;
     font-weight: 600
 }
 
 .nav-pills>a {
-    color: #fff;
+    color: #6c757d;
     font-weight: 600
 }
 

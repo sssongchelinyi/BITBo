@@ -72,6 +72,18 @@
 		i.NotificationApp.send("Certificate requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-editpatient").on("click", function (t) {
 		i.NotificationApp.send("Patient updated successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqvaccine").on("click", function (t) {
+		i.NotificationApp.send("Vaccine appointment requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqdental").on("click", function (t) {
+		i.NotificationApp.send("Dental Check-up appointment requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqinfant").on("click", function (t) {
+		i.NotificationApp.send("Infant Check-up appointment requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqmedical").on("click", function (t) {
+		i.NotificationApp.send("Medical Check-up appointment requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqscitizen").on("click", function (t) {
+		i.NotificationApp.send("Senior Citizen Check-up appointment requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
+	}), i("#toastr-reqrabis").on("click", function (t) {
+		i.NotificationApp.send("Rabis Vaccine appointment requested successfully!", "", "top-right", "rgba(0,0,0,0.2)", "success")
 	}), i("#toastr-dismiss").on("click", function (t) {
 		i.NotificationApp.send("Blotter marked as dismissed!", "", "top-right", "rgba(0,0,0,0.2)", "error")
 	}), i("#toastr-cancelblotter").on("click", function (t) {
