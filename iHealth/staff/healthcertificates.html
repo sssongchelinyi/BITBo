@@ -51,11 +51,10 @@
                             <span> Dashboard </span>
                         </a>
                     </li>
-
                     <li class="side-nav-item">
-                        <a href="vaccination.html" class="side-nav-link">
-                            <i class="uil-clipboard-alt"></i>
-                            <span> Vaccination </span>
+                        <a href="patients.html" class="side-nav-link">
+                            <i class="uil-user-square"></i>
+                            <span> Patients </span>
                         </a>
                     </li>
 
@@ -67,16 +66,40 @@
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="seniorcitizenservice.html" class="side-nav-link">
-                            <i class="uil-comment-exclamation"></i>
-                            <span> Senior Citizen Service </span>
+                        <a data-bs-toggle="collapse" href="#generalserv" aria-expanded="false" class="side-nav-link">
+                            <i class="uil-file-medical-alt"></i>
+                            <span>General Services</span>
+                            <span class="menu-arrow"></span>
                         </a>
+                        <div class="collapse" id="generalserv">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a href="covid_vaccination.html"><i class="mdi mdi-needle"></i> COVID-19 Vaccine</a>
+                                </li>
+                                <li>
+                                    <a href="dental_services.html"><i class="mdi mdi-tooth-outline"></i> Dental Check-Up</a>
+                                </li>
+                                <li>
+                                    <a href="infant_service.html"><i class="mdi mdi-baby"></i> Infant Check-Up</a>
+                                </li>
+                                <li>
+                                    <a href="medical_service.html"><i class="mdi mdi-stethoscope"></i> Medical Check-Up</a>
+                                </li>
+                                <li>
+                                    <a href="rabies_vaccination.html"><i class="mdi mdi-dog"></i> Rabies Vaccination</a>
+                                </li>
+                                <li>
+                                    <a href="seniorcitizen_service.html"> <i class="mdi mdi-account"></i> Senior Citizen</a>
+                                </li>
+                              
+                            </ul>
+                        </div>
                     </li>
-
+                    
                     <li class="side-nav-item">
-                        <a href="otherservices.html" class="side-nav-link">
-                            <i class="uil-home-alt"></i>
-                            <span> Other Services </span>
+                        <a href="logs.html" class="side-nav-link">
+                            <i class="uil-notes"></i>
+                            <span> Logs </span>
                         </a>
                     </li>
                 </ul>
@@ -186,7 +209,7 @@
                         </li>
 
                         <li class="notification-list">
-                            <a class="nav-link" href="../../BITBo/admin/bitbo-admin-index.html">
+                            <a class="nav-link" href="../../BITBo/staff/index.html>
                                 <i class="noti-icon"><button type="button" class="btn btn-primary">Switch to
                                         <strong>BITBo.</strong></button></i>
                             </a>
@@ -195,13 +218,12 @@
                         <li class="dropdown notification-list">
                             <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown"
                                 href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <span class="account-user-avatar">
-                                    <img src="../../assets/images/users/profile1.png" alt="user-image"
-                                        class="rounded-circle">
+                                <span class="account-user-avatar"> 
+                                    <img src="../../assets/images/users/profile1.png" alt="user-image" class="rounded-circle">
                                 </span>
                                 <span>
                                     <span class="account-user-name">Juan Dela Cruz</span>
-                                    <span class="account-position">Admin</span>
+                                    <span class="account-position">Staff</span>
                                 </span>
                             </a>
                             <div
@@ -315,15 +337,14 @@
                         </div>
                     </div>
                     <!-- end page title -->
-
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
 
-                                    <ul class="nav nav-pills bg-nav-pills mb-3">
+                                    <ul class="nav nav-pills mb-3">
                                         <li class="nav-item">
-                                            <a href="#buttons-table-pending" data-bs-toggle="tab" aria-expanded="false"
+                                            <a href="#buttons-table-pending" data-bs-toggle="tab" aria-expanded="true"
                                                 class="nav-link active">
                                                 Pending
                                             </a>
@@ -348,944 +369,759 @@
                                         </li>
                                     </ul> <!-- end nav-->
                                     <div class="tab-content">
-                                        <div class="tab-pane show active" id="buttons-table-pending">
-                                            <table id="scroll-vertical-datatable"
-                                                class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Request No.</th>
-                                                        <th>Name</th>
-                                                        <th>Purpose</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
 
+                                        <div class="tab-pane show active" id="buttons-table-pending"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Request No., Name or Purpose">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-requestid">Request
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 350px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-name">Name</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-date">Date Issued</a>
+                                                            </th>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Findings</a>
+                                                            </th>
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Purpose</a>
+                                                            </th>
+                                                            <th style="width: 400px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0001</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">Fit to
+                                                                    Work</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Employment
+                                                                    Requirement</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#success-alert-modal"><i
+                                                                            class="mdi mdi-check"></i> </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#danger-alert-modal"><i
+                                                                            class="mdi mdi-cancel"></i> </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Travel Pass</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#success-alert-modal"><i
+                                                                            class="mdi mdi-check"></i> </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#danger-alert-modal"><i
+                                                                            class="mdi mdi-cancel"></i> </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Travel Pass</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-success"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#success-alert-modal"><i
+                                                                            class="mdi mdi-check"></i> </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-danger"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#danger-alert-modal"><i
+                                                                            class="mdi mdi-cancel"></i> </button></a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i>
+                                                                    </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </table>
                                         </div> <!-- end pending-->
 
-                                        <div class="tab-pane" id="buttons-table-approved">
-                                            <table id="scroll-vertical-datatable" class="table dt-responsive w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Request No.</th>
-                                                        <th>Name</th>
-                                                        <th>Purpose</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
+                                        <div class="tab-pane" id="buttons-table-approved"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Request No., Name or Purpose">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-requestid">Request
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 350px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-name">Name</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-date">Date Issued</a>
+                                                            </th>
 
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Findings</a>
+                                                            </th>
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Purpose</a>
+                                                            </th>
+                                                            <th style="width: 400px;">Action</th>
+                                                        </tr>
+                                                    </thead>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0001</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Travel Pass</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i>
+                                                                    </button>
+                                                                </a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> 
+                                                                    </button>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Employment
+                                                                    Requirements</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i>
+                                                                    </button>
+                                                                </a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> 
+                                                                    </button>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Financial
+                                                                    Assistance</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-warning"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#edit-request-modal"><i
+                                                                            class="mdi mdi-file-document-edit"></i>
+                                                                    </button>
+                                                                </a>
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> 
+                                                                    </button>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </table>
                                         </div> <!-- end approved-->
 
-                                        <div class="tab-pane" id="buttons-table-declined">
-                                            <table id="scroll-vertical-datatable"
-                                                class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Request No.</th>
-                                                        <th>Name</th>
-                                                        <th>Purpose</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
+                                        <div class="tab-pane" id="buttons-table-declined"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Request No., Name or Purpose">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-requestid">Request
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 350px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-name">Name</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-date">Date Issued</a>
+                                                            </th>
 
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Findings</a>
+                                                            </th>
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Purpose</a>
+                                                            </th>
+                                                            <th style="width: 400px;">Action</th>
+                                                        </tr>
+                                                    </thead>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0001</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Medical
+                                                                    Assistance</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> </button>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Educational
+                                                                    Assistance</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Financial
+                                                                    Assistance</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </table>
                                         </div> <!-- end declined-->
+
+                                        <div class="tab-pane" id="buttons-table-history"
+                                            class="table responsive nowrap w-100" data-toggle="lists"
+                                            data-lists-values='["js-lists-values-requestid", "js-lists-values-name", "js-lists-values-purpose", "js-lists-values-findings", "js-lists-values-date"]'>
+                                            <table id="table table-centered" class="table-responsive mb-0">
+                                                <div class="search-form search-form--light col-lg-3"><input type="text"
+                                                        class="form-control search"
+                                                        placeholder="Search Request No., Name or Purpose">
+                                                </div>
+                                                <table id="" class="table dt-responsive nowrap w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-requestid">Request
+                                                                    ID.</a>
+                                                            </th>
+                                                            <th style="width: 350px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-name">Name</a>
+                                                            </th>
+                                                            <th style="width: 180px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-date">Date Issued</a>
+                                                            </th>
+
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Findings</a>
+                                                            </th>
+                                                            <th style="width: 390px;">
+                                                                <a href="javascript:void(0)" class="sort"
+                                                                    data-sort="js-lists-values-purpose">Purpose</a>
+                                                            </th>
+                                                            <th style="width: 400px;">Action</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="list" id="staff02">
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0001</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Medical
+                                                                    Assistance</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0002</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Educational
+                                                                    Assistance</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-body d-flex flex-column"><strong
+                                                                            class="js-lists-values-requestid">HC-2022-0003</strong>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td><span class="js-lists-values-name">Juan Dela Cruz</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-date">09/13/2022</span>
+                                                            </td>
+
+                                                            <td>
+                                                                <span class="js-lists-values-findings">No Record on
+                                                                    File</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="js-lists-values-purpose">Financial
+                                                                    Assistance</span>
+                                                            </td>
+                                                            <td class="table-action">
+                                                                <a href="javascript: void(0);" class="action-icon">
+                                                                    <button type="button" class="btn btn-info"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#view-request-modal"><i
+                                                                            class="mdi mdi-eye"></i> </button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </table>
+                                        </div> <!-- end history-->
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card body-->
                             </div> <!-- end card -->
                         </div><!-- end col-->
-                    </div>
-                    <!-- end row-->
+                    </div><!-- end row-->
+
+                    <!--MODALS-->
+
+                    <!--Decline Modal-->
+                    <div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-danger">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Confirm Decline Request</h4>
+                                        <p class="mt-3">Are you sure you want to decline Juan Dela Cruz's request?</p>
+                                        <button type="button" class="btn btn-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-four">Decline</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-filled bg-success">
+                                <div class="modal-body p-4">
+                                    <div class="text-center">
+                                        <i class="dripicons-question h1"></i>
+                                        <h4 class="mt-2">Confirm Approve Request</h4>
+                                        <p class="mt-3">Are you sure you want to approve Juan Dela Cruz's request?</p>
+                                        <button type="button" class="btn btn-outline-light my-2"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
+                                            id="toastr-three">Confirm</button>
+                                    </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- Info Header Modal -->
+                    <div id="edit-request-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="info-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Request ID</label>
+                                                    <input type="text" class="form-control" id="firstname"
+                                                        placeholder="Resident Name" value="HC-2022-0001" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Resident Name</label>
+                                                    <input type="text" class="form-control" id="firstname"
+                                                        placeholder="Resident Name" value="Juan Dela Cruz" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Date Issued</label>
+                                                    <input type="date" min="2022-08-01" max="2023-12-31"
+                                                        class="form-control" id="dateissued" placeholder="Enter date">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="lastname" class="form-label">Findings</label>
+                                                    <select class="form-select" id="example-select">
+                                                        <option>No Record on File</option>
+                                                        <option>Fit to Work</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="userpassword" class="form-label">Purpose</label>
+                                                    <select class="form-select" id="example-select">
+                                                        <option>None</option>
+                                                        <option>Travel Pass</option>
+                                                        <option>Medical Clearance</option>
+                                                        <option>Employment Requirement</option>
+                                                        <option>General Requirement</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        id="toastr-editreq">Save Changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- View Request Modal -->
+                    <div id="view-request-modal" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="info-header-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header modal-colored-header bg-primary">
+                                    <h4 class="modal-title" id="info-header-modalLabel">Request Certificate Details</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <p><strong>Request ID.: </strong>HC-2022-0001</p>
+                                        <p><strong>Resident Name: </strong>Juan Dela Cruz</p>
+                                        <p><strong>Date Issued: </strong>2022/01/01</p>
+                                        <p><strong>Findings: </strong>No Record on File</p>
+                                        <p><strong>Purpose: </strong>Financial Assistance</p>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
                 </div> <!-- container -->
 
             </div> <!-- content -->
@@ -1295,64 +1131,7 @@
         <!-- End Page content -->
         <!-- ============================================================== -->
 
-        <!--MODALS-->
 
-        <!--Decline Modal-->
-        <div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-danger">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Confirm Decline Request</h4>
-                            <p class="mt-3">Are you sure you want to decline Juan Dela Cruz's request?</p>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-outline-light my-2" data-bs-dismiss="modal"
-                                id="toastr-four">Decline</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content modal-filled bg-success">
-                    <div class="modal-body p-4">
-                        <div class="text-center">
-                            <i class="dripicons-question h1"></i>
-                            <h4 class="mt-2">Confirm Approve Request</h4>
-                            <p class="mt-3">Are you sure you want to approve Juan Dela Cruz's request?</p>
-                            <button type="button" class="btn btn-outline-light my-2"
-                                data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal"
-                                id="toastr-three">Confirm</button>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <!-- Info Header Modal -->
-        <div id="info-header-modal" class="modal fade" tabindex="-1" role="dialog"
-            aria-labelledby="info-header-modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-primary">
-                        <h4 class="modal-title" id="info-header-modalLabel">Request Details</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><strong>Request No.: </strong>HC-2022-0001</p>
-                        <p><strong>Name: </strong>Juan Dela Cruz</p>
-                        <p><strong>Purpose: </strong>Barangay Certificate of Residency</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
 
     </div>
     <!-- END wrapper -->
@@ -1362,6 +1141,9 @@
     <script src="../../assets/js/app.min.js"></script>
 
     <!-- third party js -->
+    <script src="../../assets/js/vendor/apexcharts.min.js"></script>
+    <script src="../../assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../../assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
     <script src="../../assets/js/vendor/jquery.dataTables.min.js"></script>
     <script src="../../assets/js/vendor/dataTables.bootstrap5.js"></script>
     <script src="../../assets/js/vendor/dataTables.responsive.min.js"></script>
@@ -1373,11 +1155,16 @@
     <script src="../../assets/js/vendor/buttons.print.min.js"></script>
     <script src="../../assets/js/vendor/dataTables.keyTable.min.js"></script>
     <script src="../../assets/js/vendor/dataTables.select.min.js"></script>
+    <script src="../../assets/js/vendor/list.min.js"></script>
     <!-- third party js ends -->
 
     <!-- demo app -->
+    <script src="../../assets/js/pages/demo.dashboard.js"></script>
     <script src="../../assets/js/pages/demo.datatable-init.js"></script>
     <script src="../../assets/js/pages/demo.toastr.js"></script>
+    <script src="../../assets/js/pages/demo.datatable-init.js"></script>
+    <script src="../../assets/js/pages/demo.toastr.js"></script>
+    <script src="../../assets/js/pages/list.js"></script>
     <!-- end demo js-->
 </body>
 
